@@ -1,9 +1,9 @@
-import { Button } from 'primereact/button';
+import { Home } from '@/views';
 
-export default function Home() {
+export default function HomePage() {
   return (
     <main>
-      <Button label="Submit" />
+      <Home />
     </main>
   );
 }

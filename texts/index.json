@@ -1,0 +1,391 @@
+{
+  "menu": {
+    "imgLogo": "./img/logo-branco.png",
+    "contrateAgora": "Contrate agora seu plano:",
+    "cta1": "Vida On",
+    "cta2": "Vida plano",
+    "nav": [
+      {
+        "id": 1,
+        "nome": "telemedicina",
+        "link": ""
+      },
+      {
+        "id": 2,
+        "nome": "Benefícios",
+        "link": ""
+      },
+      {
+        "id": 3,
+        "nome": "Planos",
+        "link": ""
+      },
+      {
+        "id": 4,
+        "nome": "quem somos",
+        "link": ""
+      },
+      {
+        "id": 5,
+        "nome": "contato",
+        "link": ""
+      }
+    ]
+  },
+  "hero": {
+    "imgLogo": "tem q prenencher, a imagem isa",
+    "imgBg": "./img/logo-horizontal.png",
+    "titulo1": "Tô de boa, tô com APP Vida Plano.”",
+    "titulo2": "Prático, completo e seguro.",
+    "titulo3": "Preço acessível à Saúde, Bem Estar e um futuro mais tranquilo."
+  },
+  "especialidades": {
+    "imgLogo": "tem q prenencher, a imagem isa",
+    "imgBg": "",
+    "imgBg2": "",
+    "testo1": "Consultas online com especialistas onde você estiver, rápido e prático!",
+    "texto2": "a partir de R$7,90",
+    "titulo1": "Telemedicina +Televeterinária",
+    "itens": [
+      {
+        "id": 1,
+        "nome": "Pronto atendimento"
+      },
+      {
+        "id": 2,
+        "nome": "Dermatologia"
+      },
+      {
+        "id": 3,
+        "nome": "Ginecologia"
+      },
+      {
+        "id": 4,
+        "nome": "Psicologia"
+      },
+      {
+        "id": 5,
+        "nome": "Pediatria"
+      },
+      {
+        "id": 6,
+        "nome": "Nutricionista"
+      },
+      {
+        "id": 7,
+        "nome": "Treinador Físico"
+      },
+      {
+        "id": 8,
+        "nome": "Médico Veterinário"
+      }
+    ],
+    "cta1": "Telemedicina",
+    "cta2": "Televeterinária"
+  },
+  "notificaçoes": {
+    "texto1": "Pronto Atendimento online 24h",
+    "texto2": "Acesso ilimitado à plataforma Vida Plano",
+    "texto3": "Atendimento 100% Seguro e Rápido",
+    "texto4": "Atendimento em até 10 min"
+  },
+  "beneficios": {
+    "titulo": "benefícios",
+    "subtitulo": "Conheça todos os",
+    "bg": "",
+    "imgItem": "",
+    "itens": [
+      {
+        "id": 1,
+        "nome": "Marcar consulta sem sair de casa."
+      },
+      {
+        "id": 2,
+        "nome": "Cuidar do pet com atendimento online"
+      },
+      {
+        "id": 3,
+        "nome": "Descontos em consultas presenciais"
+      },
+      {
+        "id": 4,
+        "nome": "Descontos em farmácias Drogasil e Droga Raia"
+      },
+      {
+        "id": 5,
+        "nome": "Consultas, receitas e atestados direto com especialistas"
+      },
+      {
+        "id": 6,
+        "nome": "Mais tranquilidade  e cuidado no seu dia a dia"
+      },
+      {
+        "id": 7,
+        "nome": "Apoio emocional com consultas de psicologia"
+      },
+      {
+        "id": 8,
+        "nome": "Acesso ao clube de benefíos da Bene.com.vc"
+      },
+      {
+        "id": 9,
+        "nome": "Preço acessível à saúde e mais tempo livre pra você."
+      }
+    ],
+    "itensLogo": [
+      {
+        "id": 1,
+        "imagem": ""
+      },
+      {
+        "id": 2,
+        "imagem": ""
+      },
+      {
+        "id": 3,
+        "imagem": ""
+      }
+    ]
+  },
+  "emcaminhamentos": {
+    "titulo1": "Ficou mais prático cuidar de você.",
+    "imgcelular": "",
+    "encaminhamentos": [
+      {
+        "id": 1,
+        "texto": "Baixe o App no seu celular e faça seu cadastro rápido."
+      },
+      {
+        "id": 2,
+        "texto": "Procure o especialista de acordo com a sua necessidade."
+      },
+      {
+        "id": 3,
+        "texto": "Selecione e aguarde no máximo 10 min para ser atendido."
+      }
+    ],
+    "titulo2": "Apenas 3 passos para a sua tranquilidade!",
+    "texto1": "Confia, faz o vida plano!",
+    "link": [
+      {
+        "id": 1,
+        "imagemLink": ""
+      },
+      {
+        "id": 2,
+        "imagemLink": ""
+      },
+      {
+        "id": 3,
+        "imagemLink": ""
+      }
+    ]
+  },
+  "mapa": {
+    "img1": "",
+    "img2": "",
+    "img3": "",
+    "img4": "",
+    "img5": "",
+    "img6": "",
+    "img7": "",
+    "titulo1": "Praticidade para fazer consultas online mesmo longe da sua casa.",
+    "titulo2": "E abrangência nacional para consultas e serviços presênciais."
+  },
+  "Contrate": {
+    "titulo1": "Contrate seu parceiro de saúde no agora e no futuro:",
+    "card": [
+      {
+        "id": 1,
+        "img": "",
+        "tipo": "individual",
+        "faxetaria": "de 19 a 59 anos",
+        "apartir": "A partir de",
+        "valor": "7",
+        "centavos": "90",
+        "mes": "/mes",
+        "saibaMais": "saiba mais",
+        "link": ""
+      },
+      {
+        "id": 2,
+        "img": "",
+        "tipo": "individual",
+        "faxetaria": "pessoas 60+",
+        "apartir": "A partir de",
+        "valor": "9",
+        "centavos": "90",
+        "mes": "/mes",
+        "saibaMais": "saiba mais",
+        "link": ""
+      }
+    ],
+    "subtitulo": "Descontos de até 30% para contratos  longos.",
+    "cardPlano": [
+      {
+        "id": 1,
+        "titulo": "Plano Semestral",
+        "porcentagem": "10",
+        "texto": "de desconto"
+      },
+      {
+        "id": 2,
+        "titulo": "Plano Anual",
+        "porcentagem": "20",
+        "texto": "de desconto"
+      },
+      {
+        "id": 3,
+        "titulo": "Plano Trianual",
+        "porcentagem": "30",
+        "texto": "de desconto"
+      }
+    ]
+  },
+  "planejamento": {
+    "titulo1": "Faça um Upgrade no planejamento do seu bem estar:",
+    "cardPlanejamento": [
+      {
+        "id": 1,
+        "img": "",
+        "titulo": "Clínicas e Laboratórios",
+        "texto1": "Atendimentos com descontos em consultas presênciais, Odontologistas e Exames;",
+        "texto2": "A partir de",
+        "valor": "7",
+        "centavos": "90",
+        "mes": "/mes"
+      },
+      {
+        "id": 2,
+        "img": "",
+        "titulo": "Cremação Para Pets",
+        "texto1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "texto2": "A partir de",
+        "valor": "15",
+        "centavos": "00",
+        "mes": "/mes"
+      },
+      {
+        "id": 3,
+        "img": "",
+        "titulo": "Assistência Funeráral",
+        "texto1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+        "texto2": "A partir de",
+        "valor": "15",
+        "centavos": "00",
+        "mes": "/mes"
+      },
+      {
+        "id": 4,
+        "img": "",
+        "titulo": "Cerimônia de despedida com cremação",
+        "texto1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "texto2": "A partir de",
+        "valor": "15",
+        "centavos": "00",
+        "mes": "/mes"
+      }
+    ]
+  },
+  "comentarios": {
+    "imagComentarios": "",
+    "titulo": "Quem tem, Confia no Vida Plano.",
+    "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+    "usuario": "Juliana Teixeira",
+    "plano": "Usuária do plano telemedicina."
+  },
+  "sessçaobaixapp": {
+    "imgLogo": "",
+    "img1": "",
+    "img2": "",
+    "titulo": "baixe o app",
+    "subtitulo": "e comece a cuidar da sua saúde agora e em qualquer lugar.",
+    "btm": "confia, faz o vida plano"
+  },
+  "duvidas": {
+    "titulo:": "Ficou com dúvida?",
+    "titulo1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+    "texto1": "",
+    "titulo2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+    "texto2": "",
+    "titulo3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+    "texto3": "",
+    "titulo4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+    "texto4": ""
+  },
+  "footer": {
+    "list1": [
+      {
+        "id": 1,
+        "nome": "telemedicina",
+        "link": ""
+      },
+      {
+        "id": 2,
+        "nome": "beneficios",
+        "link": ""
+      },
+      {
+        "id": 3,
+        "nome": "planos",
+        "link": ""
+      },
+      {
+        "id": 4,
+        "nome": "assistencia funeraria",
+        "link": ""
+      },
+      {
+        "id": 5,
+        "nome": "cremaçao",
+        "link": ""
+      },
+      {
+        "id": 6,
+        "nome": "sorteios",
+        "link": ""
+      }
+    ],
+    "list2": [
+      {
+        "id": 1,
+        "nome": "FAQ",
+        "link": ""
+      },
+      {
+        "id": 2,
+        "nome": "quem somos",
+        "link": ""
+      },
+      {
+        "id": 3,
+        "nome": "contato",
+        "link": ""
+      }
+    ],
+    "list3": [
+      {
+        "id": 1,
+        "nome": "facebook",
+        "link": ""
+      },
+      {
+        "id": 2,
+        "nome": "instagram",
+        "link": ""
+      },
+      {
+        "id": 3,
+        "nome": "linkedin",
+        "link": ""
+      },
+      {
+        "id": 4,
+        "nome": "whatsapp",
+        "link": ""
+      }
+    ],
+    "imgFooter": "./img/logo-branco.png",
+    "cta": "confia, faz o vida plano!"
+  }
+}

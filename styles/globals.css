@@ -1,0 +1,19 @@
+@import url('https://api.fontshare.com/v2/css?f[]=switzer@100,101,200,201,300,301,400,401,500,501,600,601,700,701,800,801,900,901&display=swap');
+
+@import 'tailwindcss';
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+
+@theme {
+  --font-switzer: 'Switzer', sans-serif;
+
+  --color-pink: #c93665;
+  --color-pink-dark: #a5244d;
+  --color-cold-green: #aeaf19;
+  --color-cold-green-dark: #818107;
+  --color-blue-green: #006d82;
+  --color-blue-green-dark: #013a46;
+
+  --container-9xl: 1440px;
+  --container-10xl: 1960px;
+}
