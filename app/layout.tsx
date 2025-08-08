@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className="font-switzer bg-cold-green">{children}</body>
+      <body className="font-switzer">{children}</body>
     </html>
   );
 }

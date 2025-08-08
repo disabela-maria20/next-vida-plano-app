@@ -37,14 +37,15 @@
     "imgBg": "./img/logo-horizontal.png",
     "titulo1": "Tô de boa, tô com APP Vida Plano.”",
     "titulo2": "Prático, completo e seguro.",
-    "titulo3": "Preço acessível à Saúde, Bem Estar e um futuro mais tranquilo."
+    "titulo3": "Preço acessível <strong>à Saúde , Bem Estar </strong> e um  <strong>futuro </strong> mais <strong>tranquilo.</strong>"
   },
   "especialidades": {
-    "imgLogo": "tem q prenencher, a imagem isa",
-    "imgBg": "",
-    "imgBg2": "",
-    "testo1": "Consultas online com especialistas onde você estiver, rápido e prático!",
-    "texto2": "a partir de R$7,90",
+    "imgLogo": "./img/logo-vida-on.png",
+    "imgBg": "./img/foto-de-uma-medica-conversando-com-colegas-por-meio-de-uma-videochamada-com-um-laptop-na-consulta.png",
+    "imgBg2": "./img/mulher-sorridente-com-tiro-medio-e-cachorro.png",
+    "texto1": "Consultas online com especialistas onde você estiver, rápido e prático!",
+    "texto2": "a partir de",
+    "valor": "R$7,90",
     "titulo1": "Telemedicina +Televeterinária",
     "itens": [
       {
