@@ -84,17 +84,17 @@
     "cta1": "Telemedicina",
     "cta2": "Televeterinária"
   },
-  "notificaçoes": {
-    "texto1": "Pronto Atendimento online 24h",
-    "texto2": "Acesso ilimitado à plataforma Vida Plano",
-    "texto3": "Atendimento 100% Seguro e Rápido",
-    "texto4": "Atendimento em até 10 min"
+  "notificacoes": {
+    "texto1": "Pronto Atendimento online <strong>24h</strong>",
+    "texto2": "Acesso ilimitado à plataforma <strong> Vida Plano</strong>",
+    "texto3": "Atendimento <strong> 100% </strong>Seguro e Rápido",
+    "texto4": "Atendimento em <strong>até 10 min</strong>"
   },
   "beneficios": {
     "titulo": "benefícios",
     "subtitulo": "Conheça todos os",
-    "bg": "",
-    "imgItem": "",
+    "bg": "./img/bg-circular-gradient.png",
+    "imgItem": "./img/mulher-sorridente-com-foto-completa-sentada-no-chao copiar.jpg",
     "itens": [
       {
         "id": 1,
@@ -136,15 +136,15 @@
     "itensLogo": [
       {
         "id": 1,
-        "imagem": ""
+        "imagem": "./img/logo-vida-on.png"
       },
       {
         "id": 2,
-        "imagem": ""
+        "imagem": "./img/droga-raia.png"
       },
       {
         "id": 3,
-        "imagem": ""
+        "imagem": "./img/drogasil.png"
       }
     ]
   },
