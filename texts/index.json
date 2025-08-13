@@ -148,10 +148,10 @@
       }
     ]
   },
-  "emcaminhamentos": {
-    "titulo1": "Ficou mais prático cuidar de você.",
-    "imgcelular": "",
-    "encaminhamentos": [
+  "encaminhamentos": {
+    "titulo1": "Ficou <strong>mais prático cuidar </strong> de você.",
+    "imgcelular": "./img/celular.png",
+    "encaminhamento": [
       {
         "id": 1,
         "texto": "Baixe o App no seu celular e faça seu cadastro rápido."
@@ -169,27 +169,25 @@
     "texto1": "Confia, faz o vida plano!",
     "link": [
       {
-        "id": 1,
-        "imagemLink": ""
-      },
-      {
         "id": 2,
-        "imagemLink": ""
+        "imagemLink": "./img/playstore.png",
+        "link": ""
       },
       {
         "id": 3,
-        "imagemLink": ""
+        "imagemLink": "./img/apple-loja.png",
+        "link": ""
       }
     ]
   },
   "mapa": {
-    "img1": "",
-    "img2": "",
-    "img3": "",
-    "img4": "",
-    "img5": "",
-    "img6": "",
-    "img7": "",
+    "img1": "./img/viajante-smilling-no-smartphone copiar.jpg",
+    "img2": "./img/aproximacao-medico-afro-americano-cumprimentando-seu-paciente-durante-chamada-de-video-pelo-celular.png",
+    "img3": "./img/mulher-fazendo-uma-chamada-de-video-em-casa-em-um-laptop-com-fone-de-ouvido copiar.jpg",
+    "img4": "./img/mapa.png",
+    "img5": "./img/tablet-familiar-e-pais-com-filhos-relaxam-no-sofa-se-unindo-e-felizes-transmitindo-juntos-em-casa-sorria-amor-e-cuidado-com-jogos-de-tecnologia-ou-filmes-com-e-learning-e-homem-com-mulher-e-filho copiar.jpg",
+    "img6": "./img/retrato-de-uma-mulher-sorridente-alegre-mensagens-de-texto.png",
+    "img7": "./img/homem-afro-americano-calmo-usando-telefone-celular-enquanto-se-relaxa-na-rua-depois-de-andar-de-motocicleta.jpg",
     "titulo1": "Praticidade para fazer consultas online mesmo longe da sua casa.",
     "titulo2": "E abrangência nacional para consultas e serviços presênciais."
   },

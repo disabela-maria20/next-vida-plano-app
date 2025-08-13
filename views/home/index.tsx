@@ -116,7 +116,7 @@ const Home = () => {
       {/* Notificaçoes */}
       <section className="py-10">
         <div className="container m-auto px-4">
-          <div className="grid  lg:gap-9  md:grid-cols-4 items-center bg-blue-green text-white rounded-3xl max-w-5xl m-auto">
+          <div className="grid lg:gap-9 md:grid-cols-4 items-center bg-blue-green text-white rounded-3xl max-w-5xl m-auto">
             <div className="py-7">
               <p className="text-2xl md:text-xl px-7 text-center">
                 Pronto Atendimento online
@@ -156,7 +156,7 @@ const Home = () => {
           backgroundPositionX: isMobile ? 'initial' : '120%',
           backgroundPositionY: isMobile ? 'initial' : '-8%',
         }}
-        className="bg-no-repeat py-9"
+        className="bg-no-repeat pt-9 lg:py-16 xl:py-20"
       >
         <div className="container m-auto px-4">
           <div className="grid gap-8 md:grid-cols-7 items-center">
@@ -180,7 +180,7 @@ const Home = () => {
                     key={data.id}
                     whileHover={{ scale: 0.9, fontWeight: 'bold' }}
                     whileTap={{ scale: 0.8 }}
-                    className="relative bg-[#f6f6f6] text-blue-green rounded-2xl p-3 hover:text-white h-full border-b border-[#b5cdd0] hover:bg-cold-green hover:text-white"
+                    className="relative bg-[#f6f6f6] text-blue-green rounded-2xl p-3 h-full border-b border-[#b5cdd0] hover:bg-cold-green hover:text-white"
                   >
                     <p className=" font-bold text-lg lg:text  ">{data.nome}</p>
                     <img
@@ -191,7 +191,7 @@ const Home = () => {
                   </motion.li>
                 ))}
               </ul>
-              <ul className="flex items-center justify-center gap-9 pt-9 flex-wrap">
+              <ul className="flex items-center justify-center gap-9 py-9 flex-wrap">
                 {text.beneficios.itensLogo.map((data) => (
                   <img
                     src={data.imagem}
@@ -201,6 +201,133 @@ const Home = () => {
                   />
                 ))}
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Encaminhamentos */}
+      <section className="bg-[#ebebeb] pt-9 lg:py-16 xl:py-20">
+        <div className="container m-auto px-4">
+          <div className="grid gap-10 lg:gap-16 lg:grid-cols-12">
+            <div className="lg:col-span-7">
+              <div className="max-w-[550px] m-auto">
+                <h2
+                  className="text-blue-green text-3xl lg:text-5xl max-w-[450px] m-auto text-center"
+                  dangerouslySetInnerHTML={{
+                    __html: text.encaminhamentos.titulo1,
+                  }}
+                ></h2>
+                <ul className="text-[#23384e] py-9">
+                  {text.encaminhamentos.encaminhamento.map((data) => (
+                    <li key={data.id} className="flex items-center gap-2.5">
+                      <strong className="text-3xl">{data.id}.</strong>
+                      <p className="border-2 py-2 px-4 w-full font-bold rounded-3xl my-2.5">
+                        {data.texto}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+                <h3 className="text-pink font-bold text-3xl max-w-[320px] m-auto text-center pb-7">
+                  {text.encaminhamentos.titulo2}
+                </h3>
+              </div>
+              <div className="max-w-[550px] m-auto">
+                <div className="flex flex-col md:flex-row gap-6 items-center">
+                  <div>
+                    <span
+                      className="inline-block relative bg-pink text-white font-bold text-base px-7 py-2 rounded-full shadow-md text-center
+                      after:absolute after:w-4 after:bg-pink after:h-4 after:-bottom-12 after:rounded-full after:-left-2
+                      before:absolute before:w-6 before:bg-pink before:h-6 before:-bottom-7 before:rounded-full before:-left-5"
+                    >
+                      CONFIA, FAZ <br /> O VIDA PLANO!
+                    </span>
+                  </div>
+                  <div className="flex md:gap-4 items-center mt-10 pb-9 md:pb-0">
+                    {text.encaminhamentos.link.map((data) => (
+                      <img
+                        src={data.imagemLink}
+                        alt=""
+                        key={data.id}
+                        className="w-[120px]"
+                      />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="hidden lg:block lg:col-span-5 relative ">
+              <img
+                src={text.encaminhamentos.imgcelular}
+                alt=""
+                className="md:scale-125 relative top-24 h-dvh lg:h-[550px] 2xl:h-[600px]"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Mapa */}
+      <section>
+        <div className="container m-auto px-4">
+          <div className="flex py-9 md:py-24">
+            <div className="grid gap-6 md:grid-cols-2 2xl:grid-cols-3">
+              <div className="grid grid-cols-5 gap-5">
+                <div className="col-span-2">
+                  <img
+                    src={text.mapa.img1}
+                    alt=""
+                    className="rounded-4xl h-full object-cover"
+                  />
+                </div>
+                <div className="col-span-3">
+                  <h2 className="text-cold-green font-bold text-2xl leading-6">
+                    {text.mapa.titulo1}
+                  </h2>
+                  <div className="p-3"></div>
+                  <img
+                    src={text.mapa.img2}
+                    alt=""
+                    className="rounded-4xl w-4/5"
+                  />
+                </div>
+                <div className="col-span-3">
+                  <img
+                    src={text.mapa.img3}
+                    alt=""
+                    className="rounded-4xl h-[100%] w-[100%] object-cover"
+                  />
+                </div>
+                <div className="col-span-2 flex items-center">
+                  <h2 className="text-cold-green font-bold text-2xl leading-6">
+                    {text.mapa.titulo2}
+                  </h2>
+                </div>
+              </div>
+              <div className="flex items-center">
+                <img src={text.mapa.img4} alt="" />
+              </div>
+              <div className="hidden 2xl:grid grid-cols-6 gap-5">
+                <div className="col-span-3">
+                  <img
+                    src={text.mapa.img5}
+                    alt=""
+                    className="rounded-4xl h-[150px] object-cover"
+                  />
+                </div>
+                <div className="col-span-3">
+                  <img
+                    src={text.mapa.img6}
+                    alt=""
+                    className="rounded-4xl  h-full"
+                  />
+                </div>
+                <div className="col-span-6">
+                  <img
+                    src={text.mapa.img7}
+                    alt=""
+                    className="rounded-4xl h-[200px] w-[100%] object-cover"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
