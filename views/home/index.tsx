@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 'use client';
 
 import React from 'react';
@@ -266,7 +267,12 @@ const Home = () => {
         </div>
       </section>
       {/* Mapa */}
-      <section>
+      <section
+        style={{
+          backgroundImage: !isMobile ? `url('./img/bg-invertido.png')` : '',
+        }}
+        className="bg-left-top bg-no-repeat"
+      >
         <div className="container m-auto px-4">
           <div className="flex py-9 md:py-24">
             <div className="grid gap-6 md:grid-cols-2 2xl:grid-cols-3">
@@ -329,6 +335,127 @@ const Home = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      {/* Contrate */}
+      <section className="mb-9 md:mb-16">
+        <div className="container m-auto px-4 max-w-[1020px]">
+          <h2 className="text-blue-green font-bold text-3xl text-center mb-7">
+            {text.contrate.titulo1}
+          </h2>
+          <div className="grid md:grid-cols-2 gap-5">
+            {text.contrate.card.map((data) => (
+              <div
+                key={data.id}
+                className="bg-[#ebebeb] rounded-4xl overflow-auto"
+              >
+                <img
+                  src={data.img}
+                  alt=""
+                  className="overflow-auto h-[250px] w-full object-cover"
+                />
+                <div className="flex justify-between items-center p-5">
+                  <div className="">
+                    <img
+                      src="./img/logo-vida-on.png"
+                      alt=""
+                      className="max-w-[200px] "
+                    />
+                    <p className="mt-4 text-blue-green italic border-2 border-blue-green inline-block py-1 px-6 rounded-3xl font-semibold">
+                      {data.tipo}
+                    </p>
+                    <br />
+                    <span className="ml-2.5 mt-1 inline-block text-blue-green italic font-semibold ">
+                      {data.faixaetaria}
+                    </span>
+                  </div>
+                  <div className="mr-10">
+                    <span className="text-[#555555] font-bold text-xl">
+                      {data.apartir}
+                    </span>
+                    <div className="text-cold-green font-bold ">
+                      <span className="text-lg">R$</span>
+                      <span className="relative">
+                        <span className="text-6xl absolute">{data.valor},</span>
+                        <span className="absolute text-3xl top-[-5px] left-[40px]">
+                          {data.centavos}
+                        </span>
+                        <span className="text-[#555555] text-2xl absolute bottom-0 top-[26px] left-[50px]">
+                          {data.mes}
+                        </span>
+                      </span>
+                    </div>
+                    <div className="mt-12">
+                      <a
+                        href="#"
+                        className="bg-blue-green text-white py-1.5 px-5 block transition rounded-3xl hover:bg-blue-green-dark"
+                      >
+                        {data.saibaMais}
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* Descontos */}
+      <section className="mb-9 md:mb-16">
+        <div className="container m-auto px-4">
+          <h2 className="text-blue-green font-bold text-3xl text-center mb-7">
+            {text.contrate.subtitulo}
+          </h2>
+          <div className="max-w-[650px] m-auto">
+            <div className="grid md:grid-cols-3 gap-4">
+              {text.contrate.cardPlano.map((data) => (
+                <div
+                  className="bg-[#ebebeb] flex justify-center flex-col items-center rounded-3xl py-3"
+                  key={data.id}
+                >
+                  <h2 className="text-blue-green font-bold text-xl">
+                    {data.titulo}
+                  </h2>
+                  <div className="relative text-cold-green ">
+                    <span className="text-5xl font-bold">
+                      {data.porcentagem}
+                    </span>
+                    <span className="font-bold absolute text-2xl">%</span>
+                  </div>
+                  <p className="text-[#555] font-bold">{data.texto}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Planejamento */}
+      <section>
+        <div className="container m-auto px-4">
+          <h2 className="text-pink font-bold text-3xl text-center mb-7">
+            {text.planejamento.titulo1}
+          </h2>
+          <div className="grid md:grid-cols-2 xl:grid-cols-4">
+            {text.planejamento.cardPlanejamento.map((data) => (
+              <div key={data.id} className="relative">
+                <img src={data.img} alt="" />
+                <h3 className="text-2xl text-pink font-bold">{data.titulo}</h3>
+                <p>{data.texto1}</p>
+                <div className="text-cold-green font-bold ">
+                  <span className="text-lg">R$</span>
+                  <span className="relative">
+                    <span className="text-6xl absolute">{data.valor},</span>
+                    <span className="absolute text-3xl top-[-5px] left-[40px]">
+                      {data.centavos}
+                    </span>
+                    <span className="text-[#555555] text-2xl absolute bottom-0 top-[26px] left-[50px]">
+                      {data.mes}
+                    </span>
+                  </span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

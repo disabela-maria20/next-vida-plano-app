@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className="font-switzer">{children}</body>
+      <body className="font-switzer overflow-x-hidden">{children}</body>
     </html>
   );
 }
