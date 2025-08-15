@@ -246,7 +246,7 @@
     "cardPlanejamento": [
       {
         "id": 1,
-        "img": "",
+        "img": "./img/paciente-sorridente-olhando-para-medica.jpg",
         "titulo": "Clínicas e Laboratórios",
         "texto1": "Atendimentos com descontos em consultas presênciais, Odontologistas e Exames;",
         "texto2": "A partir de",
@@ -256,7 +256,7 @@
       },
       {
         "id": 2,
-        "img": "",
+        "img": "./img/homem-abracando-seu-pitbull-amigavel.jpg",
         "titulo": "Cremação Para Pets",
         "texto1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "texto2": "A partir de",
@@ -266,7 +266,7 @@
       },
       {
         "id": 3,
-        "img": "",
+        "img": "./img/mulher-segurando-flor-branca-no-funeral.jpg",
         "titulo": "Assistência Funeráral",
         "texto1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
         "texto2": "A partir de",
@@ -276,7 +276,7 @@
       },
       {
         "id": 4,
-        "img": "",
+        "img": "./img/homem-tomando-urna-funeraria-com-velas-e-flores.jpg",
         "titulo": "Cerimônia de despedida com cremação",
         "texto1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "texto2": "A partir de",

@@ -431,28 +431,50 @@ const Home = () => {
         </div>
       </section>
       {/* Planejamento */}
-      <section>
+      <section className="mb-9 md:mb-16">
         <div className="container m-auto px-4">
           <h2 className="text-pink font-bold text-3xl text-center mb-7">
             {text.planejamento.titulo1}
           </h2>
-          <div className="grid md:grid-cols-2 xl:grid-cols-4">
+          <div className="grid lg:grid-cols-4 gap-9 items-stretch">
             {text.planejamento.cardPlanejamento.map((data) => (
-              <div key={data.id} className="relative">
-                <img src={data.img} alt="" />
-                <h3 className="text-2xl text-pink font-bold">{data.titulo}</h3>
-                <p>{data.texto1}</p>
-                <div className="text-cold-green font-bold ">
-                  <span className="text-lg">R$</span>
-                  <span className="relative">
-                    <span className="text-6xl absolute">{data.valor},</span>
-                    <span className="absolute text-3xl top-[-5px] left-[40px]">
-                      {data.centavos}
-                    </span>
-                    <span className="text-[#555555] text-2xl absolute bottom-0 top-[26px] left-[50px]">
-                      {data.mes}
-                    </span>
-                  </span>
+              <div
+                key={data.id}
+                className="relative rounded-3xl h-full bg-[#f6f6f6] flex flex-col"
+              >
+                <img
+                  src={data.img}
+                  className="rounded-3xl h-[250px] w-full object-cover"
+                  alt=""
+                />
+
+                {/* Área interna que empurra o rodapé para o fim */}
+                <div className="p-5 flex flex-col justify-between items-center lg:items-start flex-1 gap-5">
+                  <div>
+                    <h3 className="text-2xl text-pink font-bold">
+                      {data.titulo}
+                    </h3>
+                  </div>
+                  <div>
+                    <p>{data.texto1}</p>
+                  </div>
+                  <div className="bg-cold-green font-bold relative lg:w-full lg:max-w-[100%] rounded-3xl max-w-[200px] p-4 h-[120]">
+                    <p className="text-[#4e4e0b]">{data.texto2}</p>
+                    <div className="flex justify-center">
+                      <span className="text-2xl text-white relative top-[5px]">
+                        R$
+                      </span>
+                      <span className="text-6xl block text-white">
+                        {data.valor},
+                      </span>
+                      <span className="text-white text-3xl relative -left-3">
+                        {data.centavos}
+                        <p className="text-[#4e4e0b] text-xl relative bottom-2 left-3.5">
+                          {data.mes}
+                        </p>
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
