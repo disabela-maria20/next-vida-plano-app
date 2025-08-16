@@ -1,13 +1,30 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Footer, Header } from '@/components';
 import text from '@/texts/index.json';
 import useIsMobile from '@/hooks/useIsMobile/isMobile';
 import { motion } from 'framer-motion';
+import { useKeenSlider } from 'keen-slider/react';
+import 'keen-slider/keen-slider.min.css';
+import { FiChevronDown } from 'react-icons/fi';
+
 const Home = () => {
   const { isMobile } = useIsMobile();
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  // eslint-disable-next-line no-undef
+  const [comentarios] = useKeenSlider<HTMLDivElement>({
+    breakpoints: {
+      '(min-width: 400px)': {
+        slides: { perView: 1, spacing: 5 },
+      },
+      '(min-width: 1000px)': {
+        slides: { perView: 3, spacing: 10 },
+      },
+    },
+    slides: { perView: 1 },
+  });
 
   return (
     <>
@@ -27,18 +44,18 @@ const Home = () => {
             <div className="flex flex-col md:flex-row md:justify-between md:items-end mb-20 ">
               <div>
                 <h1 className="relative">
-                  <span className="text-white text-[250px] italic absolute -top-[70%] -left-1">
+                  <span className="text-white text-[250px] 2xl:text-[250px] italic absolute -top-[90%] -left-1">
                     “
                   </span>
                   <br />
-                  <span className="text-white text-6xl italic font-extrabold max-w-[352px] block">
+                  <span className="text-white text-5xl 2xl:text-6xl max-w-[300px] italic font-extrabold 2xl:max-w-[352px] block">
                     Tô de boa, tô com APP Vida Plano.”
                   </span>
                 </h1>
               </div>
               <div className="flex flex-col items-end gap-9">
                 <h2
-                  className="inline-block relative text-blue-green max-w-3xs text-3xl md:text-3xl px-7 py-2 mt-12 uppercase font-black
+                  className="inline-block relative text-blue-green max-w-3xs text-1xl md:text-2xl 2xl:text-3xl px-7 py-2 mt-12 uppercase font-black
                     after:absolute after:w-5 after:bg-blue-green after:h-5 after:-top-11 after:rounded-full after:left-8
                     before:absolute before:w-10 before:bg-blue-green before:h-10 before:-top-7 before:rounded-full before:-left-5
                   "
@@ -46,7 +63,7 @@ const Home = () => {
                   {text.hero.titulo2}
                 </h2>
                 <h2
-                  className="text-blue-green text-3xl md:text-3xl max-w-[480px]"
+                  className="text-blue-green text-2xl max-w-[450px] 2xl:text-3xl 2xl:max-w-[480px]"
                   dangerouslySetInnerHTML={{ __html: text.hero.titulo3 }}
                 />
               </div>
@@ -73,9 +90,9 @@ const Home = () => {
             <p className="text-blue-green text-xl md:text-2xl text-center mt-4 mx-8">
               {text.especialidades.texto1}
             </p>
-            <p className="text-blue-green text-xl md:text-3xl text-center mt-4 mx-10 uppercase">
+            <p className="text-blue-green text-xl md:text-3xl  text-center mt-4 mx-10 uppercase">
               {text.especialidades.texto2}
-              <strong className="block text-6xl lg:text-9xl">
+              <strong className="block text-6xl lg:text-7x font-extrabold ">
                 {text.especialidades.valor}
               </strong>
             </p>
@@ -360,7 +377,7 @@ const Home = () => {
                     <img
                       src="./img/logo-vida-on.png"
                       alt=""
-                      className="max-w-[200px] "
+                      className="max-w-[100px] lg:max-w-[200px] "
                     />
                     <p className="mt-4 text-blue-green italic border-2 border-blue-green inline-block py-1 px-6 rounded-3xl font-semibold">
                       {data.tipo}
@@ -473,6 +490,164 @@ const Home = () => {
                           {data.mes}
                         </p>
                       </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* Comentario - Video */}
+      {/* <section className="bg-blue-green">
+        <div className="container m-auto px-4">
+          <h2 className="font-bold text-3xl text-center  pb-8 md:pt-14 lg:mb-10 text-[#9ef6ff] ">
+            {text.comentarios.titulo}
+          </h2>
+          <div className="grid items-center 2xl:grid-cols-12 lg:grid-cols-10 gap-8 lg:gap-11  pb-9 lg:pb-16 xl:gap-32">
+            <div className="md:col-span-3">
+              <h2 className="relative">
+                <span className="text-white text-[170px] italic absolute -top-[35%] left-[-20px] lg:-top-[25%]">
+                  “
+                </span>
+                <br />
+                <span className="text-white text-xl italic font-bold  block mt-3 lg:m-0">
+                  {text.comentarios.texto}
+                </span>
+              </h2>
+              <div className="text-[#9ef6ff] pt-9">
+                <h3 className="text-lg">{text.comentarios.usuario}</h3>
+                <p className="text-sm">{text.comentarios.plano}</p>
+              </div>
+            </div>
+            <div className="md:col-span-7 2xl:col-span-9">
+              <div className="relative aspect-video rounded-4xl overflow-auto shadow-2xl border-2 border-cold-green">
+                <iframe
+                  className="absolute inset-0 w-full h-full"
+                  src="https://www.youtube.com/embed/IVdyt2pNxn8?si=Dwh7qkbU-h-0X0Jc"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+
+      {/* Comentario - comentarios */}
+      <section className="bg-blue-green pb-20 md:pb-16">
+        <div className="container m-auto px-4">
+          <h2 className="font-bold text-3xl text-center  pb-8 pt-14 lg:mb-0 text-[#9ef6ff] ">
+            {text.comentarios.titulo}
+          </h2>
+          <div ref={comentarios} className="keen-slider">
+            {text.comentarios.todo.map((data) => (
+              <div key={data.id} className="keen-slider__slide">
+                <div className="bg-[#006579] rounded-3xl p-6 mt-10">
+                  <h2 className="relative ">
+                    <span className="text-white text-[200px] font-extrabold italic absolute -top-[130px] left-[-20px] lg:-top-[60%]">
+                      “
+                    </span>
+                    <br />
+                    <span className="text-white text-xl font-bold  block lg:m-0 ">
+                      {data.texto}
+                    </span>
+                  </h2>
+                  <div className="text-[#9ef6ff] pt-7">
+                    <h3 className="text-lg">{data.usuario}</h3>
+                    <p className="text-sm">{data.plano}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* Vida plano */}
+      <section>
+        <div className="grid gap-10 lg:gap-0 md:grid-cols-12 ">
+          <div className="hidden 2xl:block 2xl:col-span-3">
+            <img
+              src={text.sessaobaixar.img1}
+              alt=""
+              className="rounded-br-4xl object-cover w-full  2xl:max-h-dvh h-full"
+            />
+          </div>
+          <div className="col-span-10 md:col-span-6 2xl:col-span-3 lg:p-11 p-4">
+            <div className="flex flex-col justify-center h-full">
+              <img
+                src={text.sessaobaixar.imgLogo}
+                alt=""
+                className="m-auto mt-10 mb-10  max-w-[270px]"
+              />
+              <div className="text-center my-6 max-w-[250px] m-auto">
+                <h2 className="uppercase text-3xl text-blue-green font-bold">
+                  {text.sessaobaixar.titulo}
+                </h2>
+                <p className="font-bold text-2xl text-cold-green mb-10">
+                  {text.sessaobaixar.subtitulo}
+                </p>
+                <span
+                  className="inline-block relative bg-blue-green text-white font-bold text-base px-7 py-2 rounded-full shadow-md text-center
+                      after:absolute after:w-4 after:bg-blue-green after:h-4 after:-bottom-12 after:rounded-full after:-left-2
+                      before:absolute before:w-6 before:bg-blue-green before:h-6 before:-bottom-7 before:rounded-full before:-left-5"
+                >
+                  CONFIA, FAZ <br /> O VIDA PLANO!
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="col-span-10 md:col-span-6 relative">
+            <img
+              src={text.sessaobaixar.img2}
+              alt=""
+              className="hidden lg:block rounded-bl-4xl h-dvh object-cover w-full object-top"
+            />
+          </div>
+        </div>
+      </section>
+      {/* Accordion */}
+      <section
+        className="md:pt-20 pb-11  bg-no-repeat bg-cover"
+        style={{
+          backgroundImage: !isMobile ? `url('./img/bg-perguntas.png')` : 'none',
+        }}
+      >
+        <div className="container m-auto px-4">
+          <h2 className="text-2xl lg:text-3xl font-bold mb-6 text-[#898989] text-center">
+            {text.duvidas.titulo}
+          </h2>
+          <div className="mx-auto max-w-4xl space-y-3 p-6">
+            {text.duvidas.items.map((item, index) => (
+              <div
+                key={index}
+                className="rounded-2xl bg-[#ebebeb] overflow-hidden transition-shadow duration-200 hover:shadow-md"
+              >
+                <button
+                  onClick={() =>
+                    setOpenIndex(openIndex === index ? null : index)
+                  }
+                  className="cursor-pointer flex w-full items-center justify-between px-6 py-4 text-left text-gray-800 font-medium  transition-colors duration-200"
+                >
+                  <span className="text-lg font-bold">{item.title}</span>
+                  <span
+                    className={`ml-2 transition-transform duration-300 ${openIndex === index ? 'transform rotate-180' : ''}`}
+                  >
+                    <FiChevronDown className="h-5 w-5 text-gray-600" />
+                  </span>
+                </button>
+
+                <div
+                  className={`grid transition-all duration-300 ease-in-out ${
+                    openIndex === index ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
+                  }`}
+                >
+                  <div className="overflow-hidden">
+                    <div className="px-6 pb-4 pt-0 text-gray-600">
+                      <p className="leading-relaxed">{item.content}</p>
                     </div>
                   </div>
                 </div>

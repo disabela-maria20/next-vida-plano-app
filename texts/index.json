@@ -3,11 +3,11 @@
     "imgLogo": "./img/logo-branco.png",
     "contrateAgora": "Contrate agora seu plano:",
     "cta1": "Vida On",
-    "cta2": "Vida plano",
+    "cta2": "Vida Plano",
     "nav": [
       {
         "id": 1,
-        "nome": "telemedicina",
+        "nome": "Telemedicina",
         "link": ""
       },
       {
@@ -22,12 +22,12 @@
       },
       {
         "id": 4,
-        "nome": "quem somos",
+        "nome": "Quem somos",
         "link": ""
       },
       {
         "id": 5,
-        "nome": "contato",
+        "nome": "Contato",
         "link": ""
       }
     ]
@@ -35,18 +35,18 @@
   "hero": {
     "imgLogo": "tem q prenencher, a imagem isa",
     "imgBg": "./img/logo-horizontal.png",
-    "titulo1": "Tô de boa, tô com APP Vida Plano.”",
+    "titulo1": "Tô de boa, tô com APP Vida Plano.",
     "titulo2": "Prático, completo e seguro.",
-    "titulo3": "Preço acessível <strong>à Saúde , Bem Estar </strong> e um  <strong>futuro </strong> mais <strong>tranquilo.</strong>"
+    "titulo3": "Preço acessível <strong>à saúde, bem-estar </strong> e um <strong>futuro</strong> mais <strong>tranquilo</strong>."
   },
   "especialidades": {
     "imgLogo": "./img/logo-vida-on.png",
     "imgBg": "./img/foto-de-uma-medica-conversando-com-colegas-por-meio-de-uma-videochamada-com-um-laptop-na-consulta.png",
     "imgBg2": "./img/mulher-sorridente-com-tiro-medio-e-cachorro.png",
     "texto1": "Consultas online com especialistas onde você estiver, rápido e prático!",
-    "texto2": "a partir de",
+    "texto2": "A partir de",
     "valor": "R$7,90",
-    "titulo1": "Telemedicina +Televeterinária",
+    "titulo1": "Telemedicina + Televeterinária",
     "itens": [
       {
         "id": 1,
@@ -74,24 +74,24 @@
       },
       {
         "id": 7,
-        "nome": "Treinador Físico"
+        "nome": "Treinador físico"
       },
       {
         "id": 8,
-        "nome": "Médico Veterinário"
+        "nome": "Médico veterinário"
       }
     ],
     "cta1": "Telemedicina",
     "cta2": "Televeterinária"
   },
   "notificacoes": {
-    "texto1": "Pronto Atendimento online <strong>24h</strong>",
-    "texto2": "Acesso ilimitado à plataforma <strong> Vida Plano</strong>",
-    "texto3": "Atendimento <strong> 100% </strong>Seguro e Rápido",
+    "texto1": "Pronto atendimento online <strong>24h</strong>",
+    "texto2": "Acesso ilimitado à plataforma <strong>Vida Plano</strong>",
+    "texto3": "Atendimento <strong>100%</strong> seguro e rápido",
     "texto4": "Atendimento em <strong>até 10 min</strong>"
   },
   "beneficios": {
-    "titulo": "benefícios",
+    "titulo": "Benefícios",
     "subtitulo": "Conheça todos os",
     "bg": "./img/bg-circular-gradient.png",
     "imgItem": "./img/mulher-sorridente-com-foto-completa-sentada-no-chao.jpg",
@@ -118,7 +118,7 @@
       },
       {
         "id": 6,
-        "nome": "Mais tranquilidade  e cuidado no seu dia a dia"
+        "nome": "Mais tranquilidade e cuidado no seu dia a dia"
       },
       {
         "id": 7,
@@ -126,11 +126,11 @@
       },
       {
         "id": 8,
-        "nome": "Acesso ao clube de benefíos da Bene.com.vc"
+        "nome": "Acesso ao clube de benefícios da Bene.com.vc"
       },
       {
         "id": 9,
-        "nome": "Preço acessível à saúde e mais tempo livre pra você."
+        "nome": "Preço acessível à saúde e mais tempo livre para você."
       }
     ],
     "itensLogo": [
@@ -149,12 +149,12 @@
     ]
   },
   "encaminhamentos": {
-    "titulo1": "Ficou <strong>mais prático cuidar </strong> de você.",
+    "titulo1": "Ficou <strong>mais prático cuidar</strong> de você.",
     "imgcelular": "./img/celular.png",
     "encaminhamento": [
       {
         "id": 1,
-        "texto": "Baixe o App no seu celular e faça seu cadastro rápido."
+        "texto": "Baixe o app no seu celular e faça seu cadastro rápido."
       },
       {
         "id": 2,
@@ -166,7 +166,7 @@
       }
     ],
     "titulo2": "Apenas 3 passos para a sua tranquilidade!",
-    "texto1": "Confia, faz o vida plano!",
+    "texto1": "Confia, faz o Vida Plano!",
     "link": [
       {
         "id": 2,
@@ -189,7 +189,7 @@
     "img6": "./img/retrato-de-uma-mulher-sorridente-alegre-mensagens-de-texto.png",
     "img7": "./img/homem-afro-americano-calmo-usando-telefone-celular-enquanto-se-relaxa-na-rua-depois-de-andar-de-motocicleta.jpg",
     "titulo1": "Praticidade para fazer consultas online mesmo longe da sua casa.",
-    "titulo2": "E abrangência nacional para consultas e serviços presênciais."
+    "titulo2": "E abrangência nacional para consultas e serviços presenciais."
   },
   "contrate": {
     "titulo1": "Contrate seu parceiro de saúde no agora e no futuro:",
@@ -197,29 +197,29 @@
       {
         "id": 1,
         "img": "./img/mulher-sorridente-verificando-telefone-plantas-eletronicos-confortaveis.jpg",
-        "tipo": "individual",
-        "faixaetaria": "de 19 a 59 anos",
+        "tipo": "Individual",
+        "faixaetaria": "De 19 a 59 anos",
         "apartir": "A partir de",
         "valor": "7",
         "centavos": "90",
-        "mes": "/mes",
-        "saibaMais": "saiba mais",
+        "mes": "/mês",
+        "saibaMais": "Saiba mais",
         "link": ""
       },
       {
         "id": 2,
         "img": "./img/um-cavalheiro-mais-velho-pensativo-com-um-tablet-numa-sala-brilhante-cheia-de-plantas.jpg",
-        "tipo": "individual",
-        "faixaetaria": "pessoas 60+",
+        "tipo": "Individual",
+        "faixaetaria": "Pessoas 60+",
         "apartir": "A partir de",
         "valor": "9",
         "centavos": "90",
-        "mes": "/mes",
-        "saibaMais": "saiba mais",
+        "mes": "/mês",
+        "saibaMais": "Saiba mais",
         "link": ""
       }
     ],
-    "subtitulo": "Descontos de até 30% para contratos  longos.",
+    "subtitulo": "Descontos de até 30% para contratos longos.",
     "cardPlano": [
       {
         "id": 1,
@@ -235,44 +235,44 @@
       },
       {
         "id": 3,
-        "titulo": "Plano Trianual",
+        "titulo": "Plano Trienal",
         "porcentagem": "30",
         "texto": "de desconto"
       }
     ]
   },
   "planejamento": {
-    "titulo1": "Faça um Upgrade no planejamento do seu bem estar:",
+    "titulo1": "Faça um upgrade no planejamento do seu bem-estar:",
     "cardPlanejamento": [
       {
         "id": 1,
         "img": "./img/paciente-sorridente-olhando-para-medica.jpg",
         "titulo": "Clínicas e Laboratórios",
-        "texto1": "Atendimentos com descontos em consultas presênciais, Odontologistas e Exames;",
+        "texto1": "Atendimentos com descontos em consultas presenciais, odontologistas e exames;",
         "texto2": "A partir de",
         "valor": "7",
         "centavos": "90",
-        "mes": "/mes"
+        "mes": "/mês"
       },
       {
         "id": 2,
         "img": "./img/homem-abracando-seu-pitbull-amigavel.jpg",
-        "titulo": "Cremação Para Pets",
+        "titulo": "Cremação para pets",
         "texto1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "texto2": "A partir de",
         "valor": "15",
         "centavos": "00",
-        "mes": "/mes"
+        "mes": "/mês"
       },
       {
         "id": 3,
         "img": "./img/mulher-segurando-flor-branca-no-funeral.jpg",
-        "titulo": "Assistência Funeráral",
-        "texto1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+        "titulo": "Assistência funerária",
+        "texto1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "texto2": "A partir de",
         "valor": "15",
         "centavos": "00",
-        "mes": "/mes"
+        "mes": "/mês"
       },
       {
         "id": 4,
@@ -282,66 +282,151 @@
         "texto2": "A partir de",
         "valor": "15",
         "centavos": "00",
-        "mes": "/mes"
+        "mes": "/mês"
       }
     ]
   },
   "comentarios": {
     "imagComentarios": "",
-    "titulo": "Quem tem, Confia no Vida Plano.",
+    "titulo": "Quem tem, confia no Vida Plano.",
     "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
     "usuario": "Juliana Teixeira",
-    "plano": "Usuária do plano telemedicina."
+    "plano": "Usuária do plano Telemedicina.",
+    "todo": [
+      {
+        "id": 0,
+        "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+        "usuario": "Ana Clara",
+        "plano": "Mensal"
+      },
+      {
+        "id": 1,
+        "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+        "usuario": "João Pedro",
+        "plano": "Anual"
+      },
+      {
+        "id": 2,
+        "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+        "usuario": "Mariana Souza",
+        "plano": "Vitalício"
+      },
+      {
+        "id": 3,
+        "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+        "usuario": "Lucas Almeida",
+        "plano": "Trimestral"
+      }
+    ]
   },
-  "sessçaobaixapp": {
-    "imgLogo": "",
-    "img1": "",
-    "img2": "",
-    "titulo": "baixe o app",
-    "subtitulo": "e comece a cuidar da sua saúde agora e em qualquer lugar.",
-    "btm": "confia, faz o vida plano"
+  "sessaobaixar": {
+    "imgLogo": "./img/logo-horizontal.png",
+    "img1": "./img/abraco-feliz-e-retrato-da-familia-no-dia-das-maes-visita-e-carinho-enquanto-se-unem-sorria-amor-e-mae-filho-e-avo-se-abracando-sendo-afetuosos-e-alegres-para-um-tempo-de-qualidade-juntos.jpg",
+    "img2": "./img/escritorio-feliz-e-retratc.jpg",
+    "titulo": "Baixe o app",
+    "subtitulo": "E comece a cuidar da sua saúde agora e em qualquer lugar.",
+    "btm": "Confia, faz o Vida Plano"
   },
   "duvidas": {
-    "titulo:": "Ficou com dúvida?",
-    "titulo1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-    "texto1": "",
-    "titulo2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-    "texto2": "",
-    "titulo3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-    "texto3": "",
-    "titulo4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-    "texto4": ""
+    "titulo": "Ficou com dúvida?",
+    "items": [
+      {
+        "id": 1,
+        "title": "O que é o Vida Plano?",
+        "content": "O Vida Plano é um super app de benefícios que oferece suporte em vários momentos da vida, incluindo benefícios como consultas online, exames, diagnósticos, descontos em parceiros, sorteios semanais, desconto em farmácias e assistência funeral para você, sua família e seus pets em caso de falecimento."
+      },
+      {
+        "id": 2,
+        "title": "Como funciona o plano em caso de falecimento?",
+        "content": "Em caso de falecimento, o responsável deverá contatar imediatamente o Vida Plano através dos canais de comunicação disponíveis no super app e no site. O Vida Plano oferece assistência completa para os funerais, garantindo um processo menos oneroso e mais tranquilo para os familiares."
+      },
+      {
+        "id": 3,
+        "title": "Quantas pessoas posso incluir no Vida Plano?",
+        "content": "No plano familiar, titular, cônjuge, filhos até 24 anos, sem limite de dependentes extras (checar tabela de preços). Já no Plano Individual, apenas o titular."
+      },
+      {
+        "id": 4,
+        "title": "Existe carência para utilizar os benefícios?",
+        "content": "Sim, existe um período de carência de 07 dias para os benefícios em vida, o sorteio começará a valer no mês seguinte e 90 dias para os funerais."
+      },
+      {
+        "id": 5,
+        "title": "Como adquirir o Vida Plano?",
+        "content": "Você deverá baixar o super app, preencher o cadastro e efetuar o pagamento."
+      },
+      {
+        "id": 6,
+        "title": "Como posso acessar os serviços de consultas presenciais e exames?",
+        "content": "Após a adesão, você receberá acesso à plataforma exclusiva do Vida Plano, onde poderá agendar consultas e requisitar exames de forma prática e rápida."
+      },
+      {
+        "id": 7,
+        "title": "Como posso acessar os serviços de Telemedicina?",
+        "content": "Após a adesão, você receberá acesso à plataforma de Telemedicina onde poderá se consultar imediatamente."
+      },
+      {
+        "id": 8,
+        "title": "O Vida Plano é um plano de saúde ou Plano Odontológico?",
+        "content": "Não, o Vida Plano é um Plano de Benefícios focado em qualidade de vida, bem-estar e descontos exclusivos."
+      },
+      {
+        "id": 9,
+        "title": "Existe suporte 24 horas?",
+        "content": "Sim, o Vida Plano oferece suporte telefônico 24 horas por dia para Telemedicina e Assistência Funerária."
+      },
+      {
+        "id": 10,
+        "title": "Quais são as formas de pagamento disponíveis?",
+        "content": "O pagamento pode ser realizado via cartão de crédito e boleto bancário, com planos de pagamentos mensais."
+      },
+      {
+        "id": 11,
+        "title": "Como posso entrar em contato para mais informações?",
+        "content": "Nossa central de atendimento está disponível 24h pelo WhatsApp (16) 3605-5582."
+      },
+      {
+        "id": 12,
+        "title": "Posso alterar os dependentes do meu plano?",
+        "content": "Sim, é possível alterar os dependentes do seu plano no próprio super app."
+      },
+      {
+        "id": 13,
+        "title": "Posso adicionar um dependente mesmo após a adesão inicial?",
+        "content": "Sim, é possível incluir dependentes a qualquer momento após a adesão inicial através do super app. Confira as condições aplicáveis."
+      }
+    ]
   },
   "footer": {
     "list1": [
       {
         "id": 1,
-        "nome": "telemedicina",
+        "nome": "Telemedicina",
         "link": ""
       },
       {
         "id": 2,
-        "nome": "beneficios",
+        "nome": "Benefícios",
         "link": ""
       },
       {
         "id": 3,
-        "nome": "planos",
+        "nome": "Planos",
         "link": ""
       },
       {
         "id": 4,
-        "nome": "assistencia funeraria",
+        "nome": "Assistência funerária",
         "link": ""
       },
       {
         "id": 5,
-        "nome": "cremaçao",
+        "nome": "Cremação",
         "link": ""
       },
       {
         "id": 6,
-        "nome": "sorteios",
+        "nome": "Sorteios",
         "link": ""
       }
     ],
@@ -353,38 +438,38 @@
       },
       {
         "id": 2,
-        "nome": "quem somos",
+        "nome": "Quem somos",
         "link": ""
       },
       {
         "id": 3,
-        "nome": "contato",
+        "nome": "Contato",
         "link": ""
       }
     ],
     "list3": [
       {
         "id": 1,
-        "nome": "facebook",
+        "nome": "Facebook",
         "link": ""
       },
       {
         "id": 2,
-        "nome": "instagram",
+        "nome": "Instagram",
         "link": ""
       },
       {
         "id": 3,
-        "nome": "linkedin",
+        "nome": "LinkedIn",
         "link": ""
       },
       {
         "id": 4,
-        "nome": "whatsapp",
+        "nome": "WhatsApp",
         "link": ""
       }
     ],
     "imgFooter": "./img/logo-branco.png",
-    "cta": "confia, faz o vida plano!"
+    "cta": "Confia, faz o Vida Plano!"
   }
 }
