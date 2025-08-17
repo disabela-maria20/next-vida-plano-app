@@ -18,7 +18,7 @@
       {
         "id": 3,
         "nome": "Planos",
-        "link": ""
+        "link": "/planos"
       },
       {
         "id": 4,
@@ -471,5 +471,203 @@
     ],
     "imgFooter": "./img/logo-branco.png",
     "cta": "Confia, faz o Vida Plano!"
+  },
+  "Contrateseuparceiro": {
+    "titulo": "Contrate seu parceiro de saúde no agora e no futuro:",
+    "planos2": {
+      "mensal": [
+        {
+          "id": 1,
+          "img": "./img/mulher-sorridente-verificando-telefone-plantas-eletronicos-confortaveis.jpg",
+          "logo": "./img/logo-vida-on.png",
+          "subtitulo": "individual",
+          "faxetaria": "de 19 a 59 anos",
+          "texto1": "a partir de",
+          "reais": "7",
+          "centavos": "90",
+          "mes": "/mes",
+          "link": "baixe o app e contrate",
+          "subtitulo2": "Benefícios incluídos no Plano  para 1 pessoa:",
+          "texto": [
+            "Telemedicina",
+            "Televeterinária",
+            "Clube de benefícios",
+            "Descontos em farmácias parceiras",
+            "Descontos em Consultas físicas",
+            "Descontos em exames",
+            "Abrangência nacional"
+          ]
+        },
+        {
+          "id": 2,
+          "img": "./img/um-cavalheiro-mais-velho-pensativo-com-um-tablet-numa-sala-brilhante-cheia-de-plantas.jpg",
+          "logo": "./img/logo-vida-on.png",
+          "subtitulo": "individual",
+          "faxetaria": "pessoas 60+",
+          "texto1": "a partir de",
+          "reais": "9",
+          "centavos": "90",
+          "mes": "/mes",
+          "link": "baixe o app e contrate",
+          "subtitulo2": "Benefícios incluídos no Plano para 1 pessoa:",
+          "texto": [
+            "Telemedicina",
+            "Televeterinária",
+            "Clube de benefícios",
+            "Descontos em farmácias parceiras",
+            "Descontos em Consultas físicas",
+            "Descontos em exames",
+            "Abrangência nacional"
+          ]
+        },
+        {
+          "id": 3,
+          "img": "./img/mulher-segurando-flor-branca-no-funeral.jpg",
+          "titulo": "Assistência Funeral Completa",
+          "texto1": "a partir de",
+          "reais": "15",
+          "centavos": "00",
+          "mes": "/mes",
+          "link": "baixe o app e contrate",
+          "subtitulo2": "Benefícios incluídos no Plano :",
+          "texto": [
+            "Cobertura de até R$ 10.000,00",
+            "Organização e execução do funeral para o contratante;",
+            "Serviços de cremação, quando aplicável.",
+            "Cobertura integral dos custos conforme os limites contratados."
+          ]
+        },
+        {
+          "id": 4,
+          "img": "./img/paciente-sorridente-olhando-para-medica.jpg",
+          "titulo": "Clínicas e Laboratórios:",
+          "faxetaria_titulo": "para pessoas de 19 a 59 anos",
+          "texto1": "a partir de",
+          "reais": "7",
+          "centavos": "90",
+          "mes": "/mes",
+          "link": "baixe o app e contrate",
+          "subtitulo2": "Benefícios incluídos no Plano :",
+          "texto": [
+            "Fácil de usar: Acesso na central de atendimento, Site ou APP;",
+            "Rápido: consultas ou exames em até 10 dias úteis;",
+            "Perto de você: Até 30km de distância de você.",
+            "Rede credênciada: consultas presenciais com descontos em mais de 50 especialidades médicas",
+            "Rede laborial: mais de 1500 tipos de exames disponíveis",
+            "Odontologia: rede para consultas, exames tratamentos e procedimentos"
+          ]
+        },
+        {
+          "id": 5,
+          "img": "./img/medico-de-papelada-ou-consultando-um-paciente-feliz-em-.jpg",
+          "titulo": "Clínicas e Laboratórios:",
+          "faxetaria_titulo": "pessoas 60+ anos",
+          "texto1": "a partir de",
+          "reais": "9",
+          "centavos": "90",
+          "mes": "/mes",
+          "link": "baixe o app e contrate",
+          "subtitulo2": "Benefícios incluídos no Plano :",
+          "texto": [
+            "Fácil de usar: Acesso na central de atendimento, Site ou APP;",
+            "Rápido: consultas ou exames em até 10 dias úteis;",
+            "Perto de você: Até 30km de distância de você.",
+            "Rede credênciada: consultas presenciais com descontos em mais de 50 especialidades médicas",
+            "Rede laborial: mais de 1500 tipos de exames disponíveis",
+            "Odontologia: rede para consultas, exames tratamentos e procedimentos"
+          ]
+        }
+      ],
+      "trimestal": [],
+      "anual": [],
+      "semestral": []
+    }
+  },
+  "pagamento": {
+    "titulo": "Pagamento Rápido e Seguro",
+    "item": [
+      {
+        "id": 1,
+        "subtitulo": "Baixe o APP Vida Plano no seu celular.",
+        "texto": "Acesse a loja de aplicativos do seu Smartphone, busque pelo APP Vida plano e faça o download gratuíto.",
+        "img": "",
+        "img2": ""
+      },
+      {
+        "id": 2,
+        "subtitulo": "Escolha o plano ideal para você e Cadastre-se",
+        "texto": "Dentro do APP escolha e selecione o plano que mais se adequa a você e faça seu cadastro rápido direto no aplicativo."
+      },
+      {
+        "id": 3,
+        "subtitulo": "Pague diretamente pelo APP e cancele quando quiser.",
+        "texto": "Confirme seu cadastro com o pagamento dentro do APP. As transações são protegidas com criptografia, garantia de reembolso de 30 dias, sem taxas de cancelamento."
+      }
+    ]
+  },
+  "tabela": [
+    {
+      "id": 1,
+      "nome": "Consulta particular com clínico",
+      "semVidaPlano": "em média R$150",
+      "vidaOn": "Consulta gratuita online em até 10 min",
+      "vidaPlano": "Consulta gratuita online em até 10 min"
+    },
+    {
+      "id": 2,
+      "nome": "Consulta com especialista",
+      "semVidaPlano": "até R$300",
+      "vidaOn": "Consulta gratuita online em até 10 min",
+      "vidaPlano": "Consulta gratuita online em até 10 min"
+    },
+    {
+      "id": 3,
+      "nome": "Descontos em vacinas",
+      "semVidaPlano": "nao",
+      "vidaOn": "sim",
+      "vidaPlano": "sim"
+    },
+    {
+      "id": 4,
+      "nome": "Descontos em medicamentos",
+      "semVidaPlano": "nao",
+      "vidaOn": "sim",
+      "vidaPlano": "sim"
+    },
+    {
+      "id": 5,
+      "nome": "Clube de Benefícios",
+      "semVidaPlano": "nao",
+      "vidaOn": "sim",
+      "vidaPlano": "sim"
+    },
+    {
+      "id": 6,
+      "nome": "Assistência Funeral",
+      "semVidaPlano": "em média R$10MIL",
+      "vidaOn": "nao",
+      "vidaPlano": "Cobertura de até R$10mil com translado de 500km"
+    },
+    {
+      "id": 7,
+      "nome": "Cerimônia de despedida com cremação",
+      "semVidaPlano": "em média R$7MIL",
+      "vidaOn": "nao",
+      "vidaPlano": "Assistência para a cremação e cerimônia de despedida garantida"
+    },
+    {
+      "id": 8,
+      "nome": "Cremação para Pet",
+      "semVidaPlano": "em média R$1200",
+      "vidaOn": "nao",
+      "vidaPlano": "sim"
+    }
+  ],
+  "baixaApp": {
+    "logo": "",
+    "titulo": "BAIXE O APP",
+    "texto": "e comece a cuidar da sua saúde agora e em qualquer lugar.",
+    "subtitulo": "Confia, faz o vida plano!",
+    "img": ""
   }
 }
