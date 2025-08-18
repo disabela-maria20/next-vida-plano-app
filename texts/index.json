@@ -171,12 +171,12 @@
       {
         "id": 2,
         "imagemLink": "./img/playstore.png",
-        "link": ""
+        "link": "https://play.google.com/store/apps/details?id=com.farol.vidaApp&hl=pt_BR"
       },
       {
         "id": 3,
         "imagemLink": "./img/apple-loja.png",
-        "link": ""
+        "link": "https://apps.apple.com/br/app/vida-plano/id1664932847"
       }
     ]
   },

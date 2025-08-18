@@ -261,14 +261,16 @@ const Home = () => {
                       CONFIA, FAZ <br /> O VIDA PLANO!
                     </span>
                   </div>
-                  <div className="flex md:gap-4 items-center mt-10 pb-9 md:pb-0">
+                  <div className="flex md:gap-4 items-center mt-10 md:m-0 pb-9 md:pb-0">
                     {text.encaminhamentos.link.map((data) => (
-                      <img
-                        src={data.imagemLink}
-                        alt=""
-                        key={data.id}
-                        className="w-[120px]"
-                      />
+                      <a href={data.imagemLink} target="_blank">
+                        <img
+                          src={data.imagemLink}
+                          alt=""
+                          key={data.id}
+                          className="w-[120px]"
+                        />
+                      </a>
                     ))}
                   </div>
                 </div>
