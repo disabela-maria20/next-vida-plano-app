@@ -9,6 +9,7 @@ import text from '@/texts/index.json';
 import useIsMobile from '@/hooks/useIsMobile/isMobile';
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
+import { useAppLink } from '@/hooks/useAppLink';
 
 const Planos = () => {
   const { isMobile } = useIsMobile();
@@ -27,10 +28,10 @@ const Planos = () => {
         slides: { perView: 3, spacing: 5 },
       },
       '(min-width: 1000px)': {
-        slides: { perView: 3, spacing: 20 },
+        slides: { perView: 4, spacing: 20 },
       },
-      '(min-width: 1440px)': {
-        slides: { perView: 3, spacing: 20 },
+      '(min-width: 1540px)': {
+        slides: { perView: 5, spacing: 20 },
       },
     },
     slides: { perView: 1 },
@@ -43,7 +44,11 @@ const Planos = () => {
   const activePlans =
     text.Contrateseuparceiro.planos2[plans[activeIndex]] || [];
 
-  console.log(activePlans);
+  const appLink = useAppLink();
+
+  if (!appLink) {
+    return <div>Carregando...</div>; // ou algum loading state
+  }
 
   return (
     <>
@@ -61,7 +66,6 @@ const Planos = () => {
             {text.Contrateseuparceiro.titulo}
           </h1>
 
-          {/* Área dos botões de seleção de plano - Modificada para melhor responsividade */}
           <div className="flex justify-center mb-8">
             <div className="flex flex-col md:flex-row rounded-3xl bg-[#ebebeb] m-auto max-w-max overflow-hidden shadow-sm">
               {plans.map((plan, index) => (
@@ -82,7 +86,7 @@ const Planos = () => {
 
           <div ref={planos} className="keen-slider mt-8 md:mt-16">
             {activePlans.map((data: any) => (
-              <div key={data.id} className="keen-slider__slide">
+              <div key={data.id} className="keen-slider__slide p-1.5">
                 <div className="relative rounded-3xl h-full bg-[#f6f6f6] flex flex-col hover:border-4 hover:border-cold-green">
                   <img
                     src={data.img}
@@ -96,7 +100,7 @@ const Planos = () => {
                           <img
                             src="./img/logo-vida-on.png"
                             alt=""
-                            className="w-[100px] md:w-[200px] object-contain"
+                            className="w-[100px] md:w-170px] object-contain"
                           />
                           <div>
                             <p className="mt-4 text-blue-green italic border-2 border-blue-green inline-block py-1 px-6 rounded-3xl font-semibold">
@@ -141,7 +145,8 @@ const Planos = () => {
                     <h3 className="mb-3 font-bold">{data.subtitulo2}</h3>
 
                     <a
-                      href="#/"
+                      href={appLink}
+                      target="_blank"
                       className="uppercase text-xl block bg-blue-green hover:bg-cold-green rounded-2xl text-white py-2 hover:bg-opacity-90 transition-colors"
                     >
                       <span className="w-full block text-center">
@@ -164,6 +169,100 @@ const Planos = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+      <section className="mb-9 md:mb-16 lg:mb-24">
+        <div className="container m-auto px-4">
+          <h2 className="text-blue-green text-3xl font-bold lg:text-4xl 2xl:text-5xl max-w-[650px] m-auto text-center mb-8">
+            {text.pagamento.titulo}
+          </h2>
+          <div>
+            <ul className="grid gap-7 md:grid-cols-3">
+              {text.pagamento.item.map((data) => (
+                <li key={data.id} className="flex gap-4">
+                  <div className="text-cold-green font-extrabold text-6xl">
+                    {data.id}.
+                  </div>
+                  <div>
+                    <h2 className="text-xl md:text-2xl font-bold">
+                      {data.subtitulo}
+                    </h2>
+                    <p className="pt-2">{data.texto}</p>
+                    {data.img && data.img2 && (
+                      <div className="flex gap-4 mt-4">
+                        <a
+                          href="https://play.google.com/store/apps/details?id=com.farol.vidaApp&hl=pt_BR"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img
+                            src={data.img}
+                            className="max-w-[120px]"
+                            alt=""
+                          />
+                        </a>
+                        <a
+                          href="https://apps.apple.com/br/app/vida-plano/id1664932847"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img
+                            src={data.img2}
+                            className="max-w-[120px]"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+                    )}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="container px-4 m-auto">
+          <div className="max-w-4xl mx-auto p-4">
+            <img
+              src={text.imgtable.img}
+              alt=""
+              className="mb-9 md:mb-16 lg:mb-24"
+            />
+          </div>
+        </div>
+      </section>
+      <section className="mb-9 md:mb-16 lg:mb-24">
+        <div className="container px-4 m-auto">
+          <div className="grid gap-5 md:grid-cols-5 items-center">
+            <div className="col-span-2">
+              <div className="flex flex-col justify-center h-full">
+                <img
+                  src={text.baixaApp.logo}
+                  alt=""
+                  className="m-auto mt-10 mb-10  max-w-[270px]"
+                />
+                <div className="text-center my-6 max-w-[250px] m-auto">
+                  <h2 className="uppercase text-3xl text-blue-green font-bold">
+                    {text.baixaApp.titulo}
+                  </h2>
+                  <p className="font-bold text-2xl text-cold-green mb-10">
+                    {text.baixaApp.texto}
+                  </p>
+                  <span
+                    className="inline-block relative bg-blue-green text-white font-bold text-base px-7 py-2 rounded-full shadow-md text-center
+                      after:absolute after:w-4 after:bg-blue-green after:h-4 after:-bottom-12 after:rounded-full after:-left-2
+                      before:absolute before:w-6 before:bg-blue-green before:h-6 before:-bottom-7 before:rounded-full before:-left-5"
+                  >
+                    CONFIA, FAZ <br /> O VIDA PLANO!
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="col-span-3">
+              <img src={text.baixaApp.img} className="rounded-3xl" alt="" />
+            </div>
           </div>
         </div>
       </section>

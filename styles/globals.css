@@ -17,3 +17,8 @@
   --container-9xl: 1440px;
   --container-10xl: 1960px;
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}

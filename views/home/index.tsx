@@ -72,7 +72,7 @@ const Home = () => {
         </div>
       </section>
       {/* Especialidades */}
-      <section>
+      <section id="telemedicina">
         <div className="grid gap-10 lg:gap-0  md:grid-cols-12 2xl:items-center">
           <div className="hidden 2xl:block 2xl:col-span-3">
             <img
@@ -169,6 +169,7 @@ const Home = () => {
       </section>
       {/* Benefícios */}
       <section
+        id="beneficios"
         style={{
           backgroundImage: `url(${text.beneficios.bg})`,
           backgroundPositionX: isMobile ? 'initial' : '120%',
@@ -611,6 +612,7 @@ const Home = () => {
       </section>
       {/* Accordion */}
       <section
+        id="quemsomos"
         className="md:pt-20 pb-11  bg-no-repeat bg-cover"
         style={{
           backgroundImage: !isMobile ? `url('./img/bg-perguntas.png')` : 'none',
