@@ -407,39 +407,39 @@
       {
         "id": 2,
         "nome": "Benefícios",
-        "link": ""
+        "link": "#beneficios"
       },
       {
         "id": 3,
         "nome": "Planos",
-        "link": ""
+        "link": "/planos"
       },
       {
         "id": 4,
         "nome": "Assistência funerária",
-        "link": ""
+        "link": "/planos"
       },
       {
         "id": 5,
         "nome": "Cremação",
-        "link": ""
+        "link": "/planos"
       },
       {
         "id": 6,
         "nome": "Sorteios",
-        "link": ""
+        "link": "/planos"
       }
     ],
     "list2": [
       {
         "id": 1,
         "nome": "FAQ",
-        "link": ""
+        "link": "/#quemsomos"
       },
       {
         "id": 2,
         "nome": "Quem somos",
-        "link": ""
+        "link": "/#quemsomos"
       },
       {
         "id": 3,
@@ -466,7 +466,7 @@
       {
         "id": 4,
         "nome": "WhatsApp",
-        "link": ""
+        "link": "https://wa.me/551636055582"
       }
     ],
     "imgFooter": "./img/logo-branco.png",
