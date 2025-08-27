@@ -748,5 +748,9 @@
     "texto": "e comece a cuidar da sua saúde agora e em qualquer lugar.",
     "subtitulo": "Confia, faz o vida plano!",
     "img": "./img/retrato-de-familia-e-cachorro-no-parque-com-menina-e-os-pais-relaxa.jpg"
+  },
+  "pacotes_personalizaveis": {
+    "titulo": "Pacotes personalizáveis",
+    "descricao": "Os produtos podem ser comprados individualmente, por módulos independentes, sem limite de quantidade e conforme a sua necessidade;"
   }
 }

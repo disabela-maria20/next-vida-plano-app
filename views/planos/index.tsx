@@ -86,9 +86,13 @@ const Planos = () => {
             className="keen-slider my-8 md:my-16 items-center lg:min-h-[1200.740px]"
           >
             {activePlans.map((data: any) => (
-              <div key={data.id} className="keen-slider__slide relative ">
+              <div
+                key={data.id}
+                className="keen-slider__slide relative"
+                style={{ overflow: 'initial !important' }}
+              >
                 {data.destaque && (
-                  <span className="absolute text-2xl uppercase block text-center bg-blue-green border-blue-green border-8  text-white w-full m-0  rounded-3xl h-[100px] ">
+                  <span className="absolute text-2xl uppercase block text-center bg-blue-green border-blue-green border-8  text-white w-full m-0  rounded-3xl h-[100px] -top-[41px]">
                     {data.destaque}
                   </span>
                 )}
