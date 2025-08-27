@@ -29,9 +29,9 @@ const Planos = () => {
         slides: { perView: 1, spacing: 20 },
       },
       '(min-width: 750px)': {
-        slides: { perView: 3, spacing: 5 },
+        slides: { perView: 2, spacing: 5 },
       },
-      '(min-width: 1000px)': {
+      '(min-width: 1200px)': {
         slides: { perView: 4, spacing: 20 },
       },
     },
@@ -83,7 +83,8 @@ const Planos = () => {
 
           <div
             ref={planos}
-            className="keen-slider my-8 md:my-16 items-center lg:min-h-[1200.740px]"
+            className="keen-slider my-16 md:my-16 items-center md:min-h-[1200.740px]"
+            style={{ overflow: 'initial !important' }}
           >
             {activePlans.map((data: any) => (
               <div
