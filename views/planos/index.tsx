@@ -29,7 +29,7 @@ const Planos = () => {
         slides: { perView: 1, spacing: 20 },
       },
       '(min-width: 750px)': {
-        slides: { perView: 2, spacing: 5 },
+        slides: { perView: 2, spacing: 35 },
       },
       '(min-width: 1200px)': {
         slides: { perView: 4, spacing: 20 },
@@ -170,6 +170,229 @@ const Planos = () => {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* planos  */}
+          <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-5 mt-16">
+            <div className="bg-white  rounded-4xl">
+              <img
+                src={text.planos_individuais[0].img}
+                className="p-5 h-[90px] max-w-[220px] w-full object-contain"
+                alt=""
+              />
+              <div
+                className="font-bold w-full rounded-3xl bg-cold-green md:p-4 h-[120] relative top-[10px]"
+                style={{ margin: '0 auto' }}
+              >
+                <p className="text-[#4e4e0b] pt-3 pl-3 sm:pt-0 sm:pl-0">
+                  {text.planos_individuais[0].apartir}
+                </p>
+                <div className="flex justify-center w-full h-full">
+                  <span className="text-2xl text-white relative top-[5px]">
+                    R$
+                  </span>
+                  <span className="text-6xl block text-white">
+                    {text.planos_individuais[0].valor},
+                  </span>
+                  <span className="text-white text-3xl relative -left-3">
+                    {text.planos_individuais[0].centavos}
+                    <p className="text-[#4e4e0b] text-xl relative bottom-2 left-3.5">
+                      {text.planos_individuais[0].mes}
+                    </p>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <span className="text-7xl text-cold-green">+</span>
+            <div className="bg-white  rounded-4xl">
+              <img
+                src={text.planos_individuais[1].img}
+                className="p-5 h-[90px] max-w-[220px] w-full object-contain"
+                alt=""
+              />
+              <div
+                className="font-bold w-full rounded-3xl bg-cold-green md:p-4 h-[120] relative top-[10px]"
+                style={{ margin: '0 auto' }}
+              >
+                <p className="text-[#4e4e0b] pt-3 pl-3 sm:pt-0 sm:pl-0">
+                  {text.planos_individuais[1].apartir}
+                </p>
+                <div className="flex justify-center w-full h-full">
+                  <span className="text-2xl text-white relative top-[5px]">
+                    R$
+                  </span>
+                  <span className="text-6xl block text-white">
+                    {text.planos_individuais[1].valor},
+                  </span>
+                  <span className="text-white text-3xl relative -left-3">
+                    {text.planos_individuais[1].centavos}
+                    <p className="text-[#4e4e0b] text-xl relative bottom-2 left-3.5">
+                      {text.planos_individuais[1].mes}
+                    </p>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <span className="text-7xl text-cold-green">+</span>
+            <div className="bg-white  rounded-4xl">
+              <img
+                src={text.planos_individuais[2].img}
+                className="p-5 h-[100px] w-[220px]  object-contain"
+                alt=""
+              />
+              <div
+                className="font-bold w-full rounded-3xl bg-cold-green md:p-4 h-[120] relative "
+                style={{ margin: '0 auto' }}
+              >
+                <p className="text-[#4e4e0b] pt-3 pl-3 sm:pt-0 sm:pl-0">
+                  {text.planos_individuais[2].apartir}
+                </p>
+                <div className="flex justify-center w-full h-full">
+                  <span className="text-2xl text-white relative top-[5px]">
+                    R$
+                  </span>
+                  <span className="text-6xl block text-white">
+                    {text.planos_individuais[2].valor},
+                  </span>
+                  <span className="text-white text-3xl relative -left-3">
+                    {text.planos_individuais[2].centavos}
+                    <p className="text-[#4e4e0b] text-xl relative bottom-2 left-3.5">
+                      {text.planos_individuais[2].mes}
+                    </p>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <span className="text-7xl text-cold-green">=</span>
+            <div className="bg-white  rounded-4xl border-4 border-blue-green">
+              <img
+                src={text.planos_individuais[3].img}
+                className="p-5 h-[100px] w-[220px]  object-contain"
+                alt=""
+              />
+              <div
+                className="font-bold w-full rounded-3xl bg-blue-green md:p-4 h-[120] relative "
+                style={{ margin: '0 auto' }}
+              >
+                <p className="text-white pt-3 pl-3 sm:pt-0 sm:pl-0">
+                  {text.planos_individuais[3].apartir}
+                </p>
+                <div className="flex justify-center w-full h-full">
+                  <span className="text-2xl text-white relative top-[5px]">
+                    R$
+                  </span>
+                  <span className="text-6xl block text-white">
+                    {text.planos_individuais[3].valor},
+                  </span>
+                  <span className="text-white text-3xl relative -left-3">
+                    {text.planos_individuais[3].centavos}
+                    <p className="text-white text-xl relative bottom-2 left-3.5">
+                      {text.planos_individuais[3].mes}
+                    </p>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-5 mt-16">
+            <div className="bg-white  rounded-4xl">
+              <img
+                src={text.planos_combinados[0].img}
+                className="p-5 h-[90px] max-w-[220px] w-full object-contain"
+                alt=""
+              />
+              <div
+                className="font-bold w-full rounded-3xl bg-cold-green md:p-4 h-[120] relative top-[10px]"
+                style={{ margin: '0 auto' }}
+              >
+                <p className="text-[#4e4e0b] pt-3 pl-3 sm:pt-0 sm:pl-0">
+                  {text.planos_combinados[0].apartir}
+                </p>
+                <div className="flex justify-center w-full h-full">
+                  <span className="text-2xl text-white relative top-[5px]">
+                    R$
+                  </span>
+                  <span className="text-6xl block text-white">
+                    {text.planos_combinados[0].valor},
+                  </span>
+                  <span className="text-white text-3xl relative -left-3">
+                    {text.planos_combinados[0].centavos}
+                    <p className="text-[#4e4e0b] text-xl relative bottom-2 left-3.5">
+                      {text.planos_combinados[0].mes}
+                    </p>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <span className="text-7xl text-cold-green">+</span>
+            <div className="bg-white  rounded-4xl">
+              <img
+                src={text.planos_combinados[1].img}
+                className="p-5 h-[90px] max-w-[220px] w-full object-contain"
+                alt=""
+              />
+              <div
+                className="font-bold w-full rounded-3xl bg-cold-green md:p-4 h-[120] relative top-[10px]"
+                style={{ margin: '0 auto' }}
+              >
+                <p className="text-[#4e4e0b] pt-3 pl-3 sm:pt-0 sm:pl-0">
+                  {text.planos_combinados[1].apartir}
+                </p>
+                <div className="flex justify-center w-full h-full">
+                  <span className="text-2xl text-white relative top-[5px]">
+                    R$
+                  </span>
+                  <span className="text-6xl block text-white">
+                    {text.planos_combinados[1].valor},
+                  </span>
+                  <span className="text-white text-3xl relative -left-3">
+                    {text.planos_combinados[1].centavos}
+                    <p className="text-[#4e4e0b] text-xl relative bottom-2 left-3.5">
+                      {text.planos_combinados[1].mes}
+                    </p>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <span className="text-7xl text-cold-green">=</span>
+            <div className="bg-white  rounded-4xl border-4 border-blue-green">
+              <div className="p-5">
+                <h2 className="text-center text-blue-green font-bold text-2xl">
+                  {text.planos_combinados[2].nome}
+                </h2>
+                <p className="text-center text-blue-green font-bold text-xl">
+                  {text.planos_combinados[2]?.apenas}
+                </p>
+              </div>
+              <div
+                className="font-bold w-full rounded-3xl bg-blue-green md:p-4 h-[120] relative "
+                style={{ margin: '0 auto' }}
+              >
+                <p className="text-white pt-3 pl-3 sm:pt-0 sm:pl-0">
+                  {text.planos_individuais[2].apartir}
+                </p>
+                <div className="flex justify-center w-full ">
+                  <span className="text-2xl text-white relative top-[5px]">
+                    R$
+                  </span>
+                  <span className="text-6xl block text-white">
+                    {text.planos_individuais[2].valor},
+                  </span>
+                  <span className="text-white text-3xl relative -left-3">
+                    {text.planos_individuais[2].centavos}
+                    <p className="text-white text-xl relative bottom-2 left-3.5">
+                      {text.planos_individuais[2].mes}
+                    </p>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-center font-bold text-2xl text-blue-green max-w-[300px] m-auto">
+                {text.mensagem_final}
+              </h2>
+            </div>
           </div>
         </div>
       </section>

@@ -752,5 +752,81 @@
   "pacotes_personalizaveis": {
     "titulo": "Pacotes personalizáveis",
     "descricao": "Os produtos podem ser comprados individualmente, por módulos independentes, sem limite de quantidade e conforme a sua necessidade;"
-  }
+  },
+  "planos_individuais": [
+    {
+      "id": 1,
+      "img": "./img/logo-telemedicina.png",
+      "nome": "VIDA ON",
+      "tipo": "Telemedicina",
+      "apartir": "A partir de",
+      "valor": "7",
+      "centavos": "90",
+      "mes": "/mês"
+    },
+    {
+      "id": 2,
+      "img": "./img/logo-clinicas-e-laboratorios.png",
+      "nome": "VIDA LAB",
+      "tipo": "Clínicas e Laboratórios",
+      "apartir": "A partir de",
+      "valor": "7",
+      "centavos": "90",
+      "mes": "/mês"
+    },
+    {
+      "id": 3,
+      "img": "./img/logo-funerais.png",
+      "nome": "VIDA",
+      "tipo": "A0ssistência Funeral Completa + Cremação",
+      "apartir": "A partir de",
+      "valor": "15",
+      "centavos": "00",
+      "mes": "/mês"
+    },
+    {
+      "id": 4,
+      "img": "./img/logo-horizontal.png",
+      "nome": "VIDA",
+      "tipo": "A0ssistência Funeral Completa + Cremação",
+      "apartir": "A partir de",
+      "valor": "30",
+      "centavos": "80",
+      "mes": "/mês"
+    }
+  ],
+  "planos_combinados": [
+    {
+      "id": 1,
+      "img": "./img/logo-telemedicina.png",
+      "nome": "VIDA plano",
+      "componentes": ["VIDA ON", "VIDA LAB", "VIDA"],
+      "apartir": "A partir de",
+      "valor": "7",
+      "centavos": "90",
+      "mes": "/mês",
+      "destaque": true
+    },
+    {
+      "id": 2,
+      "img": "./img/logo-clinicas-e-laboratorios.png",
+      "nome": "2 PACOTES",
+      "componentes": ["VIDA ON", "VIDA LAB"],
+      "apartir": "A partir de",
+      "valor": "7",
+      "centavos": "90",
+      "mes": "/mês",
+      "descricao": "por apenas"
+    },
+    {
+      "id": 3,
+      "nome": "2 pacotes",
+      "apenas": "por apenas",
+      "apartir": "A partir de",
+      "valor": "15",
+      "centavos": "00",
+      "mes": "/mês"
+    }
+  ],
+  "mensagem_final": "Agora é só escolher os pacotes que você precisa!"
 }
