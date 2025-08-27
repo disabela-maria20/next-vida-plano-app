@@ -1,6 +1,9 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-undef */
-/* eslint-disable @typescript-eslint/no-explicit-any */
+
 'use client';
 
 import { Footer, Header } from '@/components';
@@ -13,6 +16,7 @@ import { useAppLink } from '@/hooks/useAppLink';
 
 const Planos = () => {
   const { isMobile } = useIsMobile();
+  const appLink = useAppLink();
 
   type PlanoKey = 'mensal' | 'trimestal' | 'anual' | 'semestral';
   const plans: PlanoKey[] = ['mensal', 'trimestal', 'anual', 'semestral'];
@@ -22,16 +26,13 @@ const Planos = () => {
   const [planos, slider] = useKeenSlider<HTMLDivElement>({
     breakpoints: {
       '(min-width: 400px)': {
-        slides: { perView: 1, spacing: 5 },
+        slides: { perView: 1, spacing: 20 },
       },
       '(min-width: 750px)': {
         slides: { perView: 3, spacing: 5 },
       },
       '(min-width: 1000px)': {
         slides: { perView: 4, spacing: 20 },
-      },
-      '(min-width: 1540px)': {
-        slides: { perView: 5, spacing: 20 },
       },
     },
     slides: { perView: 1 },
@@ -44,8 +45,6 @@ const Planos = () => {
   const activePlans =
     text.Contrateseuparceiro.planos2[plans[activeIndex]] || [];
 
-  const appLink = useAppLink();
-
   if (!appLink) {
     return <div>Carregando...</div>; // ou algum loading state
   }
@@ -55,11 +54,9 @@ const Planos = () => {
       <Header />
       <section
         style={{
-          backgroundImage: `url(${text.beneficios.bg})`,
-          backgroundPositionX: isMobile ? 'initial' : '120%',
-          backgroundPositionY: isMobile ? 'initial' : '-8%',
+          backgroundImage: `url(${text.Contrateseuparceiro.bg})`,
         }}
-        className="bg-no-repeat pt-9 pb-9 lg:py-16 xl:py-20"
+        className="bg-no-repeat bg-cover bg-center pt-9 pb-9 lg:py-16 xl:py-20"
       >
         <div className="container m-auto px-4">
           <h1 className="text-blue-green text-3xl font-bold lg:text-4xl 2xl:text-5xl max-w-[650px] m-auto text-center mb-8">
@@ -84,95 +81,94 @@ const Planos = () => {
             </div>
           </div>
 
-          <div ref={planos} className="keen-slider mt-8 md:mt-16">
+          <div
+            ref={planos}
+            className="keen-slider my-8 md:my-16 items-center lg:min-h-[1200.740px]"
+          >
             {activePlans.map((data: any) => (
-              <div key={data.id} className="keen-slider__slide p-1.5">
-                <div className="relative rounded-3xl h-full bg-[#f6f6f6] flex flex-col hover:border-4 hover:border-cold-green">
+              <div key={data.id} className="keen-slider__slide relative ">
+                {data.destaque && (
+                  <span className="absolute text-2xl uppercase block text-center bg-blue-green border-blue-green border-8  text-white w-full m-0  rounded-3xl h-[100px] ">
+                    {data.destaque}
+                  </span>
+                )}
+                <div
+                  className={`${data.destaque && 'border-blue-green border-4 rounded-3xl '}  relative rounded-3xl h-full bg-[#f6f6f6] flex flex-col justify-between  px-4 md:min-h-[1050.740px] lg:min-h-[1110.740px]`}
+                >
                   <img
-                    src={data.img}
-                    className="rounded-3xl h-[250px] w-full object-cover"
+                    src={data.logo}
+                    className="rounded-3xl h-[60px] w-full object-contain mt-4"
                     alt=""
                   />
-                  <div className="px-5 relative">
-                    <div className="flex justify-between">
-                      {!data.titulo && (
-                        <>
-                          <img
-                            src="./img/logo-vida-on.png"
-                            alt=""
-                            className="w-[100px] md:w-170px] object-contain"
-                          />
-                          <div>
-                            <p className="mt-4 text-blue-green italic border-2 border-blue-green inline-block py-1 px-6 rounded-3xl font-semibold">
-                              {data.subtitulo}
-                            </p>
-                            <br />
-                            <span className="ml-2.5 mt-1 inline-block text-blue-green italic font-semibold">
-                              {data.faxetaria}
-                            </span>
-                          </div>
-                        </>
-                      )}
-                      {data.titulo && (
-                        <div>
-                          <h2 className="w-full text-2xl text-cold-green relative font-black text-center mt-6">
-                            {data.titulo}
-                          </h2>
-                          <p className="ml-2.5 mt-1 text-center text-blue-green italic font-semibold">
-                            {data.faxetaria_titulo}
-                          </p>
-                        </div>
-                      )}
-                    </div>
-                    <div className="mb-6 font-bold relative lg:w-full lg:max-w-[100%] rounded-3xl max-w-[200px] p-4 h-[120]">
-                      <p className="text-[#4e4e0b] text-2xl">{data.texto1}</p>
-                      <div className="flex justify-center">
-                        <span className="text-2xl text-cold-green relative top-[5px]">
-                          R$
-                        </span>
-                        <span className="text-7xl block text-cold-green">
-                          {data.reais},
-                        </span>
-                        <span className="text-cold-green text-3xl relative -left-3">
-                          {data.centavos}
-                          <p className="text-[#4e4e0b] text-2xl relative bottom-2 left-3.5">
-                            {data.mes}
-                          </p>
-                        </span>
-                      </div>
-                    </div>
+                  {data.descricao && (
+                    <h2 className="text-blue-green py-4 text-center font-bold text-xl">
+                      {data.descricao}
+                    </h2>
+                  )}
 
-                    <h3 className="mb-3 font-bold">{data.subtitulo2}</h3>
-
-                    <a
-                      href={appLink}
-                      target="_blank"
-                      className="uppercase text-xl block bg-blue-green hover:bg-cold-green rounded-2xl text-white py-2 hover:bg-opacity-90 transition-colors"
-                    >
-                      <span className="w-full block text-center">
-                        {data.link}
+                  <div
+                    className="font-bold w-full lg:max-w-[100%] rounded-3xl max-w-[200px] md:p-4 h-[120]"
+                    style={{ margin: '0 auto' }}
+                  >
+                    <p className="text-[#4e4e0b]">{data.apartir}</p>
+                    <div className="flex justify-center w-full h-full">
+                      <span className="text-2xl text-cold-green relative top-[5px]">
+                        R$
                       </span>
-                    </a>
-                    <ul className="flex flex-col gap-2 my-6">
-                      {data.texto.map((item: any, idx: number) => (
-                        <li key={idx} className="flex items-center gap-2.5">
-                          <img
-                            src="./img/db9e1a5e-19b5-46a9-9daf-7217c488e8d2.png"
-                            alt=""
-                            width={20}
-                          />
-                          <p>{item}</p>
-                        </li>
-                      ))}
-                    </ul>
+                      <span className="text-6xl block text-cold-green">
+                        {data.valor},
+                      </span>
+                      <span className="text-cold-green text-3xl relative -left-3">
+                        {data.centavos}
+                        <p className="text-[#4e4e0b] text-xl relative bottom-2 left-3.5">
+                          {data.mes}
+                        </p>
+                      </span>
+                    </div>
                   </div>
+
+                  <ul>
+                    {data.beneficios.map(
+                      (data: { incluso: boolean; texto: string }) => (
+                        <li
+                          key={data.texto}
+                          className="flex items-start gap-2 my-1"
+                        >
+                          <img
+                            src={
+                              data.incluso
+                                ? './img/true.png'
+                                : './img/false.png'
+                            }
+                            alt=""
+                            className="mt-1"
+                          />
+                          <p
+                            className={`${data.incluso ? 'text-cold-green' : 'text-[#cccccc]'}`}
+                          >
+                            {data.texto}
+                          </p>
+                        </li>
+                      )
+                    )}
+                  </ul>
+
+                  <p className="text-blue-green text-center font-bold mt-5">
+                    {data.plano}
+                  </p>
+                  <a
+                    href={appLink}
+                    className="block text-center text-blue-green border-4 font-bold border-blue-green rounded-3xl mb-7 mt-2"
+                  >
+                    {data.acao}
+                  </a>
                 </div>
               </div>
             ))}
           </div>
         </div>
       </section>
-      <section className="mb-9 md:mb-16 lg:mb-24">
+      <section className="my-9 md:my-16 lg:my-24">
         <div className="container m-auto px-4">
           <h2 className="text-blue-green text-3xl font-bold lg:text-4xl 2xl:text-5xl max-w-[650px] m-auto text-center mb-8">
             {text.pagamento.titulo}
@@ -236,7 +232,7 @@ const Planos = () => {
       <section className="mb-9 md:mb-16 lg:mb-24">
         <div className="container px-4 m-auto">
           <div className="grid gap-5 md:grid-cols-5 items-center">
-            <div className="col-span-2">
+            <div className="col-span-3 md:col-span-2">
               <div className="flex flex-col justify-center h-full">
                 <img
                   src={text.baixaApp.logo}

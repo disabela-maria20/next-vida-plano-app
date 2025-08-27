@@ -456,7 +456,7 @@ const Home = () => {
           <h2 className="text-pink font-bold text-3xl text-center mb-7">
             {text.planejamento.titulo1}
           </h2>
-          <div className="grid lg:grid-cols-4 gap-9 items-stretch">
+          <div className="grid lg:grid-cols-2 gap-9 items-stretch">
             {text.planejamento.cardPlanejamento.map((data) => (
               <div
                 key={data.id}
@@ -467,18 +467,8 @@ const Home = () => {
                   className="rounded-3xl h-[250px] w-full object-cover"
                   alt=""
                 />
-
-                {/* Área interna que empurra o rodapé para o fim */}
-                <div className="p-5 flex flex-col justify-between items-center lg:items-start flex-1 gap-5">
-                  <div>
-                    <h3 className="text-2xl text-pink font-bold">
-                      {data.titulo}
-                    </h3>
-                  </div>
-                  <div>
-                    <p>{data.texto1}</p>
-                  </div>
-                  <div className="bg-cold-green font-bold relative lg:w-full lg:max-w-[100%] rounded-3xl max-w-[200px] p-4 h-[120]">
+                <div className="relative px-5 pt-6">
+                  <div className="bg-cold-green font-bold absolute right-0 bottom-6 lg:max-w-[100%] rounded-3xl max-w-[200px] p-4 h-[120]">
                     <p className="text-[#4e4e0b]">{data.texto2}</p>
                     <div className="flex justify-center">
                       <span className="text-2xl text-white relative top-[5px]">
@@ -494,6 +484,24 @@ const Home = () => {
                         </p>
                       </span>
                     </div>
+                  </div>
+                  <img
+                    src={data.logo}
+                    alt=""
+                    className="max-w-[250px] h-[60px] object-center object-contain"
+                  />
+                </div>
+
+                {/* Área interna que empurra o rodapé para o fim */}
+                <div className="p-5 flex flex-col justify-between items-center lg:items-start flex-1 gap-5">
+                  <div>
+                    <h3
+                      className="text-2xl text-pink font-bold"
+                      dangerouslySetInnerHTML={{ __html: data.titulo }}
+                    ></h3>
+                  </div>
+                  <div>
+                    <p>{data.texto1}</p>
                   </div>
                 </div>
               </div>
