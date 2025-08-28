@@ -31,7 +31,10 @@ const Planos = () => {
       '(min-width: 750px)': {
         slides: { perView: 2, spacing: 35 },
       },
-      '(min-width: 1200px)': {
+      '(min-width: 990px)': {
+        slides: { perView: 3, spacing: 20 },
+      },
+      '(min-width: 1240px)': {
         slides: { perView: 4, spacing: 20 },
       },
     },
@@ -454,6 +457,59 @@ const Planos = () => {
               alt=""
               className="mb-9 md:mb-16 lg:mb-24"
             />
+          </div>
+        </div>
+      </section>
+      <section className="mb-9 md:mb-16 lg:mb-24">
+        <div className="container px-4 m-auto">
+          <div className="grid md:grid-cols-5 bg-[#ebebeb] rounded-3xl items-center max-w-[1200px] m-auto">
+            <div className="bg-cold-green rounded-3xl md:col-span-2 p-5 h-full w-full items-center flex flex-col justify-center">
+              <img
+                src={text.caixa_esquerda.img}
+                alt=""
+                className="m-auto w-[100px] mb-0"
+              />
+              <h2 className="text-white font-bold text-2xl w-[150px] m-auto text-center">
+                {text.caixa_esquerda.titulo}
+              </h2>
+            </div>
+            <div className="md:col-span-3 p-10">
+              <h2
+                dangerouslySetInnerHTML={{
+                  __html: text.caixa_direita.descricao,
+                }}
+                className="text-blue-green text-2xl text-center"
+              ></h2>
+              <div className="flex flex-col md:flex-row w-full justify-center items-center gap-4 mt-4">
+                <div className="border-4 border-blue-green rounded-2xl p-5">
+                  <span className="block text-center text-blue-green font-bold text-9xl mb-4">
+                    {text.caixa_direita.opcoes[0].valor}
+                  </span>
+                  <span className="block text-center text-blue-green font-bold text-2xl mb-4">
+                    {text.caixa_direita.opcoes[0].rotulo}
+                  </span>
+                  <img
+                    src={text.caixa_direita.opcoes[0].img}
+                    className="w-full max-w-[190px] max-h-[50px] object-contain"
+                    alt=""
+                  />
+                </div>
+                <span className="text-4xl font-bold text-cold-green">ou</span>
+                <div className="border-4 border-blue-green rounded-2xl p-5">
+                  <span className="block text-center text-blue-green font-bold text-9xl mb-4">
+                    {text.caixa_direita.opcoes[1].valor}
+                  </span>
+                  <span className="block text-center text-blue-green font-bold text-2xl mb-4">
+                    {text.caixa_direita.opcoes[1].rotulo}
+                  </span>
+                  <img
+                    src={text.caixa_direita.opcoes[1].img}
+                    className="w-full max-w-[190px] max-h-[50px] object-contain"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

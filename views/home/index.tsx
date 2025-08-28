@@ -33,7 +33,7 @@ const Home = () => {
       <section
         id=""
         style={{ backgroundImage: `url('./img/bg-hero.png')` }}
-        className="h-dvh relative bg-cover"
+        className="h-[95vh] relative bg-cover"
       >
         <div className="container m-auto px-4">
           <div className="flex flex-col justify-between content-between h-dvh pt-7">
@@ -172,10 +172,8 @@ const Home = () => {
         id="beneficios"
         style={{
           backgroundImage: `url(${text.beneficios.bg})`,
-          backgroundPositionX: isMobile ? 'initial' : '120%',
-          backgroundPositionY: isMobile ? 'initial' : '-8%',
         }}
-        className="bg-no-repeat pt-9 lg:py-16 xl:py-20"
+        className="bg-no-repeat bg-right-top pt-9 lg:py-16 xl:py-20"
       >
         <div className="container m-auto px-4">
           <div className="grid gap-8 md:grid-cols-7 items-center">
@@ -465,7 +463,7 @@ const Home = () => {
                 <img
                   src={data.img}
                   className="rounded-3xl h-[250px] w-full object-cover"
-                  alt=""
+                  alt={data.titulo}
                 />
                 <div className="relative px-5 pt-6">
                   <div className="bg-cold-green font-bold absolute right-0 bottom-6 lg:max-w-[100%] rounded-3xl max-w-[200px] p-4 h-[120]">
@@ -488,7 +486,7 @@ const Home = () => {
                   <img
                     src={data.logo}
                     alt=""
-                    className="max-w-[250px] h-[60px] object-center object-contain"
+                    className="md:max-w-[250px] h-[60px] object-center object-contain max-w-[140px] "
                   />
                 </div>
 
@@ -496,7 +494,7 @@ const Home = () => {
                 <div className="p-5 flex flex-col justify-between items-center lg:items-start flex-1 gap-5">
                   <div>
                     <h3
-                      className="text-2xl text-pink font-bold"
+                      className="text-xl md:text-2xl text-pink font-bold"
                       dangerouslySetInnerHTML={{ __html: data.titulo }}
                     ></h3>
                   </div>

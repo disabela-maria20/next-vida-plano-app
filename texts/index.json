@@ -828,5 +828,26 @@
       "mes": "/mês"
     }
   ],
-  "mensagem_final": "Agora é só escolher os pacotes que você precisa!"
+  "mensagem_final": "Agora é só escolher os pacotes que você precisa!",
+  "caixa_esquerda": {
+    "titulo": "Economia imperdível!",
+    "img": "./img/salvando.png"
+  },
+  "caixa_direita": {
+    "descricao": "Com o valor de <strong>R$300 economizados</strong> em uma consulta com clínico particular <strong>você paga:</strong>",
+    "opcoes": [
+      {
+        "valor": "36",
+        "rotulo": "MENSALIDADES",
+        "plano": "Telemedicina VIDA ON",
+        "img": "./img/logo-telemedicina.png"
+      },
+      {
+        "valor": "9",
+        "rotulo": "MENSALIDADES",
+        "img": "./img/logo-horizontal.png",
+        "plano": "VIDA plano"
+      }
+    ]
+  }
 }
