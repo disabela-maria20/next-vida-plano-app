@@ -358,16 +358,13 @@ const Home = () => {
       </section>
       {/* Contrate */}
       <section className="mb-9 md:mb-16">
-        <div className="container m-auto px-4 max-w-[1020px]">
+        <div className="container m-auto px-4 max-w-[850px]">
           <h2 className="text-blue-green font-bold text-3xl text-center mb-7">
             {text.contrate.titulo1}
           </h2>
           <div className="grid md:grid-cols-2 gap-5">
             {text.contrate.card.map((data) => (
-              <div
-                key={data.id}
-                className="bg-[#ebebeb] rounded-4xl overflow-auto"
-              >
+              <div key={data.id} className="bg-[#ebebeb] rounded-4xl">
                 <img
                   src={data.img}
                   alt=""
@@ -378,7 +375,7 @@ const Home = () => {
                     <img
                       src={data.imgLogo}
                       alt="Logo plano"
-                      className="max-w-[100px] lg:max-w-[200px] "
+                      className="max-w-[100px] lg:max-w-[120px] max-h-[75px] object-contain "
                     />
                     <p className="mt-4 text-blue-green italic border-2 border-blue-green inline-block py-1 px-6 rounded-3xl font-semibold">
                       {data.tipo}
@@ -388,23 +385,63 @@ const Home = () => {
                       {data.faixaetaria}
                     </span>
                   </div>
-                  <div className="mr-10">
-                    <span className="text-[#555555] font-bold text-xl">
+                  <div>
+                    {/* <span className="text-[#555555] font-bold text-xl">
                       {data.apartir}
-                    </span>
-                    <div className="text-cold-green font-bold ">
-                      <span className="text-lg">R$</span>
-                      <span className="relative">
-                        <span className="text-6xl absolute">{data.valor},</span>
-                        <span className="absolute text-3xl top-[-5px] left-[40px]">
-                          {data.centavos}
-                        </span>
-                        <span className="text-[#555555] text-2xl absolute bottom-0 top-[26px] left-[50px]">
-                          {data.mes}
-                        </span>
-                      </span>
+                    </span> */}
+                    <div
+                      className={`relative font-bold w-full lg:max-w-[100%] rounded-3xl max-w-[200px] md:pb-1 h-[120] `}
+                      style={{ margin: '0 auto' }}
+                    >
+                      <div className={`${data.novo && 'opacity-35'}`}>
+                        <p className="text-[#4e4e0b]">{data.apartir}</p>
+                        <div className="flex justify-center w-full h-full">
+                          <span className="text-2xl text-cold-green relative top-[5px]">
+                            R$
+                          </span>
+                          <span className="text-6xl block text-cold-green">
+                            {data.valor},
+                          </span>
+                          <span className="text-cold-green text-3xl relative -left-3">
+                            {data.centavos}
+                            <p className="text-[#4e4e0b] text-xl relative bottom-2 left-3.5">
+                              {data.mes}
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+
+                      {data.novo && (
+                        <div className="absolute bottom-[100%] right-[-20%] -rotate-[10deg] ">
+                          <div
+                            className="font-bold w-full rounded-3xl relative bg-blue-green p-3.5 px-16"
+                            style={{ margin: '0 auto' }}
+                          >
+                            <p className="text-white pt-3 pl-3 sm:pt-0 sm:pl-0">
+                              {data.novo?.apartir}
+                            </p>
+                            <div className="flex justify-center w-full h-full">
+                              <span className="text-2xl text-white relative top-[5px]">
+                                R$
+                              </span>
+                              <span className="text-6xl block text-white">
+                                {data.novo?.valor},
+                              </span>
+                              <span className="text-white relative text-3xl -left-3">
+                                {data.novo?.centavos}
+                                <p className="text-white text-xl relative bottom-2 left-3.5">
+                                  {data.novo?.mes}
+                                </p>
+                              </span>
+                            </div>
+                            <p className="text-sm block text-white text-center">
+                              VALOR PROMOCIONAL
+                            </p>
+                          </div>
+                        </div>
+                      )}
                     </div>
-                    <div className="mt-12">
+                    <div className="flex justify-center">
                       <a
                         href="#"
                         className="bg-blue-green text-white py-1.5 px-5 block transition rounded-3xl hover:bg-blue-green-dark"
@@ -548,7 +585,7 @@ const Home = () => {
       {/* Comentario - comentarios */}
       <section className="bg-blue-green pb-20 md:pb-16">
         <div className="container m-auto px-4">
-          <h2 className="font-bold text-3xl text-center  pb-8 pt-14 lg:mb-0 text-[#9ef6ff] ">
+          <h2 className="font-bold text-3xl text-center pb-8 pt-14 lg:mb-0 text-[#9ef6ff] ">
             {text.comentarios.titulo}
           </h2>
           <div ref={comentarios} className="keen-slider">
@@ -556,7 +593,7 @@ const Home = () => {
               <div key={data.id} className="keen-slider__slide">
                 <div className="bg-[#006579] rounded-3xl p-6 mt-10">
                   <h2 className="relative ">
-                    <span className="text-white text-[200px] font-extrabold italic absolute -top-[130px] left-[-20px] lg:-top-[60%]">
+                    <span className="text-white text-[200px] font-extrabold italic absolute -top-[130px] left-[-20px] lg:-top-[50%] xl:-top-[60%] xl2:-top-[70%]">
                       “
                     </span>
                     <br />
@@ -577,14 +614,14 @@ const Home = () => {
       {/* Vida plano */}
       <section>
         <div className="grid gap-10 lg:gap-0 md:grid-cols-12 ">
-          <div className="hidden 2xl:block 2xl:col-span-3">
+          <div className="hidden lg:block lg:col-span-6 2xl:col-span-5">
             <img
               src={text.sessaobaixar.img1}
               alt=""
-              className="rounded-br-4xl object-cover w-full  2xl:max-h-dvh h-full"
+              className="rounded-br-4xl object-cover w-full 2xl:max-h-dvh h-full"
             />
           </div>
-          <div className="col-span-10 md:col-span-6 2xl:col-span-3 lg:p-11 p-4">
+          <div className="col-span-10 lg:col-span-6 2xl:col-span-3 lg:p-11 p-4">
             <div className="flex flex-col justify-center h-full">
               <img
                 src={text.sessaobaixar.imgLogo}
@@ -608,11 +645,11 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-10 md:col-span-6 relative">
+          <div className="col-span-10 md:col-span-6 2xl:col-span-4 relative hidden 2xl:block">
             <img
               src={text.sessaobaixar.img2}
               alt=""
-              className="hidden lg:block rounded-bl-4xl h-dvh object-cover w-full object-top"
+              className=" rounded-bl-4xl h-dvh object-cover w-full object-top"
             />
           </div>
         </div>
@@ -620,7 +657,7 @@ const Home = () => {
       {/* Accordion */}
       <section
         id="quemsomos"
-        className="md:pt-20 pb-11  bg-no-repeat bg-cover"
+        className="md:pt-20 pt-11  bg-no-repeat bg-cover"
         style={{
           backgroundImage: !isMobile ? `url('./img/bg-perguntas.png')` : 'none',
         }}
