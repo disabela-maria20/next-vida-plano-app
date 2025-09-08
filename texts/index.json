@@ -204,7 +204,8 @@
         "centavos": "90",
         "mes": "/mês",
         "saibaMais": "Saiba mais",
-        "link": ""
+        "link": "",
+        "imgLogo": "./img/logo-vida-on.png"
       },
       {
         "id": 2,
@@ -212,11 +213,12 @@
         "tipo": "Individual",
         "faixaetaria": "Pessoas 60+",
         "apartir": "A partir de",
-        "valor": "9",
+        "valor": "30",
         "centavos": "90",
         "mes": "/mês",
         "saibaMais": "Saiba mais",
-        "link": ""
+        "link": "",
+        "imgLogo": "./img/logo-horizontal.png"
       }
     ],
     "subtitulo": "Descontos de até 30% para contratos longos.",
@@ -516,6 +518,8 @@
           "centavos": "90",
           "mes": "/mês",
           "beneficios": [
+            { "texto": "Telemedicina", "incluso": false },
+            { "texto": "Televeterinária", "incluso": false },
             { "texto": "Clube de benefícios", "incluso": true },
             {
               "texto": "Descontos em Farmácias (a partir de 22%)",
@@ -535,8 +539,7 @@
               "texto": "Odontologia: rede para consultas, exames tratamentos e procedimentos",
               "incluso": true
             },
-            { "texto": "Telemedicina", "incluso": false },
-            { "texto": "Televeterinária", "incluso": false },
+
             {
               "texto": "Assistência funeral completa com cobertura de até R$10k",
               "incluso": false
@@ -793,6 +796,16 @@
       "valor": "30",
       "centavos": "80",
       "mes": "/mês"
+    },
+    {
+      "id": 5,
+      "img": "./img/logo-horizontal.png",
+      "nome": "VIDA",
+      "tipo": "A0ssistência Funeral Completa + Cremação",
+      "apartir": "por apenas",
+      "valor": "20",
+      "centavos": "90",
+      "mes": "/mês"
     }
   ],
   "planos_combinados": [
@@ -824,7 +837,7 @@
       "apenas": "por apenas",
       "apartir": "A partir de",
       "valor": "15",
-      "centavos": "00",
+      "centavos": "80",
       "mes": "/mês"
     }
   ],

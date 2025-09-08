@@ -65,7 +65,6 @@ const Planos = () => {
           <h1 className="text-blue-green text-3xl font-bold lg:text-4xl 2xl:text-5xl max-w-[650px] m-auto text-center mb-8">
             {text.Contrateseuparceiro.titulo}
           </h1>
-
           <div className="flex justify-center mb-8">
             <div className="flex flex-col md:flex-row rounded-3xl bg-[#ebebeb] m-auto max-w-max overflow-hidden shadow-sm">
               {plans.map((plan, index) => (
@@ -83,7 +82,6 @@ const Planos = () => {
               ))}
             </div>
           </div>
-
           <div
             ref={planos}
             className="keen-slider my-16 md:my-16 items-center md:min-h-[1200.740px]"
@@ -174,7 +172,21 @@ const Planos = () => {
               </div>
             ))}
           </div>
-
+          {/* Promo */}
+          <div className="border-2 border-blue-green rounded-3xl p-6 md:p-8 m-auto max-w-[1100px]">
+            <div className="grid gap-3.5 md:grid-cols-5 items-center">
+              <div className="md:col-span-2">
+                <h2 className="text-blue-green font-bold text-2xl md:text-3xl ">
+                  {text.pacotes_personalizaveis.titulo}
+                </h2>
+              </div>
+              <div className="md:col-span-3">
+                <p className="text-blue-green font-bold text-xl ">
+                  {text.pacotes_personalizaveis.descricao}
+                </p>
+              </div>
+            </div>
+          </div>
           {/* planos  */}
           <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-5 mt-16">
             <div className="bg-white  rounded-4xl">
@@ -267,37 +279,65 @@ const Planos = () => {
               </div>
             </div>
             <span className="text-7xl text-cold-green">=</span>
-            <div className="bg-white  rounded-4xl border-4 border-blue-green">
-              <img
-                src={text.planos_individuais[3].img}
-                className="p-5 h-[100px] w-[220px]  object-contain"
-                alt=""
-              />
-              <div
-                className="font-bold w-full rounded-3xl bg-blue-green md:p-4 h-[120] relative "
-                style={{ margin: '0 auto' }}
-              >
-                <p className="text-white pt-3 pl-3 sm:pt-0 sm:pl-0">
-                  {text.planos_individuais[3].apartir}
-                </p>
-                <div className="flex justify-center w-full h-full">
-                  <span className="text-2xl text-white relative top-[5px]">
-                    R$
-                  </span>
-                  <span className="text-6xl block text-white">
-                    {text.planos_individuais[3].valor},
-                  </span>
-                  <span className="text-white text-3xl relative -left-3">
-                    {text.planos_individuais[3].centavos}
-                    <p className="text-white text-xl relative bottom-2 left-3.5">
-                      {text.planos_individuais[3].mes}
-                    </p>
-                  </span>
+            <div className="relative">
+              <div className="bg-white  rounded-4xl border-4 border-blue-green">
+                <img
+                  src={text.planos_individuais[3].img}
+                  className="p-5 h-[100px] w-[220px]  object-contain"
+                  alt=""
+                />
+                <div
+                  className="font-bold w-full rounded-3xl bg-pink md:p-4 h-[120] relative "
+                  style={{ margin: '0 auto' }}
+                >
+                  <p className="text-[#ffffff6e] pt-3 pl-3 sm:pt-0 sm:pl-0">
+                    {text.planos_individuais[3].apartir}
+                  </p>
+                  <div className="flex justify-center w-full h-full">
+                    <span className="text-2xl text-[#ffffff6e] relative top-[5px]">
+                      R$
+                    </span>
+                    <span className="text-6xl block text-[#ffffff6e]">
+                      {text.planos_individuais[3].valor},
+                    </span>
+                    <span className="text-[#ffffff6e] text-3xl relative -left-3">
+                      {text.planos_individuais[3].centavos}
+                      <p className="text-[#ffffff6e] text-xl relative bottom-2 left-3.5">
+                        {text.planos_individuais[3].mes}
+                      </p>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="absolute bottom-[-30%] right-[-20%] -rotate-[10deg]">
+                <div
+                  className="font-bold w-full rounded-3xl relative bg-blue-green p-3.5"
+                  style={{ margin: '0 auto' }}
+                >
+                  <p className="text-white pt-3 pl-3 sm:pt-0 sm:pl-0">
+                    {text.planos_individuais[4].apartir}
+                  </p>
+                  <div className="flex justify-center w-full h-full">
+                    <span className="text-2xl text-white relative top-[5px]">
+                      R$
+                    </span>
+                    <span className="text-6xl block text-white">
+                      {text.planos_individuais[4].valor},
+                    </span>
+                    <span className="text-white relative text-3xl -left-3">
+                      {text.planos_individuais[4].centavos}
+                      <p className="text-white text-xl relative bottom-2 left-3.5">
+                        {text.planos_individuais[4].mes}
+                      </p>
+                    </span>
+                  </div>
+                  <p className="text-sm block text-white text-center">
+                    VALOR PROMOCIONAL
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-
           <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-5 mt-16">
             <div className="bg-white  rounded-4xl">
               <img
@@ -399,6 +439,7 @@ const Planos = () => {
           </div>
         </div>
       </section>
+
       <section className="my-9 md:my-16 lg:my-24">
         <div className="container m-auto px-4">
           <h2 className="text-blue-green text-3xl font-bold lg:text-4xl 2xl:text-5xl max-w-[650px] m-auto text-center mb-8">

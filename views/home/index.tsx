@@ -376,8 +376,8 @@ const Home = () => {
                 <div className="flex justify-between items-center p-5">
                   <div className="">
                     <img
-                      src="./img/logo-vida-on.png"
-                      alt=""
+                      src={data.imgLogo}
+                      alt="Logo plano"
                       className="max-w-[100px] lg:max-w-[200px] "
                     />
                     <p className="mt-4 text-blue-green italic border-2 border-blue-green inline-block py-1 px-6 rounded-3xl font-semibold">
@@ -545,7 +545,6 @@ const Home = () => {
           </div>
         </div>
       </section> */}
-
       {/* Comentario - comentarios */}
       <section className="bg-blue-green pb-20 md:pb-16">
         <div className="container m-auto px-4">
