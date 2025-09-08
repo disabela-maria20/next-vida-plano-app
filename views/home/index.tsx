@@ -368,7 +368,7 @@ const Home = () => {
                 <img
                   src={data.img}
                   alt=""
-                  className="overflow-auto h-[250px] w-full object-cover"
+                  className="overflow-auto rounded-4xl h-[250px] w-full object-cover"
                 />
                 <div className="flex justify-between items-center p-5">
                   <div className="">
