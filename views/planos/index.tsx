@@ -164,7 +164,7 @@ const Planos = () => {
                   </p>
                   <a
                     href={appLink}
-                    className="block text-center text-blue-green border-4 font-bold border-blue-green rounded-3xl mb-7 mt-2"
+                    className="block text-center text-blue-green border-4 font-bold border-blue-green hover:bg-blue-green hover:text-white transition rounded-3xl mb-7 mt-2"
                   >
                     {data.acao}
                   </a>

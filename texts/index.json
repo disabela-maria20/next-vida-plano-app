@@ -213,8 +213,8 @@
         "tipo": "Individual",
         "faixaetaria": "Pessoas 60+",
         "apartir": "A partir de",
-        "valor": "30",
-        "centavos": "90",
+        "valor": "31",
+        "centavos": "70",
         "mes": "/mês",
         "saibaMais": "Saiba mais",
         "link": "",
@@ -271,7 +271,7 @@
         "texto1": "Cobertura de até R$10mil e abrangência nacional para funerais, cremação e cerimônia de despedida. Além de translado de até 500km em todo território brasileiro e sorteios semanais de até R$25mil.",
         "texto2": "Por penas mais",
         "valor": "15",
-        "centavos": "00",
+        "centavos": "90",
         "mes": "/mês"
       }
     ]
@@ -570,7 +570,7 @@
           "descricao": "Assistência Funeral Completa + Cremação Humana e Pet",
           "apartir": "A partir de",
           "valor": "15",
-          "centavos": "00",
+          "centavos": "90",
           "mes": "/mês",
           "beneficios": [
             { "texto": "Telemedicina", "incluso": false },
