@@ -221,7 +221,7 @@
         "imgLogo": "./img/logo-horizontal.png",
         "novo": {
           "apartir": "por apenas",
-          "valor": "20",
+          "valor": "29",
           "centavos": "90",
           "mes": "/mês"
         }
@@ -809,7 +809,7 @@
       "nome": "VIDA",
       "tipo": "A0ssistência Funeral Completa + Cremação",
       "apartir": "por apenas",
-      "valor": "20",
+      "valor": "29",
       "centavos": "90",
       "mes": "/mês"
     }
