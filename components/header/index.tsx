@@ -8,7 +8,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isMenuReady, setIsMenuReady] = useState(false); // Para animar os itens com delay depois do slide
+  const [isMenuReady, setIsMenuReady] = useState(false);
 
   const variantsList = {
     open: {
@@ -76,13 +76,13 @@ const Header = () => {
               <span>{text.menu.contrateAgora}</span>
               <div className="flex gap-3.5 transition-colors">
                 <a
-                  href="/"
+                  href="/planos"
                   className="bg-cold-green transition hover:bg-cold-green-dark py-1.5 px-5 rounded-4xl duration-300 ease-in-out hover:scale-110"
                 >
                   {text.menu.cta1}
                 </a>
                 <a
-                  href="/"
+                  href="/planos"
                   className="bg-pink transition hover:bg-pink-dark py-1.5 px-5 rounded-4xl duration-300 ease-in-out hover:scale-110"
                 >
                   {text.menu.cta2}

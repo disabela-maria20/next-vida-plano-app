@@ -220,7 +220,7 @@
         "link": "",
         "imgLogo": "./img/logo-horizontal.png",
         "novo": {
-          "apartir": "por apenas",
+          "apartir": "A partir de",
           "valor": "29",
           "centavos": "90",
           "mes": "/mês"
@@ -257,7 +257,7 @@
         "img": "./img/paciente-sorridente-olhando-para-medica.jpg",
         "logo": "./img/logo-vida-lab.png",
         "titulo": "Clínicas e Laboratórios Presenciais",
-        "texto1": "Atendimentos com descontos em consultas presênciais em mais de 50 especialidades, Odontologistas, descontos em rede laborial com mais de 1500 tipos de exames. Além de descontos apartir de 22% em farmácias e abrangência nacional.",
+        "texto1": "Atendimentos com descontos em consultas presenciais em mais de 50 especialidades, Odontologistas, descontos em rede laborial com mais de 1500 tipos de exames. Além de descontos apartir de 22% em farmácias e abrangência nacional.",
         "texto2": "Por penas mais",
         "valor": "7",
         "centavos": "90",
@@ -368,7 +368,7 @@
       {
         "id": 10,
         "title": "Quais são as formas de pagamento disponíveis?",
-        "content": "O pagamento pode ser realizado via cartão de crédito e boleto bancário, com planos de pagamentos mensais."
+        "content": "O pagamento pode ser realizado via cartão de crédito e pix, com planos de pagamentos mensais."
       },
       {
         "id": 11,
@@ -378,12 +378,7 @@
       {
         "id": 12,
         "title": "Posso alterar os dependentes do meu plano?",
-        "content": "Sim, é possível alterar os dependentes do seu plano no próprio super app."
-      },
-      {
-        "id": 13,
-        "title": "Posso adicionar um dependente mesmo após a adesão inicial?",
-        "content": "Sim, é possível incluir dependentes a qualquer momento após a adesão inicial através do super app. Confira as condições aplicáveis."
+        "content": "“As contratações são realizadas individualmente, por CPF, para cada contratação haverá uma titularidade."
       }
     ]
   },
@@ -621,7 +616,13 @@
           "valor": "31",
           "centavos": "70",
           "mes": "/mês",
-          "descricao": "Vida Palno: Cobertura Completa ",
+          "descricao": "Vida Plano: Cobertura Completa ",
+          "novo": {
+            "apartir": "A partir de",
+            "valor": "29",
+            "centavos": "90",
+            "mes": "/mês"
+          },
           "beneficios": [
             { "texto": "Telemedicina", "incluso": true },
             { "texto": "Televeterinária", "incluso": true },
@@ -663,9 +664,615 @@
           "acao": "BAIXE O APP E CONTRATE"
         }
       ],
-      "trimestal": [],
-      "anual": [],
-      "semestral": []
+      "semestral": [
+        {
+          "id": 1,
+          "logo": "./img/logo-vida-on.png",
+          "descricao": "Telemedicina e Televeterinária",
+          "apartir": "A partir de",
+          "valor": "7",
+          "centavos": "11",
+          "mes": "/mês",
+          "beneficios": [
+            { "texto": "Telemedicina", "incluso": true },
+            { "texto": "Televeterinária", "incluso": true },
+            { "texto": "Clube de benefícios", "incluso": true },
+            {
+              "texto": "Descontos em Farmácias (a partir de 22%)",
+              "incluso": true
+            },
+            { "texto": "Abrangência nacional", "incluso": true },
+            {
+              "texto": "Descontos em consultas físicas em mais de 50 especialidades médicas",
+              "incluso": false
+            },
+            { "texto": "Descontos em exames", "incluso": false },
+            {
+              "texto": "Rede laboral: mais de 1500 tipos de exames disponíveis",
+              "incluso": false
+            },
+            {
+              "texto": "Odontologia: rede para consultas, exames tratamentos e procedimentos",
+              "incluso": false
+            },
+            {
+              "texto": "Assistência funeral completa com cobertura de até R$10k",
+              "incluso": false
+            },
+            {
+              "texto": "Cobertura completa de cremação e cerimônia de despedida",
+              "incluso": false
+            },
+            { "texto": "Cobertura de cremação para Pets", "incluso": false },
+            {
+              "texto": "Serviço de Translado de até 500km com cobertura em todo território nacional",
+              "incluso": false
+            },
+            { "texto": "Sorteios semanais de até R$25.000", "incluso": false }
+          ],
+          "plano": "Plano Individual",
+          "acao": "BAIXE O APP E CONTRATE"
+        },
+        {
+          "id": 2,
+          "logo": "./img/logo-vida-lab.png",
+          "descricao": "Clínicas e Laboratórios Presenciais",
+          "apartir": "A partir de",
+          "valor": "7",
+          "centavos": "11",
+          "mes": "/mês",
+          "beneficios": [
+            { "texto": "Telemedicina", "incluso": false },
+            { "texto": "Televeterinária", "incluso": false },
+            { "texto": "Clube de benefícios", "incluso": true },
+            {
+              "texto": "Descontos em Farmácias (a partir de 22%)",
+              "incluso": true
+            },
+            {
+              "texto": "Descontos em consultas físicas em mais de 50 especialidades médicas",
+              "incluso": true
+            },
+            { "texto": "Descontos em exames", "incluso": true },
+            { "texto": "Abrangência nacional", "incluso": true },
+            {
+              "texto": "Rede laboral: mais de 1500 tipos de exames disponíveis",
+              "incluso": true
+            },
+            {
+              "texto": "Odontologia: rede para consultas, exames tratamentos e procedimentos",
+              "incluso": true
+            },
+
+            {
+              "texto": "Assistência funeral completa com cobertura de até R$10k",
+              "incluso": false
+            },
+            {
+              "texto": "Cobertura completa de cremação e cerimônia de despedida",
+              "incluso": false
+            },
+            { "texto": "Cobertura de cremação para Pets", "incluso": false },
+            {
+              "texto": "Serviço de Translado de até 500km com cobertura em todo território nacional",
+              "incluso": false
+            },
+            { "texto": "Sorteios semanais de até R$25.000", "incluso": false }
+          ],
+          "plano": "Plano Individual",
+          "acao": "BAIXE O APP E CONTRATE"
+        },
+        {
+          "id": 3,
+          "logo": "./img/logo-vida-plena.png",
+          "descricao": "Assistência Funeral Completa + Cremação Humana e Pet",
+          "apartir": "A partir de",
+          "valor": "14",
+          "centavos": "31",
+          "mes": "/mês",
+          "beneficios": [
+            { "texto": "Telemedicina", "incluso": false },
+            { "texto": "Televeterinária", "incluso": false },
+            { "texto": "Clube de benefícios", "incluso": false },
+            {
+              "texto": "Descontos em Farmácias (a partir de 22%)",
+              "incluso": false
+            },
+            {
+              "texto": "Descontos em consultas físicas em mais de 50 especialidades médicas",
+              "incluso": false
+            },
+            { "texto": "Descontos em exames", "incluso": false },
+
+            {
+              "texto": "Rede laboral: mais de 1500 tipos de exames disponíveis",
+              "incluso": false
+            },
+            {
+              "texto": "Odontologia: rede para consultas, exames tratamentos e procedimentos",
+              "incluso": false
+            },
+            { "texto": "Abrangência nacional", "incluso": true },
+            {
+              "texto": "Assistência funeral completa com cobertura de até R$10k",
+              "incluso": true
+            },
+            {
+              "texto": "Cobertura completa de cremação e cerimônia de despedida",
+              "incluso": true
+            },
+            { "texto": "Cobertura de cremação para Pets", "incluso": true },
+            {
+              "texto": "Serviço de Translado de até 500km com cobertura em todo território nacional",
+              "incluso": true
+            },
+            { "texto": "Sorteios semanais de até R$25.000", "incluso": true }
+          ],
+          "plano": "Plano Individual",
+          "acao": "BAIXE O APP E CONTRATE"
+        },
+        {
+          "id": 3,
+          "logo": "./img/logo-horizontal.png",
+          "destaque": "Melhor Opção",
+          "apartir": "A partir de",
+          "valor": "28",
+          "centavos": "53",
+          "mes": "/mês",
+          "descricao": "Vida Plano: Cobertura Completa ",
+          "novo": {
+            "apartir": "A partir de",
+            "valor": "27",
+            "centavos": "50",
+            "mes": "/mês"
+          },
+          "beneficios": [
+            { "texto": "Telemedicina", "incluso": true },
+            { "texto": "Televeterinária", "incluso": true },
+            { "texto": "Clube de benefícios", "incluso": true },
+            {
+              "texto": "Descontos em Farmácias (a partir de 22%)",
+              "incluso": true
+            },
+            {
+              "texto": "Descontos em consultas físicas em mais de 50 especialidades médicas",
+              "incluso": true
+            },
+            { "texto": "Descontos em exames", "incluso": true },
+            { "texto": "Abrangência nacional", "incluso": true },
+            {
+              "texto": "Rede laboral: mais de 1500 tipos de exames disponíveis",
+              "incluso": true
+            },
+            {
+              "texto": "Odontologia: rede para consultas, exames tratamentos e procedimentos",
+              "incluso": true
+            },
+            {
+              "texto": "Assistência funeral completa com cobertura de até R$10k",
+              "incluso": true
+            },
+            {
+              "texto": "Cobertura completa de cremação e cerimônia de despedida",
+              "incluso": true
+            },
+            { "texto": "Cobertura de cremação para Pets", "incluso": true },
+            {
+              "texto": "Serviço de Translado de até 500km com cobertura em todo território nacional",
+              "incluso": true
+            },
+            { "texto": "Sorteios semanais de até R$25.000", "incluso": true }
+          ],
+          "plano": "Plano Individual",
+          "acao": "BAIXE O APP E CONTRATE"
+        }
+      ],
+      "anual": [
+        {
+          "id": 1,
+          "logo": "./img/logo-vida-on.png",
+          "descricao": "Telemedicina e Televeterinária",
+          "apartir": "A partir de",
+          "valor": "6",
+          "centavos": "32",
+          "mes": "/mês",
+          "beneficios": [
+            { "texto": "Telemedicina", "incluso": true },
+            { "texto": "Televeterinária", "incluso": true },
+            { "texto": "Clube de benefícios", "incluso": true },
+            {
+              "texto": "Descontos em Farmácias (a partir de 22%)",
+              "incluso": true
+            },
+            { "texto": "Abrangência nacional", "incluso": true },
+            {
+              "texto": "Descontos em consultas físicas em mais de 50 especialidades médicas",
+              "incluso": false
+            },
+            { "texto": "Descontos em exames", "incluso": false },
+            {
+              "texto": "Rede laboral: mais de 1500 tipos de exames disponíveis",
+              "incluso": false
+            },
+            {
+              "texto": "Odontologia: rede para consultas, exames tratamentos e procedimentos",
+              "incluso": false
+            },
+            {
+              "texto": "Assistência funeral completa com cobertura de até R$10k",
+              "incluso": false
+            },
+            {
+              "texto": "Cobertura completa de cremação e cerimônia de despedida",
+              "incluso": false
+            },
+            { "texto": "Cobertura de cremação para Pets", "incluso": false },
+            {
+              "texto": "Serviço de Translado de até 500km com cobertura em todo território nacional",
+              "incluso": false
+            },
+            { "texto": "Sorteios semanais de até R$25.000", "incluso": false }
+          ],
+          "plano": "Plano Individual",
+          "acao": "BAIXE O APP E CONTRATE"
+        },
+        {
+          "id": 2,
+          "logo": "./img/logo-vida-lab.png",
+          "descricao": "Clínicas e Laboratórios Presenciais",
+          "apartir": "A partir de",
+          "valor": "6",
+          "centavos": "32",
+          "mes": "/mês",
+          "beneficios": [
+            { "texto": "Telemedicina", "incluso": false },
+            { "texto": "Televeterinária", "incluso": false },
+            { "texto": "Clube de benefícios", "incluso": true },
+            {
+              "texto": "Descontos em Farmácias (a partir de 22%)",
+              "incluso": true
+            },
+            {
+              "texto": "Descontos em consultas físicas em mais de 50 especialidades médicas",
+              "incluso": true
+            },
+            { "texto": "Descontos em exames", "incluso": true },
+            { "texto": "Abrangência nacional", "incluso": true },
+            {
+              "texto": "Rede laboral: mais de 1500 tipos de exames disponíveis",
+              "incluso": true
+            },
+            {
+              "texto": "Odontologia: rede para consultas, exames tratamentos e procedimentos",
+              "incluso": true
+            },
+
+            {
+              "texto": "Assistência funeral completa com cobertura de até R$10k",
+              "incluso": false
+            },
+            {
+              "texto": "Cobertura completa de cremação e cerimônia de despedida",
+              "incluso": false
+            },
+            { "texto": "Cobertura de cremação para Pets", "incluso": false },
+            {
+              "texto": "Serviço de Translado de até 500km com cobertura em todo território nacional",
+              "incluso": false
+            },
+            { "texto": "Sorteios semanais de até R$25.000", "incluso": false }
+          ],
+          "plano": "Plano Individual",
+          "acao": "BAIXE O APP E CONTRATE"
+        },
+        {
+          "id": 3,
+          "logo": "./img/logo-vida-plena.png",
+          "descricao": "Assistência Funeral Completa + Cremação Humana e Pet",
+          "apartir": "A partir de",
+          "valor": "12",
+          "centavos": "72",
+          "mes": "/mês",
+          "beneficios": [
+            { "texto": "Telemedicina", "incluso": false },
+            { "texto": "Televeterinária", "incluso": false },
+            { "texto": "Clube de benefícios", "incluso": false },
+            {
+              "texto": "Descontos em Farmácias (a partir de 22%)",
+              "incluso": false
+            },
+            {
+              "texto": "Descontos em consultas físicas em mais de 50 especialidades médicas",
+              "incluso": false
+            },
+            { "texto": "Descontos em exames", "incluso": false },
+
+            {
+              "texto": "Rede laboral: mais de 1500 tipos de exames disponíveis",
+              "incluso": false
+            },
+            {
+              "texto": "Odontologia: rede para consultas, exames tratamentos e procedimentos",
+              "incluso": false
+            },
+            { "texto": "Abrangência nacional", "incluso": true },
+            {
+              "texto": "Assistência funeral completa com cobertura de até R$10k",
+              "incluso": true
+            },
+            {
+              "texto": "Cobertura completa de cremação e cerimônia de despedida",
+              "incluso": true
+            },
+            { "texto": "Cobertura de cremação para Pets", "incluso": true },
+            {
+              "texto": "Serviço de Translado de até 500km com cobertura em todo território nacional",
+              "incluso": true
+            },
+            { "texto": "Sorteios semanais de até R$25.000", "incluso": true }
+          ],
+          "plano": "Plano Individual",
+          "acao": "BAIXE O APP E CONTRATE"
+        },
+        {
+          "id": 3,
+          "logo": "./img/logo-horizontal.png",
+          "destaque": "Melhor Opção",
+          "apartir": "A partir de",
+          "valor": "25",
+          "centavos": "36",
+          "mes": "/mês",
+          "descricao": "Vida Plano: Cobertura Completa ",
+          "novo": {
+            "apartir": "A partir de",
+            "valor": "25",
+            "centavos": "00",
+            "mes": "/mês"
+          },
+          "beneficios": [
+            { "texto": "Telemedicina", "incluso": true },
+            { "texto": "Televeterinária", "incluso": true },
+            { "texto": "Clube de benefícios", "incluso": true },
+            {
+              "texto": "Descontos em Farmácias (a partir de 22%)",
+              "incluso": true
+            },
+            {
+              "texto": "Descontos em consultas físicas em mais de 50 especialidades médicas",
+              "incluso": true
+            },
+            { "texto": "Descontos em exames", "incluso": true },
+            { "texto": "Abrangência nacional", "incluso": true },
+            {
+              "texto": "Rede laboral: mais de 1500 tipos de exames disponíveis",
+              "incluso": true
+            },
+            {
+              "texto": "Odontologia: rede para consultas, exames tratamentos e procedimentos",
+              "incluso": true
+            },
+            {
+              "texto": "Assistência funeral completa com cobertura de até R$10k",
+              "incluso": true
+            },
+            {
+              "texto": "Cobertura completa de cremação e cerimônia de despedida",
+              "incluso": true
+            },
+            { "texto": "Cobertura de cremação para Pets", "incluso": true },
+            {
+              "texto": "Serviço de Translado de até 500km com cobertura em todo território nacional",
+              "incluso": true
+            },
+            { "texto": "Sorteios semanais de até R$25.000", "incluso": true }
+          ],
+          "plano": "Plano Individual",
+          "acao": "BAIXE O APP E CONTRATE"
+        }
+      ],
+      "trienal": [
+        {
+          "id": 1,
+          "logo": "./img/logo-vida-on.png",
+          "descricao": "Telemedicina e Televeterinária",
+          "apartir": "A partir de",
+          "valor": "5",
+          "centavos": "53",
+          "mes": "/mês",
+          "beneficios": [
+            { "texto": "Telemedicina", "incluso": true },
+            { "texto": "Televeterinária", "incluso": true },
+            { "texto": "Clube de benefícios", "incluso": true },
+            {
+              "texto": "Descontos em Farmácias (a partir de 22%)",
+              "incluso": true
+            },
+            { "texto": "Abrangência nacional", "incluso": true },
+            {
+              "texto": "Descontos em consultas físicas em mais de 50 especialidades médicas",
+              "incluso": false
+            },
+            { "texto": "Descontos em exames", "incluso": false },
+            {
+              "texto": "Rede laboral: mais de 1500 tipos de exames disponíveis",
+              "incluso": false
+            },
+            {
+              "texto": "Odontologia: rede para consultas, exames tratamentos e procedimentos",
+              "incluso": false
+            },
+            {
+              "texto": "Assistência funeral completa com cobertura de até R$10k",
+              "incluso": false
+            },
+            {
+              "texto": "Cobertura completa de cremação e cerimônia de despedida",
+              "incluso": false
+            },
+            { "texto": "Cobertura de cremação para Pets", "incluso": false },
+            {
+              "texto": "Serviço de Translado de até 500km com cobertura em todo território nacional",
+              "incluso": false
+            },
+            { "texto": "Sorteios semanais de até R$25.000", "incluso": false }
+          ],
+          "plano": "Plano Individual",
+          "acao": "BAIXE O APP E CONTRATE"
+        },
+        {
+          "id": 2,
+          "logo": "./img/logo-vida-lab.png",
+          "descricao": "Clínicas e Laboratórios Presenciais",
+          "apartir": "A partir de",
+          "valor": "5",
+          "centavos": "53",
+          "mes": "/mês",
+          "beneficios": [
+            { "texto": "Telemedicina", "incluso": false },
+            { "texto": "Televeterinária", "incluso": false },
+            { "texto": "Clube de benefícios", "incluso": true },
+            {
+              "texto": "Descontos em Farmácias (a partir de 22%)",
+              "incluso": true
+            },
+            {
+              "texto": "Descontos em consultas físicas em mais de 50 especialidades médicas",
+              "incluso": true
+            },
+            { "texto": "Descontos em exames", "incluso": true },
+            { "texto": "Abrangência nacional", "incluso": true },
+            {
+              "texto": "Rede laboral: mais de 1500 tipos de exames disponíveis",
+              "incluso": true
+            },
+            {
+              "texto": "Odontologia: rede para consultas, exames tratamentos e procedimentos",
+              "incluso": true
+            },
+
+            {
+              "texto": "Assistência funeral completa com cobertura de até R$10k",
+              "incluso": false
+            },
+            {
+              "texto": "Cobertura completa de cremação e cerimônia de despedida",
+              "incluso": false
+            },
+            { "texto": "Cobertura de cremação para Pets", "incluso": false },
+            {
+              "texto": "Serviço de Translado de até 500km com cobertura em todo território nacional",
+              "incluso": false
+            },
+            { "texto": "Sorteios semanais de até R$25.000", "incluso": false }
+          ],
+          "plano": "Plano Individual",
+          "acao": "BAIXE O APP E CONTRATE"
+        },
+        {
+          "id": 3,
+          "logo": "./img/logo-vida-plena.png",
+          "descricao": "Assistência Funeral Completa + Cremação Humana e Pet",
+          "apartir": "A partir de",
+          "valor": "11",
+          "centavos": "13",
+          "mes": "/mês",
+          "beneficios": [
+            { "texto": "Telemedicina", "incluso": false },
+            { "texto": "Televeterinária", "incluso": false },
+            { "texto": "Clube de benefícios", "incluso": false },
+            {
+              "texto": "Descontos em Farmácias (a partir de 22%)",
+              "incluso": false
+            },
+            {
+              "texto": "Descontos em consultas físicas em mais de 50 especialidades médicas",
+              "incluso": false
+            },
+            { "texto": "Descontos em exames", "incluso": false },
+
+            {
+              "texto": "Rede laboral: mais de 1500 tipos de exames disponíveis",
+              "incluso": false
+            },
+            {
+              "texto": "Odontologia: rede para consultas, exames tratamentos e procedimentos",
+              "incluso": false
+            },
+            { "texto": "Abrangência nacional", "incluso": true },
+            {
+              "texto": "Assistência funeral completa com cobertura de até R$10k",
+              "incluso": true
+            },
+            {
+              "texto": "Cobertura completa de cremação e cerimônia de despedida",
+              "incluso": true
+            },
+            { "texto": "Cobertura de cremação para Pets", "incluso": true },
+            {
+              "texto": "Serviço de Translado de até 500km com cobertura em todo território nacional",
+              "incluso": true
+            },
+            { "texto": "Sorteios semanais de até R$25.000", "incluso": true }
+          ],
+          "plano": "Plano Individual",
+          "acao": "BAIXE O APP E CONTRATE"
+        },
+        {
+          "id": 3,
+          "logo": "./img/logo-horizontal.png",
+          "destaque": "Melhor Opção",
+          "apartir": "A partir de",
+          "valor": "22",
+          "centavos": "19",
+          "mes": "/mês",
+          "descricao": "Vida Plano: Cobertura Completa ",
+          "novo": {
+            "apartir": "A partir de",
+            "valor": "20",
+            "centavos": "00",
+            "mes": "/mês"
+          },
+          "beneficios": [
+            { "texto": "Telemedicina", "incluso": true },
+            { "texto": "Televeterinária", "incluso": true },
+            { "texto": "Clube de benefícios", "incluso": true },
+            {
+              "texto": "Descontos em Farmácias (a partir de 22%)",
+              "incluso": true
+            },
+            {
+              "texto": "Descontos em consultas físicas em mais de 50 especialidades médicas",
+              "incluso": true
+            },
+            { "texto": "Descontos em exames", "incluso": true },
+            { "texto": "Abrangência nacional", "incluso": true },
+            {
+              "texto": "Rede laboral: mais de 1500 tipos de exames disponíveis",
+              "incluso": true
+            },
+            {
+              "texto": "Odontologia: rede para consultas, exames tratamentos e procedimentos",
+              "incluso": true
+            },
+            {
+              "texto": "Assistência funeral completa com cobertura de até R$10k",
+              "incluso": true
+            },
+            {
+              "texto": "Cobertura completa de cremação e cerimônia de despedida",
+              "incluso": true
+            },
+            { "texto": "Cobertura de cremação para Pets", "incluso": true },
+            {
+              "texto": "Serviço de Translado de até 500km com cobertura em todo território nacional",
+              "incluso": true
+            },
+            { "texto": "Sorteios semanais de até R$25.000", "incluso": true }
+          ],
+          "plano": "Plano Individual",
+          "acao": "BAIXE O APP E CONTRATE"
+        }
+      ]
     }
   },
   "pagamento": {
@@ -790,7 +1397,7 @@
       "tipo": "A0ssistência Funeral Completa + Cremação",
       "apartir": "A partir de",
       "valor": "15",
-      "centavos": "00",
+      "centavos": "90",
       "mes": "/mês"
     },
     {
@@ -799,8 +1406,8 @@
       "nome": "VIDA",
       "tipo": "A0ssistência Funeral Completa + Cremação",
       "apartir": "A partir de",
-      "valor": "30",
-      "centavos": "80",
+      "valor": "31",
+      "centavos": "70",
       "mes": "/mês"
     },
     {

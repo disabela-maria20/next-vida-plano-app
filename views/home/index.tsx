@@ -125,7 +125,7 @@ const Home = () => {
                 {text.especialidades.cta1}
               </button>
               <button className="px-4 py-2 font-semibold text-xl lg:text-2xl text-cold-green bg-white">
-                {text.especialidades.cta1}
+                {text.especialidades.cta2}
               </button>
             </div>
           </div>
@@ -210,12 +210,9 @@ const Home = () => {
               </ul>
               <ul className="flex items-center justify-center gap-9 py-9 flex-wrap">
                 {text.beneficios.itensLogo.map((data) => (
-                  <img
-                    src={data.imagem}
-                    alt=""
-                    className="max-w-[144px]"
-                    key={data.id}
-                  />
+                  <li key={data.id}>
+                    <img src={data.imagem} alt="" className="max-w-[144px]" />
+                  </li>
                 ))}
               </ul>
             </div>
@@ -261,7 +258,7 @@ const Home = () => {
                   </div>
                   <div className="flex md:gap-4 items-center mt-10 md:m-0 pb-9 md:pb-0">
                     {text.encaminhamentos.link.map((data) => (
-                      <a href={data.imagemLink} target="_blank">
+                      <a href={data.link} target="_blank">
                         <img
                           src={data.imagemLink}
                           alt=""
@@ -381,9 +378,9 @@ const Home = () => {
                       {data.tipo}
                     </p>
                     <br />
-                    <span className="ml-2.5 mt-1 inline-block text-blue-green italic font-semibold ">
+                    {/* <span className="ml-2.5 mt-1 inline-block text-blue-green italic font-semibold ">
                       {data.faixaetaria}
-                    </span>
+                    </span> */}
                   </div>
                   <div>
                     {/* <span className="text-[#555555] font-bold text-xl">
@@ -391,7 +388,7 @@ const Home = () => {
                     </span> */}
                     <div
                       className={`relative font-bold w-full lg:max-w-[100%] rounded-3xl max-w-[200px] md:pb-1 h-[120] `}
-                      style={{ margin: '0 auto' }}
+                      style={{ margin: '0 auto', height: '95px' }}
                     >
                       <div className={`${data.novo && 'opacity-35'}`}>
                         <p className="text-[#4e4e0b]">{data.apartir}</p>

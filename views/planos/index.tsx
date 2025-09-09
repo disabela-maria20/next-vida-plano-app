@@ -18,8 +18,8 @@ const Planos = () => {
   const { isMobile } = useIsMobile();
   const appLink = useAppLink();
 
-  type PlanoKey = 'mensal' | 'trimestal' | 'anual' | 'semestral';
-  const plans: PlanoKey[] = ['mensal', 'trimestal', 'anual', 'semestral'];
+  type PlanoKey = 'mensal' | 'anual' | 'semestral' | 'trienal';
+  const plans: PlanoKey[] = ['mensal', 'semestral', 'anual', 'trienal'];
 
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -113,24 +113,55 @@ const Planos = () => {
                   )}
 
                   <div
-                    className="font-bold w-full lg:max-w-[100%] rounded-3xl max-w-[200px] md:p-4 h-[120]"
+                    className="relative font-bold w-full lg:max-w-[100%] rounded-3xl max-w-[200px] md:p-4 h-[120]"
                     style={{ margin: '0 auto' }}
                   >
-                    <p className="text-[#4e4e0b]">{data.apartir}</p>
-                    <div className="flex justify-center w-full h-full">
-                      <span className="text-2xl text-cold-green relative top-[5px]">
-                        R$
-                      </span>
-                      <span className="text-6xl block text-cold-green">
-                        {data.valor},
-                      </span>
-                      <span className="text-cold-green text-3xl relative -left-3">
-                        {data.centavos}
-                        <p className="text-[#4e4e0b] text-xl relative bottom-2 left-3.5">
-                          {data.mes}
-                        </p>
-                      </span>
+                    <div className={`${data.novo && 'opacity-35'}`}>
+                      <p className="text-[#4e4e0b]">{data.apartir}</p>
+                      <div className="flex justify-center w-full h-full">
+                        <span className="text-2xl text-cold-green relative top-[5px]">
+                          R$
+                        </span>
+                        <span className="text-6xl block text-cold-green">
+                          {data.valor},
+                        </span>
+                        <span className="text-cold-green text-3xl relative -left-3">
+                          {data.centavos}
+                          <p className="text-[#4e4e0b] text-xl relative bottom-2 left-3.5">
+                            {data.mes}
+                          </p>
+                        </span>
+                      </div>
                     </div>
+                    {data.novo && (
+                      <div className="absolute bottom-[-10%] right-[-10%] -rotate-[10deg] ">
+                        <div
+                          className="font-bold w-full rounded-3xl relative bg-blue-green p-3.5 "
+                          style={{ margin: '0 auto' }}
+                        >
+                          <p className="text-white pt-3 pl-3 sm:pt-0 sm:pl-0">
+                            {data.novo?.apartir}
+                          </p>
+                          <div className="flex justify-center w-full h-full">
+                            <span className="text-2xl text-white relative top-[5px]">
+                              R$
+                            </span>
+                            <span className="text-6xl block text-white">
+                              {data.novo?.valor},
+                            </span>
+                            <span className="text-white relative text-3xl -left-3">
+                              {data.novo?.centavos}
+                              <p className="text-white text-xl relative bottom-2 left-3.5">
+                                {data.novo?.mes}
+                              </p>
+                            </span>
+                          </div>
+                          <p className="text-sm block text-white text-center">
+                            VALOR PROMOCIONAL
+                          </p>
+                        </div>
+                      </div>
+                    )}
                   </div>
 
                   <ul>
