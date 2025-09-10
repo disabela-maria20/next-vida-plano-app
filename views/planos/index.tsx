@@ -454,9 +454,9 @@ const Planos = () => {
                     {text.planos_individuais[2].valor},
                   </span>
                   <span className="text-white text-3xl relative -left-3">
-                    {text.planos_individuais[2].centavos}
+                    00
                     <p className="text-white text-xl relative bottom-2 left-3.5">
-                      {text.planos_individuais[2].mes}
+                      {text.planos_individuais[3].mes}
                     </p>
                   </span>
                 </div>
