@@ -8,12 +8,12 @@
       {
         "id": 1,
         "nome": "Telemedicina",
-        "link": "#telemedicina"
+        "link": "/#telemedicina"
       },
       {
         "id": 2,
         "nome": "Benefícios",
-        "link": "#beneficios"
+        "link": "/#beneficios"
       },
       {
         "id": 3,
@@ -387,7 +387,7 @@
       {
         "id": 1,
         "nome": "Telemedicina",
-        "link": ""
+        "link": "/#telemedicina"
       },
       {
         "id": 2,
@@ -429,7 +429,7 @@
       {
         "id": 3,
         "nome": "Contato",
-        "link": ""
+        "link": "https://wa.me/551636055582"
       }
     ],
     "list3": [
