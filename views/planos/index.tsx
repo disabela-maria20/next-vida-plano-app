@@ -45,11 +45,12 @@ const Planos = () => {
     slider.current?.update();
   }, [activeIndex]);
 
-  const activePlans =
-    text.Contrateseuparceiro.planos2[plans[activeIndex]] || [];
+  // const activePlans =
+  // text.Contrateseuparceiro.planos2[plans[activeIndex]] || [];
 
+  const activePlans = text.Contrateseuparceiro.planos2[plans[0]] || [];
   if (!appLink) {
-    return <div>Carregando...</div>; // ou algum loading state
+    return <div>Carregando...</div>;
   }
 
   return (
@@ -65,7 +66,7 @@ const Planos = () => {
           <h1 className="text-blue-green text-3xl font-bold lg:text-4xl 2xl:text-5xl max-w-[650px] m-auto text-center mb-8">
             {text.Contrateseuparceiro.titulo}
           </h1>
-          <div className="flex justify-center mb-8">
+          {/* <div className="flex justify-center mb-8">
             <div className="flex flex-col md:flex-row rounded-3xl bg-[#ebebeb] m-auto max-w-max overflow-hidden shadow-sm">
               {plans.map((plan, index) => (
                 <button
@@ -81,7 +82,7 @@ const Planos = () => {
                 </button>
               ))}
             </div>
-          </div>
+          </div> */}
           <div
             ref={planos}
             className="keen-slider my-16 md:my-16 items-center md:min-h-[1200.740px]"

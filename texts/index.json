@@ -1,6 +1,6 @@
 {
   "menu": {
-    "imgLogo": "./img/logo-branco.png",
+    "imgLogo": "/img/logo-branco.png",
     "contrateAgora": "Contrate agora seu plano:",
     "cta1": "Vida On",
     "cta2": "Vida Plano",
@@ -34,15 +34,15 @@
   },
   "hero": {
     "imgLogo": "tem q prenencher, a imagem isa",
-    "imgBg": "./img/logo-horizontal.png",
+    "imgBg": "/img/logo-horizontal.png",
     "titulo1": "Tô de boa, tô com APP Vida Plano.",
     "titulo2": "Prático, completo e seguro.",
     "titulo3": "Preço acessível <strong>à saúde, bem-estar </strong> e um <strong>futuro</strong> mais <strong>tranquilo</strong>."
   },
   "especialidades": {
-    "imgLogo": "./img/logo-vida-on.png",
-    "imgBg": "./img/foto-de-uma-medica-conversando-com-colegas-por-meio-de-uma-videochamada-com-um-laptop-na-consulta.png",
-    "imgBg2": "./img/mulher-sorridente-com-tiro-medio-e-cachorro.png",
+    "imgLogo": "/img/logo-vida-on.png",
+    "imgBg": "/img/foto-de-uma-medica-conversando-com-colegas-por-meio-de-uma-videochamada-com-um-laptop-na-consulta.png",
+    "imgBg2": "/img/mulher-sorridente-com-tiro-medio-e-cachorro.png",
     "texto1": "Consultas online com especialistas onde você estiver, rápido e prático!",
     "texto2": "A partir de",
     "valor": "R$7,90",
@@ -93,8 +93,8 @@
   "beneficios": {
     "titulo": "Benefícios",
     "subtitulo": "Conheça todos os",
-    "bg": "./img/bg-circular-gradient.png",
-    "imgItem": "./img/mulher-sorridente-com-foto-completa-sentada-no-chao.jpg",
+    "bg": "/img/bg-circular-gradient.png",
+    "imgItem": "/img/mulher-sorridente-com-foto-completa-sentada-no-chao.jpg",
     "itens": [
       {
         "id": 1,
@@ -136,21 +136,21 @@
     "itensLogo": [
       {
         "id": 1,
-        "imagem": "./img/logo-vida-on.png"
+        "imagem": "/img/logo-vida-on.png"
       },
       {
         "id": 2,
-        "imagem": "./img/droga-raia.png"
+        "imagem": "/img/droga-raia.png"
       },
       {
         "id": 3,
-        "imagem": "./img/drogasil.png"
+        "imagem": "/img/drogasil.png"
       }
     ]
   },
   "encaminhamentos": {
     "titulo1": "Ficou <strong>mais prático cuidar</strong> de você.",
-    "imgcelular": "./img/celular.png",
+    "imgcelular": "/img/celular.png",
     "encaminhamento": [
       {
         "id": 1,
@@ -170,24 +170,24 @@
     "link": [
       {
         "id": 2,
-        "imagemLink": "./img/playstore.png",
+        "imagemLink": "/img/playstore.png",
         "link": "https://play.google.com/store/apps/details?id=com.farol.vidaApp&hl=pt_BR"
       },
       {
         "id": 3,
-        "imagemLink": "./img/apple-loja.png",
+        "imagemLink": "/img/apple-loja.png",
         "link": "https://apps.apple.com/br/app/vida-plano/id1664932847"
       }
     ]
   },
   "mapa": {
-    "img1": "./img/viajante-smilling-no-smartphone.jpg",
-    "img2": "./img/aproximacao-medico-afro-americano-cumprimentando-seu-paciente-durante-chamada-de-video-pelo-celular.png",
-    "img3": "./img/mulher-fazendo-uma-chamada-de-video-em-casa-em-um-laptop-com-fone-de-ouvido.jpg",
-    "img4": "./img/mapa.png",
-    "img5": "./img/tablet-familiar-e-pais-com-filhos-relaxam-no-sofa-se-unindo-e-felizes-transmitindo-juntos-em-casa-sorria-amor-e-cuidado-com-jogos-de-tecnologia-ou-filmes-com-e-learning-e-homem-com-mulher-e-filho.jpg",
-    "img6": "./img/retrato-de-uma-mulher-sorridente-alegre-mensagens-de-texto.png",
-    "img7": "./img/homem-afro-americano-calmo-usando-telefone-celular-enquanto-se-relaxa-na-rua-depois-de-andar-de-motocicleta.jpg",
+    "img1": "/img/viajante-smilling-no-smartphone.jpg",
+    "img2": "/img/aproximacao-medico-afro-americano-cumprimentando-seu-paciente-durante-chamada-de-video-pelo-celular.png",
+    "img3": "/img/mulher-fazendo-uma-chamada-de-video-em-casa-em-um-laptop-com-fone-de-ouvido.jpg",
+    "img4": "/img/mapa.png",
+    "img5": "/img/tablet-familiar-e-pais-com-filhos-relaxam-no-sofa-se-unindo-e-felizes-transmitindo-juntos-em-casa-sorria-amor-e-cuidado-com-jogos-de-tecnologia-ou-filmes-com-e-learning-e-homem-com-mulher-e-filho.jpg",
+    "img6": "/img/retrato-de-uma-mulher-sorridente-alegre-mensagens-de-texto.png",
+    "img7": "/img/homem-afro-americano-calmo-usando-telefone-celular-enquanto-se-relaxa-na-rua-depois-de-andar-de-motocicleta.jpg",
     "titulo1": "Praticidade para fazer consultas online mesmo longe da sua casa.",
     "titulo2": "E abrangência nacional para consultas e serviços presenciais."
   },
@@ -196,7 +196,7 @@
     "card": [
       {
         "id": 1,
-        "img": "./img/mulher-sorridente-verificando-telefone-plantas-eletronicos-confortaveis.jpg",
+        "img": "/img/mulher-sorridente-verificando-telefone-plantas-eletronicos-confortaveis.jpg",
         "tipo": "Individual",
         "faixaetaria": "De 19 a 59 anos",
         "apartir": "A partir de",
@@ -205,11 +205,11 @@
         "mes": "/mês",
         "saibaMais": "Saiba mais",
         "link": "",
-        "imgLogo": "./img/logo-vida-on.png"
+        "imgLogo": "/img/logo-vida-on.png"
       },
       {
         "id": 2,
-        "img": "./img/um-cavalheiro-mais-velho-pensativo-com-um-tablet-numa-sala-brilhante-cheia-de-plantas.jpg",
+        "img": "/img/um-cavalheiro-mais-velho-pensativo-com-um-tablet-numa-sala-brilhante-cheia-de-plantas.jpg",
         "tipo": "Individual",
         "faixaetaria": "Pessoas 60+",
         "apartir": "A partir de",
@@ -218,7 +218,7 @@
         "mes": "/mês",
         "saibaMais": "Saiba mais",
         "link": "",
-        "imgLogo": "./img/logo-horizontal.png",
+        "imgLogo": "/img/logo-horizontal.png",
         "novo": {
           "apartir": "A partir de",
           "valor": "29",
@@ -254,8 +254,8 @@
     "cardPlanejamento": [
       {
         "id": 1,
-        "img": "./img/paciente-sorridente-olhando-para-medica.jpg",
-        "logo": "./img/logo-vida-lab.png",
+        "img": "/img/paciente-sorridente-olhando-para-medica.jpg",
+        "logo": "/img/logo-vida-lab.png",
         "titulo": "Clínicas e Laboratórios Presenciais",
         "texto1": "Atendimentos com descontos em consultas presenciais em mais de 50 especialidades, Odontologistas, descontos em rede laborial com mais de 1500 tipos de exames. Além de descontos apartir de 22% em farmácias e abrangência nacional.",
         "texto2": "Por penas mais",
@@ -265,8 +265,8 @@
       },
       {
         "id": 2,
-        "img": "./img/img-assistencias.png",
-        "logo": "./img/logo-vida-plena.png",
+        "img": "/img/img-assistencias.png",
+        "logo": "/img/logo-vida-plena.png",
         "titulo": "Assistência Funeral Completa </br> + Cremação Humana e para Pets",
         "texto1": "Cobertura de até R$10mil e abrangência nacional para funerais, cremação e cerimônia de despedida. Além de translado de até 500km em todo território brasileiro e sorteios semanais de até R$25mil.",
         "texto2": "Por penas mais",
@@ -310,9 +310,9 @@
     ]
   },
   "sessaobaixar": {
-    "imgLogo": "./img/logo-horizontal.png",
-    "img1": "./img/abraco-feliz-e-retrato-da-familia-no-dia-das-maes-visita-e-carinho-enquanto-se-unem-sorria-amor-e-mae-filho-e-avo-se-abracando-sendo-afetuosos-e-alegres-para-um-tempo-de-qualidade-juntos.jpg",
-    "img2": "./img/escritorio-feliz-e-retratc.jpg",
+    "imgLogo": "/img/logo-horizontal.png",
+    "img1": "/img/abraco-feliz-e-retrato-da-familia-no-dia-das-maes-visita-e-carinho-enquanto-se-unem-sorria-amor-e-mae-filho-e-avo-se-abracando-sendo-afetuosos-e-alegres-para-um-tempo-de-qualidade-juntos.jpg",
+    "img2": "/img/escritorio-feliz-e-retratc.jpg",
     "titulo": "Baixe o app",
     "subtitulo": "E comece a cuidar da sua saúde agora e em qualquer lugar.",
     "btm": "Confia, faz o Vida Plano"
@@ -454,17 +454,17 @@
         "link": "https://wa.me/551636055582"
       }
     ],
-    "imgFooter": "./img/logo-branco.png",
+    "imgFooter": "/img/logo-branco.png",
     "cta": "Confia, faz o Vida Plano!"
   },
   "Contrateseuparceiro": {
     "titulo": "Contrate seu parceiro de saúde no agora e no futuro:",
-    "bg": "./img/rectangle1177.png",
+    "bg": "/img/rectangle1177.png",
     "planos2": {
       "mensal": [
         {
           "id": 1,
-          "logo": "./img/logo-vida-on.png",
+          "logo": "/img/logo-vida-on.png",
           "descricao": "Telemedicina e Televeterinária",
           "apartir": "A partir de",
           "valor": "7",
@@ -512,7 +512,7 @@
         },
         {
           "id": 2,
-          "logo": "./img/logo-vida-lab.png",
+          "logo": "/img/logo-vida-lab.png",
           "descricao": "Clínicas e Laboratórios Presenciais",
           "apartir": "A partir de",
           "valor": "7",
@@ -561,7 +561,7 @@
         },
         {
           "id": 3,
-          "logo": "./img/logo-vida-plena.png",
+          "logo": "/img/logo-vida-plena.png",
           "descricao": "Assistência Funeral Completa + Cremação Humana e Pet",
           "apartir": "A partir de",
           "valor": "15",
@@ -610,7 +610,7 @@
         },
         {
           "id": 3,
-          "logo": "./img/logo-horizontal.png",
+          "logo": "/img/logo-horizontal.png",
           "destaque": "Melhor Opção",
           "apartir": "A partir de",
           "valor": "31",
@@ -667,7 +667,7 @@
       "semestral": [
         {
           "id": 1,
-          "logo": "./img/logo-vida-on.png",
+          "logo": "/img/logo-vida-on.png",
           "descricao": "Telemedicina e Televeterinária",
           "apartir": "A partir de",
           "valor": "7",
@@ -715,7 +715,7 @@
         },
         {
           "id": 2,
-          "logo": "./img/logo-vida-lab.png",
+          "logo": "/img/logo-vida-lab.png",
           "descricao": "Clínicas e Laboratórios Presenciais",
           "apartir": "A partir de",
           "valor": "7",
@@ -764,7 +764,7 @@
         },
         {
           "id": 3,
-          "logo": "./img/logo-vida-plena.png",
+          "logo": "/img/logo-vida-plena.png",
           "descricao": "Assistência Funeral Completa + Cremação Humana e Pet",
           "apartir": "A partir de",
           "valor": "14",
@@ -813,7 +813,7 @@
         },
         {
           "id": 3,
-          "logo": "./img/logo-horizontal.png",
+          "logo": "/img/logo-horizontal.png",
           "destaque": "Melhor Opção",
           "apartir": "A partir de",
           "valor": "28",
@@ -870,7 +870,7 @@
       "anual": [
         {
           "id": 1,
-          "logo": "./img/logo-vida-on.png",
+          "logo": "/img/logo-vida-on.png",
           "descricao": "Telemedicina e Televeterinária",
           "apartir": "A partir de",
           "valor": "6",
@@ -918,7 +918,7 @@
         },
         {
           "id": 2,
-          "logo": "./img/logo-vida-lab.png",
+          "logo": "/img/logo-vida-lab.png",
           "descricao": "Clínicas e Laboratórios Presenciais",
           "apartir": "A partir de",
           "valor": "6",
@@ -967,7 +967,7 @@
         },
         {
           "id": 3,
-          "logo": "./img/logo-vida-plena.png",
+          "logo": "/img/logo-vida-plena.png",
           "descricao": "Assistência Funeral Completa + Cremação Humana e Pet",
           "apartir": "A partir de",
           "valor": "12",
@@ -1016,7 +1016,7 @@
         },
         {
           "id": 3,
-          "logo": "./img/logo-horizontal.png",
+          "logo": "/img/logo-horizontal.png",
           "destaque": "Melhor Opção",
           "apartir": "A partir de",
           "valor": "25",
@@ -1073,7 +1073,7 @@
       "trienal": [
         {
           "id": 1,
-          "logo": "./img/logo-vida-on.png",
+          "logo": "/img/logo-vida-on.png",
           "descricao": "Telemedicina e Televeterinária",
           "apartir": "A partir de",
           "valor": "5",
@@ -1121,7 +1121,7 @@
         },
         {
           "id": 2,
-          "logo": "./img/logo-vida-lab.png",
+          "logo": "/img/logo-vida-lab.png",
           "descricao": "Clínicas e Laboratórios Presenciais",
           "apartir": "A partir de",
           "valor": "5",
@@ -1170,7 +1170,7 @@
         },
         {
           "id": 3,
-          "logo": "./img/logo-vida-plena.png",
+          "logo": "/img/logo-vida-plena.png",
           "descricao": "Assistência Funeral Completa + Cremação Humana e Pet",
           "apartir": "A partir de",
           "valor": "11",
@@ -1219,7 +1219,7 @@
         },
         {
           "id": 3,
-          "logo": "./img/logo-horizontal.png",
+          "logo": "/img/logo-horizontal.png",
           "destaque": "Melhor Opção",
           "apartir": "A partir de",
           "valor": "22",
@@ -1282,8 +1282,8 @@
         "id": 1,
         "subtitulo": "Baixe o APP Vida Plano no seu celular.",
         "texto": "Acesse a loja de aplicativos do seu Smartphone, busque pelo APP Vida plano e faça o download gratuíto.",
-        "img": "./img/playstore.png",
-        "img2": "./img/apple-loja.png"
+        "img": "/img/playstore.png",
+        "img2": "/img/apple-loja.png"
       },
       {
         "id": 2,
@@ -1356,14 +1356,14 @@
     }
   ],
   "imgtable": {
-    "img": "./img/quadro.png"
+    "img": "/img/quadro.png"
   },
   "baixaApp": {
-    "logo": "./img/logo-horizontal.png",
+    "logo": "/img/logo-horizontal.png",
     "titulo": "BAIXE O APP",
     "texto": "e comece a cuidar da sua saúde agora e em qualquer lugar.",
     "subtitulo": "Confia, faz o vida plano!",
-    "img": "./img/retrato-de-familia-e-cachorro-no-parque-com-menina-e-os-pais-relaxa.jpg"
+    "img": "/img/retrato-de-familia-e-cachorro-no-parque-com-menina-e-os-pais-relaxa.jpg"
   },
   "pacotes_personalizaveis": {
     "titulo": "Pacotes personalizáveis",
@@ -1372,7 +1372,7 @@
   "planos_individuais": [
     {
       "id": 1,
-      "img": "./img/logo-telemedicina.png",
+      "img": "/img/logo-telemedicina.png",
       "nome": "VIDA ON",
       "tipo": "Telemedicina",
       "apartir": "A partir de",
@@ -1382,7 +1382,7 @@
     },
     {
       "id": 2,
-      "img": "./img/logo-clinicas-e-laboratorios.png",
+      "img": "/img/logo-clinicas-e-laboratorios.png",
       "nome": "VIDA LAB",
       "tipo": "Clínicas e Laboratórios",
       "apartir": "A partir de",
@@ -1392,7 +1392,7 @@
     },
     {
       "id": 3,
-      "img": "./img/logo-funerais.png",
+      "img": "/img/logo-funerais.png",
       "nome": "VIDA",
       "tipo": "A0ssistência Funeral Completa + Cremação",
       "apartir": "A partir de",
@@ -1402,7 +1402,7 @@
     },
     {
       "id": 4,
-      "img": "./img/logo-horizontal.png",
+      "img": "/img/logo-horizontal.png",
       "nome": "VIDA",
       "tipo": "A0ssistência Funeral Completa + Cremação",
       "apartir": "A partir de",
@@ -1412,7 +1412,7 @@
     },
     {
       "id": 5,
-      "img": "./img/logo-horizontal.png",
+      "img": "/img/logo-horizontal.png",
       "nome": "VIDA",
       "tipo": "A0ssistência Funeral Completa + Cremação",
       "apartir": "A partir de",
@@ -1424,7 +1424,7 @@
   "planos_combinados": [
     {
       "id": 1,
-      "img": "./img/logo-telemedicina.png",
+      "img": "/img/logo-telemedicina.png",
       "nome": "VIDA plano",
       "componentes": ["VIDA ON", "VIDA LAB", "VIDA"],
       "apartir": "A partir de",
@@ -1435,7 +1435,7 @@
     },
     {
       "id": 2,
-      "img": "./img/logo-clinicas-e-laboratorios.png",
+      "img": "/img/logo-clinicas-e-laboratorios.png",
       "nome": "2 PACOTES",
       "componentes": ["VIDA ON", "VIDA LAB"],
       "apartir": "A partir de",
@@ -1457,7 +1457,7 @@
   "mensagem_final": "Agora é só escolher os pacotes que você precisa!",
   "caixa_esquerda": {
     "titulo": "Economia imperdível!",
-    "img": "./img/salvando.png"
+    "img": "/img/salvando.png"
   },
   "caixa_direita": {
     "descricao": "Com o valor de <strong>R$300 economizados</strong> em uma consulta com clínico particular <strong>você paga:</strong>",
@@ -1466,12 +1466,12 @@
         "valor": "36",
         "rotulo": "MENSALIDADES",
         "plano": "Telemedicina VIDA ON",
-        "img": "./img/logo-telemedicina.png"
+        "img": "/img/logo-telemedicina.png"
       },
       {
         "valor": "9",
         "rotulo": "MENSALIDADES",
-        "img": "./img/logo-horizontal.png",
+        "img": "/img/logo-horizontal.png",
         "plano": "VIDA plano"
       }
     ]

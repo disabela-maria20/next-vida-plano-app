@@ -76,7 +76,7 @@ const Header = () => {
               <span>{text.menu.contrateAgora}</span>
               <div className="flex gap-3.5 transition-colors">
                 <a
-                  href="/planos"
+                  href="/#telemedicina"
                   className="bg-cold-green transition hover:bg-cold-green-dark py-1.5 px-5 rounded-4xl duration-300 ease-in-out hover:scale-110"
                 >
                   {text.menu.cta1}

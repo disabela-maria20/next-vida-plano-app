@@ -6,25 +6,25 @@ import { Footer, Header } from '@/components';
 import text from '@/texts/index.json';
 import useIsMobile from '@/hooks/useIsMobile/isMobile';
 import { motion } from 'framer-motion';
-import { useKeenSlider } from 'keen-slider/react';
+//import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 import { FiChevronDown } from 'react-icons/fi';
 
 const Home = () => {
   const { isMobile } = useIsMobile();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  // eslint-disable-next-line no-undef
-  const [comentarios] = useKeenSlider<HTMLDivElement>({
-    breakpoints: {
-      '(min-width: 400px)': {
-        slides: { perView: 1, spacing: 5 },
-      },
-      '(min-width: 1000px)': {
-        slides: { perView: 3, spacing: 10 },
-      },
-    },
-    slides: { perView: 1 },
-  });
+
+  // const [comentarios] = useKeenSlider<HTMLDivElement>({
+  //   breakpoints: {
+  //     '(min-width: 400px)': {
+  //       slides: { perView: 1, spacing: 5 },
+  //     },
+  //     '(min-width: 1000px)': {
+  //       slides: { perView: 3, spacing: 10 },
+  //     },
+  //   },
+  //   slides: { perView: 1 },
+  // });
 
   return (
     <>
@@ -454,7 +454,7 @@ const Home = () => {
         </div>
       </section>
       {/* Descontos */}
-      <section className="mb-9 md:mb-16">
+      {/* <section className="mb-9 md:mb-16">
         <div className="container m-auto px-4">
           <h2 className="text-blue-green font-bold text-3xl text-center mb-7">
             {text.contrate.subtitulo}
@@ -481,7 +481,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Planejamento */}
       <section className="mb-9 md:mb-16">
         <div className="container m-auto px-4">
@@ -580,7 +580,7 @@ const Home = () => {
         </div>
       </section> */}
       {/* Comentario - comentarios */}
-      <section className="bg-blue-green pb-20 md:pb-16">
+      {/* <section className="bg-blue-green pb-20 md:pb-16">
         <div className="container m-auto px-4">
           <h2 className="font-bold text-3xl text-center pb-8 pt-14 lg:mb-0 text-[#9ef6ff] ">
             {text.comentarios.titulo}
@@ -607,7 +607,7 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Vida plano */}
       <section>
         <div className="grid gap-10 lg:gap-0 md:grid-cols-12 ">
