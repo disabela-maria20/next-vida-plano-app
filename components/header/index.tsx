@@ -82,7 +82,7 @@ const Header = () => {
                   {text.menu.cta1}
                 </a>
                 <a
-                  href="/planos"
+                  href="/planos/"
                   className="bg-pink transition hover:bg-pink-dark py-1.5 px-5 rounded-4xl duration-300 ease-in-out hover:scale-110"
                 >
                   {text.menu.cta2}
