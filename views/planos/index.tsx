@@ -50,7 +50,7 @@ const Planos = () => {
 
   const activePlans = text.Contrateseuparceiro.planos2[plans[0]] || [];
   if (!appLink) {
-    return <div>Carregando...</div>;
+    return;
   }
 
   return (
@@ -174,9 +174,7 @@ const Planos = () => {
                         >
                           <img
                             src={
-                              data.incluso
-                                ? './img/true.png'
-                                : './img/false.png'
+                              data.incluso ? '/img/true.png' : '/img/false.png'
                             }
                             alt=""
                             className="mt-1"
