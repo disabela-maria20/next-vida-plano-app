@@ -32,7 +32,7 @@ const Home = () => {
       {/* Hero */}
       <section
         id=""
-        style={{ backgroundImage: `url('./img/bg-hero.png')` }}
+        style={{ backgroundImage: `url('/img/bg-hero.png')` }}
         className="h-[95vh] relative bg-cover"
       >
         <div className="container m-auto px-4">
@@ -201,7 +201,7 @@ const Home = () => {
                   >
                     <p className=" font-bold text-lg lg:text  ">{data.nome}</p>
                     <img
-                      src="./img/db9e1a5e-19b5-46a9-9daf-7217c488e8d2.png"
+                      src="/img/db9e1a5e-19b5-46a9-9daf-7217c488e8d2.png"
                       className="absolute w-8 h-8 right-[-15px] top-[-15px]"
                       alt=""
                     />
@@ -284,7 +284,7 @@ const Home = () => {
       {/* Mapa */}
       <section
         style={{
-          backgroundImage: !isMobile ? `url('./img/bg-invertido.png')` : '',
+          backgroundImage: !isMobile ? `url('/img/bg-invertido.png')` : '',
         }}
         className="bg-left-top bg-no-repeat"
       >
@@ -656,7 +656,7 @@ const Home = () => {
         id="quemsomos"
         className="md:pt-20 pt-11  bg-no-repeat bg-cover"
         style={{
-          backgroundImage: !isMobile ? `url('./img/bg-perguntas.png')` : 'none',
+          backgroundImage: !isMobile ? `url('/img/bg-perguntas.png')` : 'none',
         }}
       >
         <div className="container m-auto px-4">
