@@ -427,6 +427,11 @@
         "link": "/#quemsomos"
       },
       {
+        "id": 2,
+        "nome": "Política de Privacidade",
+        "link": "/politica-de-privacidade/"
+      },
+      {
         "id": 3,
         "nome": "Contato",
         "link": "https://wa.me/551636055582"

@@ -31,7 +31,7 @@ const Footer = () => {
               </motion.li>
             ))}
           </ul>
-          <div className="col-span-2 ">
+          <div className="col-span-3 ">
             <ul className="flex flex-col gap-3 mb-2.5">
               {text.footer.list2.map((data) => (
                 <motion.li
@@ -107,7 +107,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="col-span-7">
+          <div className="col-span-6">
             <div className="flex flex-col items-center lg:items-end text-center lg:text-right space-y-4">
               <img
                 src={text.footer.imgFooter}
