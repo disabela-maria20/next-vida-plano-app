@@ -94,6 +94,9 @@ const Home = () => {
               {text.especialidades.texto2}
               <strong className="block text-6xl lg:text-7x font-extrabold ">
                 {text.especialidades.valor}
+                <span className=" lowercase text-2xl lg:text-3x">
+                  /{text.especialidades.tempo}
+                </span>
               </strong>
             </p>
             <div className="flex justify-center flex-col items-center text-cold-green font-bold text-xl lg:text-2xl mt-3 mb-7">
