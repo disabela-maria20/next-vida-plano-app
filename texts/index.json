@@ -334,7 +334,7 @@
       {
         "id": 3,
         "title": "Quantas pessoas posso incluir no Vida Plano?",
-        "content": "No plano familiar, titular, cônjuge, filhos até 24 anos, sem limite de dependentes extras (checar tabela de preços). Já no Plano Individual, apenas o titular."
+        "content": "Você poderá contratar ilimitadamente cada pacote de Serviço do Vida Plano, a contratação é por CPF;"
       },
       {
         "id": 4,
@@ -364,7 +364,7 @@
       {
         "id": 9,
         "title": "Existe suporte 24 horas?",
-        "content": "Sim, o Vida Plano oferece suporte telefônico 24 horas por dia para Telemedicina e Assistência Funerária."
+        "content": "O suporte para Assistência Funeral é 24 hs.<br/>O suporte para o esclarecimento de dúvidas através do Whats app é de segunda à sexta-feira das 08hs às 17h30hs."
       },
       {
         "id": 10,
@@ -380,6 +380,11 @@
         "id": 12,
         "title": "Posso alterar os dependentes do meu plano?",
         "content": "“As contratações são realizadas individualmente, por CPF, para cada contratação haverá uma titularidade."
+      },
+      {
+        "id": 13,
+        "title": "Como funcionam as Consultas com Psicologia, Nutricionista e Treinador Físico?",
+        "content": "As consultas das áreas de Psicologia, Nutricionista e Treinador Físico deverão ser agendadas no próprio aplicativo, pois se tratam de consultas que envolvem tempo de atendimento."
       }
     ]
   },

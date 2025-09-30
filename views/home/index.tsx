@@ -693,7 +693,10 @@ const Home = () => {
                 >
                   <div className="overflow-hidden">
                     <div className="px-6 pb-4 pt-0 text-gray-600">
-                      <p className="leading-relaxed">{item.content}</p>
+                      <p
+                        className="leading-relaxed"
+                        dangerouslySetInnerHTML={{ __html: item.content }}
+                      />
                     </div>
                   </div>
                 </div>

@@ -56,7 +56,7 @@ export const metadata: Metadata = {
       'Consultas médicas online 24h por apenas R$ 7,90/mês. Telemedicina, televeterinária, descontos em farmácias e assistência funeral. Baixe o app agora!',
     images: [
       {
-        url: '/img/logo-horizontal.png',
+        url: 'https://vidaplano.com.br/img/logo-horizontal.png',
         width: 1200,
         height: 630,
         alt: 'Vida Plano - App de Telemedicina e Benefícios',
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     title: 'Vida Plano - Telemedicina Online a partir de R$ 7,90/mês',
     description:
       'Consultas médicas online em até 10 min, 24h por dia. Telemedicina, televeterinária e muito mais. Baixe o app Vida Plano!',
-    images: ['/img/logo-horizontal.png'],
+    images: ['https://vidaplano.com.br/img/logo-horizontal.png'],
     creator: '@vidaplano',
     site: '@vidaplano',
   },
