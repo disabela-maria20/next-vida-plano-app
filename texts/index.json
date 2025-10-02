@@ -334,7 +334,7 @@
       {
         "id": 3,
         "title": "Quantas pessoas posso incluir no Vida Plano?",
-        "content": "Você poderá contratar ilimitadamente cada pacote de Serviço do Vida Plano, a contratação é por CPF;"
+        "content": "Você poderá contratar ilimitadamente cada pacote de Serviço do Vida Plano, a contratação é por CPF."
       },
       {
         "id": 4,
@@ -383,7 +383,7 @@
       },
       {
         "id": 13,
-        "title": "Como funcionam as Consultas com Psicologia, Nutricionista e Treinador Físico?",
+        "title": "Como funcionam as consultas com Psicologia, Nutricionista e Treinador Físico?",
         "content": "As consultas das áreas de Psicologia, Nutricionista e Treinador Físico deverão ser agendadas no próprio aplicativo, pois se tratam de consultas que envolvem tempo de atendimento."
       }
     ]
