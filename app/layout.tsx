@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
-import '../styles/globals.css';
 import { ReactNode } from 'react';
+import Script from 'next/script';
+import '../styles/globals.css';
 
 export const metadata: Metadata = {
   title: 'Vida Plano',
@@ -53,7 +54,7 @@ export const metadata: Metadata = {
     siteName: 'Vida Plano',
     title: 'Vida Plano - Telemedicina e Benefícios de Saúde Acessíveis',
     description:
-      'Consultas médicas online 24h por apenas R$ 7,90/mês. Telemedicina, televeterinária, descontos em farmácias e assistência funeral. Baixe o app agora!',
+      'Consultas médicas online 24h por apenas R$ 7,90/mês. Telemedicina, televeterinária, descontos em farmácias e assistência funeral.',
     images: [
       {
         url: 'https://vidaplano.com.br/img/logo-horizontal.png',
@@ -67,15 +68,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Vida Plano - Telemedicina Online a partir de R$ 7,90/mês',
     description:
-      'Consultas médicas online em até 10 min, 24h por dia. Telemedicina, televeterinária e muito mais. Baixe o app Vida Plano!',
+      'Consultas médicas online em até 10 min, 24h por dia. Telemedicina, televeterinária e muito mais.',
     images: ['https://vidaplano.com.br/img/logo-horizontal.png'],
     creator: '@vidaplano',
     site: '@vidaplano',
-  },
-  verification: {
-    google: 'your-google-site-verification-code',
-    yandex: 'your-yandex-verification-code',
-    yahoo: 'your-yahoo-verification-code',
   },
   alternates: {
     canonical: 'https://vidaplano.com.br',
@@ -84,28 +80,39 @@ export const metadata: Metadata = {
     },
   },
   category: 'Health & Medical',
-  classification: 'Telemedicina, Saúde Digital, Benefícios de Saúde',
-  other: {
-    'mobile-web-app-capable': 'yes',
-    'apple-mobile-web-app-capable': 'yes',
-    'apple-mobile-web-app-status-bar-style': 'default',
-    'format-detection': 'telephone=no',
-    'theme-color': '#ffffff',
-    'application-name': 'Vida Plano',
-    'apple-mobile-web-app-title': 'Vida Plano',
-    'msapplication-TileColor': '#ffffff',
-    'msapplication-config': '/browserconfig.xml',
-  },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-BR">
-      <body className="font-switzer overflow-x-hidden">{children}</body>
+      <head>
+        {/* Google Tag Manager */}
+        <Script
+          id="gtm-script"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-PMVMVDB');`,
+          }}
+        />
+      </head>
+      <body className="font-switzer overflow-x-hidden">
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-PMVMVDB"
+            height="0"
+            width="0"
+            className="hidden-iframe"
+            title="Google Tag Manager"
+          />
+        </noscript>
+
+        {children}
+      </body>
     </html>
   );
 }
