@@ -12,6 +12,7 @@
     "dev:all": "concurrently \"npm run dev\" \"npm run json-server\""
   },
   "dependencies": {
+    "@next/third-parties": "^16.0.10",
     "flowbite-react": "^0.12.6",
     "framer-motion": "^12.23.12",
     "keen-slider": "^6.8.6",
