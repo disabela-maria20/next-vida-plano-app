@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 'use client';
 
 import React, { useState } from 'react';
@@ -9,6 +8,7 @@ import { motion } from 'framer-motion';
 //import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 import { FiChevronDown } from 'react-icons/fi';
+import Link from 'next/link';
 
 const Home = () => {
   const { isMobile } = useIsMobile();
@@ -442,12 +442,12 @@ const Home = () => {
                       )}
                     </div>
                     <div className="flex justify-center">
-                      <a
-                        href="#"
+                      <Link
+                        href="/planos"
                         className="bg-blue-green text-white py-1.5 px-5 block transition rounded-3xl hover:bg-blue-green-dark"
                       >
                         {data.saibaMais}
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
