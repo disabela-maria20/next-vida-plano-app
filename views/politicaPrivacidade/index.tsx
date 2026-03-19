@@ -58,7 +58,7 @@ export default function PoliticaPrivacidade() {
               Como entrar em contato com a Vida Plano?
             </h3>
             <p>
-              Para falar com a REDE IDEAL, solicitamos que você entre em contato
+              Para falar com a VIDA PLANO, solicitamos que você entre em contato
               conosco usando os seguintes canais:
             </p>
             <ul className="list-disc list-inside">
@@ -110,7 +110,7 @@ export default function PoliticaPrivacidade() {
               enquanto o serviço ou produto contratado estiver em uso e, mesmo
               após o encerramento do contrato ou cancelamento do serviço, pelo
               período necessário para cumprimento de obrigações legais ou
-              regulatórias e para o exercício regular de direitos da REDE IDEAL.
+              regulatórias e para o exercício regular de direitos da VIDA PLANO.
               Além disso, os dados pessoais podem ser armazenados pelo período
               necessário para o cumprimento das finalidades que determinaram sua
               coleta.
