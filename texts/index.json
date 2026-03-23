@@ -45,7 +45,7 @@
     "imgBg2": "/img/mulher-sorridente-com-tiro-medio-e-cachorro.png",
     "texto1": "Consultas online com especialistas onde você estiver, rápido e prático!",
     "texto2": "A partir de",
-    "valor": "R$7,90",
+    "valor": "R$19,90",
     "tempo": "mês",
     "titulo1": "Telemedicina + Televeterinária",
     "itens": [
@@ -201,7 +201,7 @@
         "tipo": "Individual",
         "faixaetaria": "De 19 a 59 anos",
         "apartir": "A partir de",
-        "valor": "7",
+        "valor": "19",
         "centavos": "90",
         "mes": "/mês",
         "saibaMais": "Saiba mais",
@@ -260,7 +260,7 @@
         "titulo": "Clínicas e Laboratórios Presenciais",
         "texto1": "Atendimentos com descontos em consultas presenciais em mais de 50 especialidades, Odontologistas, descontos em rede laborial com mais de 1500 tipos de exames. Além de descontos apartir de 22% em farmácias e abrangência nacional.",
         "texto2": "Por apenas",
-        "valor": "7",
+        "valor": "19",
         "centavos": "90",
         "mes": "/mês"
       },
@@ -271,7 +271,7 @@
         "titulo": "Assistência Funeral Completa </br> + Cremação Humana e para Pets",
         "texto1": "Cobertura de até R$10mil e abrangência nacional para funerais, cremação e cerimônia de despedida. Além de translado de até 500km em todo território brasileiro e sorteios semanais de até R$25mil.",
         "texto2": "Por apenas",
-        "valor": "15",
+        "valor": "21",
         "centavos": "90",
         "mes": "/mês"
       }
@@ -478,7 +478,7 @@
           "logo": "/img/logo-vida-on.png",
           "descricao": "Telemedicina e Televeterinária",
           "apartir": "A partir de",
-          "valor": "7",
+          "valor": "19",
           "centavos": "90",
           "mes": "/mês",
           "beneficios": [
@@ -526,7 +526,7 @@
           "logo": "/img/logo-vida-lab.png",
           "descricao": "Clínicas e Laboratórios Presenciais",
           "apartir": "A partir de",
-          "valor": "7",
+          "valor": "19",
           "centavos": "90",
           "mes": "/mês",
           "beneficios": [
@@ -575,7 +575,7 @@
           "logo": "/img/logo-vida-plena.png",
           "descricao": "Assistência Funeral Completa + Cremação Humana e Pet",
           "apartir": "A partir de",
-          "valor": "15",
+          "valor": "21",
           "centavos": "90",
           "mes": "/mês",
           "beneficios": [
@@ -1387,7 +1387,7 @@
       "nome": "VIDA ON",
       "tipo": "Telemedicina",
       "apartir": "A partir de",
-      "valor": "7",
+      "valor": "19",
       "centavos": "90",
       "mes": "/mês"
     },
@@ -1397,7 +1397,7 @@
       "nome": "VIDA LAB",
       "tipo": "Clínicas e Laboratórios",
       "apartir": "A partir de",
-      "valor": "7",
+      "valor": "19",
       "centavos": "90",
       "mes": "/mês"
     },
@@ -1407,8 +1407,8 @@
       "nome": "VIDA",
       "tipo": "A0ssistência Funeral Completa + Cremação",
       "apartir": "A partir de",
-      "valor": "15",
-      "centavos": "90",
+      "valor": "35",
+      "centavos": "00",
       "mes": "/mês"
     },
     {
@@ -1439,7 +1439,7 @@
       "nome": "VIDA plano",
       "componentes": ["VIDA ON", "VIDA LAB", "VIDA"],
       "apartir": "A partir de",
-      "valor": "7",
+      "valor": "19",
       "centavos": "90",
       "mes": "/mês",
       "destaque": true
@@ -1450,7 +1450,7 @@
       "nome": "2 PACOTES",
       "componentes": ["VIDA ON", "VIDA LAB"],
       "apartir": "A partir de",
-      "valor": "7",
+      "valor": "19",
       "centavos": "90",
       "mes": "/mês",
       "descricao": "por apenas"
@@ -1460,7 +1460,7 @@
       "nome": "2 pacotes",
       "apenas": "por apenas",
       "apartir": "A partir de",
-      "valor": "15",
+      "valor": "35",
       "centavos": "00",
       "mes": "/mês"
     }
