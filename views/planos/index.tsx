@@ -368,7 +368,7 @@ const Planos = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-5 mt-16">
+          {/* <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-5 mt-16">
             <div className="bg-white  rounded-4xl">
               <img
                 src={text.planos_combinados[0].img}
@@ -466,7 +466,7 @@ const Planos = () => {
                 {text.mensagem_final}
               </h2>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 

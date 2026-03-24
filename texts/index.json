@@ -1407,8 +1407,8 @@
       "nome": "VIDA",
       "tipo": "A0ssistência Funeral Completa + Cremação",
       "apartir": "A partir de",
-      "valor": "35",
-      "centavos": "00",
+      "valor": "21",
+      "centavos": "90",
       "mes": "/mês"
     },
     {
@@ -1417,8 +1417,8 @@
       "nome": "VIDA",
       "tipo": "A0ssistência Funeral Completa + Cremação",
       "apartir": "A partir de",
-      "valor": "31",
-      "centavos": "70",
+      "valor": "29",
+      "centavos": "90",
       "mes": "/mês"
     },
     {
@@ -1427,8 +1427,8 @@
       "nome": "VIDA",
       "tipo": "A0ssistência Funeral Completa + Cremação",
       "apartir": "A partir de",
-      "valor": "29",
-      "centavos": "90",
+      "valor": "35",
+      "centavos": "00",
       "mes": "/mês"
     }
   ],
