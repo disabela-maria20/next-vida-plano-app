@@ -9,9 +9,11 @@ import { motion } from 'framer-motion';
 import 'keen-slider/keen-slider.min.css';
 import { FiChevronDown } from 'react-icons/fi';
 import Link from 'next/link';
+import { useAppLink } from '@/hooks/useAppLink';
 
 const Home = () => {
   const { isMobile } = useIsMobile();
+  const appLink = useAppLink();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   // const [comentarios] = useKeenSlider<HTMLDivElement>({
@@ -36,39 +38,41 @@ const Home = () => {
         className="h-[95vh] relative bg-cover"
       >
         <div className="container m-auto px-4">
-          <div className="flex flex-col justify-between content-between h-dvh pt-7">
-            <div className="flex justify-end">
-              <img src={text.hero.imgBg} className="max-w-80" alt="" />
-            </div>
-
-            <div className="flex flex-col md:flex-row md:justify-between md:items-end mb-20 ">
-              <div>
-                <h1 className="relative">
-                  <span className="text-white text-[250px] 2xl:text-[250px] italic absolute -top-[90%] -left-1">
-                    “
-                  </span>
-                  <br />
-                  <span className="text-white text-5xl 2xl:text-6xl max-w-[300px] italic font-extrabold 2xl:max-w-[352px] block">
-                    Tô de boa, tô com APP Vida Plano.”
-                  </span>
-                </h1>
+          <a href={`${appLink}`} target="_blank" rel="noopener noreferrer">
+            <div className="flex flex-col justify-between content-between h-dvh pt-7">
+              <div className="flex justify-end">
+                <img src={text.hero.imgBg} className="max-w-80" alt="" />
               </div>
-              <div className="flex flex-col items-end gap-9">
-                <h2
-                  className="inline-block relative text-blue-green max-w-3xs text-1xl md:text-2xl 2xl:text-3xl px-7 py-2 mt-12 uppercase font-black
+
+              <div className="flex flex-col md:flex-row md:justify-between md:items-end mb-20 ">
+                <div>
+                  <h1 className="relative">
+                    <span className="text-white text-[250px] 2xl:text-[250px] italic absolute -top-[90%] -left-1">
+                      “
+                    </span>
+                    <br />
+                    <span className="text-white text-5xl 2xl:text-6xl max-w-[300px] italic font-extrabold 2xl:max-w-[352px] block">
+                      Tô de boa, tô com APP Vida Plano.”
+                    </span>
+                  </h1>
+                </div>
+                <div className="flex flex-col items-end gap-9">
+                  <h2
+                    className="inline-block relative text-blue-green max-w-3xs text-1xl md:text-2xl 2xl:text-3xl px-7 py-2 mt-12 uppercase font-black
                     after:absolute after:w-5 after:bg-blue-green after:h-5 after:-top-11 after:rounded-full after:left-8
                     before:absolute before:w-10 before:bg-blue-green before:h-10 before:-top-7 before:rounded-full before:-left-5
                   "
-                >
-                  {text.hero.titulo2}
-                </h2>
-                <h2
-                  className="text-blue-green text-2xl max-w-[450px] 2xl:text-3xl 2xl:max-w-[480px]"
-                  dangerouslySetInnerHTML={{ __html: text.hero.titulo3 }}
-                />
+                  >
+                    {text.hero.titulo2}
+                  </h2>
+                  <h2
+                    className="text-blue-green text-2xl max-w-[450px] 2xl:text-3xl 2xl:max-w-[480px]"
+                    dangerouslySetInnerHTML={{ __html: text.hero.titulo3 }}
+                  />
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </section>
       {/* Especialidades */}

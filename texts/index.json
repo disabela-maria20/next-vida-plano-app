@@ -334,7 +334,7 @@
       {
         "id": 3,
         "title": "Quantas pessoas posso incluir no Vida Plano?",
-        "content": "Você poderá contratar ilimitadamente cada pacote de Serviço do Vida Plano, a contratação é por CPF."
+        "content": "Todos os nossos planos são individuais e para maiores de 18 anos."
       },
       {
         "id": 4,
@@ -369,20 +369,15 @@
       {
         "id": 10,
         "title": "Quais são as formas de pagamento disponíveis?",
-        "content": "O pagamento pode ser realizado via cartão de crédito e pix, com planos de pagamentos mensais."
+        "content": "O pagamento pode ser realizado via cartão de crédito, com planos de pagamentos mensais."
       },
       {
         "id": 11,
         "title": "Como posso entrar em contato para mais informações?",
-        "content": "Nossa central de atendimento está disponível 24h pelo WhatsApp (16) 3605-5582."
+        "content": "Nossa central de atendimento está disponível de segunda a sexta das 08:30 às 17h pelo WhatsApp (16) 3605-5582."
       },
       {
         "id": 12,
-        "title": "Posso alterar os dependentes do meu plano?",
-        "content": "“As contratações são realizadas individualmente, por CPF, para cada contratação haverá uma titularidade."
-      },
-      {
-        "id": 13,
         "title": "Como funcionam as consultas com Psicologia, Nutricionista e Treinador Físico?",
         "content": "As consultas das áreas de Psicologia, Nutricionista e Treinador Físico deverão ser agendadas no próprio aplicativo, pois se tratam de consultas que envolvem tempo de atendimento."
       }
