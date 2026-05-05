@@ -83,7 +83,7 @@
       }
     ],
     "cta1": "Telemedicina",
-    "cta2": "Televeterinária"
+    "cta2": "Médico Veterinário On Line"
   },
   "notificacoes": {
     "texto1": "Pronto atendimento online <strong>24h</strong>",
@@ -1422,8 +1422,8 @@
       "nome": "VIDA",
       "tipo": "A0ssistência Funeral Completa + Cremação",
       "apartir": "A partir de",
-      "valor": "35",
-      "centavos": "00",
+      "valor": "29",
+      "centavos": "90",
       "mes": "/mês"
     }
   ],
