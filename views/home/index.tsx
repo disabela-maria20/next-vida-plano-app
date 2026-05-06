@@ -10,12 +10,72 @@ import 'keen-slider/keen-slider.min.css';
 import { FiChevronDown } from 'react-icons/fi';
 import Link from 'next/link';
 import { useAppLink } from '@/hooks/useAppLink';
+import { useKeenSlider } from 'keen-slider/react';
 
 const Home = () => {
   const { isMobile } = useIsMobile();
   const appLink = useAppLink();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
+  const [currentSlide, setCurrentSlide] = React.useState(0);
+  const [loaded, setLoaded] = useState(false);
+
+  const [planos, instanceRef] = useKeenSlider(
+    {
+      slides: { perView: 1 },
+      loop: true,
+
+      slideChanged(slider) {
+        setCurrentSlide(slider.track.details.rel);
+      },
+
+      created() {
+        setLoaded(true);
+      },
+    },
+    [
+      (slider) => {
+        // eslint-disable-next-line no-undef
+        let timeout: ReturnType<typeof setTimeout>;
+        let mouseOver = false;
+
+        function clearNextTimeout() {
+          // eslint-disable-next-line no-undef
+          clearTimeout(timeout);
+        }
+
+        function nextTimeout() {
+          // eslint-disable-next-line no-undef
+          clearTimeout(timeout);
+
+          if (mouseOver) return;
+
+          // eslint-disable-next-line no-undef
+          timeout = setTimeout(() => {
+            slider.next();
+          }, 3500);
+        }
+
+        slider.on('created', () => {
+          slider.container.addEventListener('mouseover', () => {
+            mouseOver = true;
+            clearNextTimeout();
+          });
+
+          slider.container.addEventListener('mouseout', () => {
+            mouseOver = false;
+            nextTimeout();
+          });
+
+          nextTimeout();
+        });
+
+        slider.on('dragStarted', clearNextTimeout);
+        slider.on('animationEnded', nextTimeout);
+        slider.on('updated', nextTimeout);
+      },
+    ]
+  );
   // const [comentarios] = useKeenSlider<HTMLDivElement>({
   //   breakpoints: {
   //     '(min-width: 400px)': {
@@ -77,66 +137,95 @@ const Home = () => {
       </section>
       {/* Especialidades */}
       <section id="telemedicina">
-        <div className="grid gap-10 lg:gap-0  md:grid-cols-12 2xl:items-center">
-          <div className="hidden 2xl:block 2xl:col-span-3">
-            <img
-              src={text.especialidades.imgBg}
-              alt=""
-              className="rounded-br-4xl object-cover w-full 2xl:max-h-dvh"
-            />
-          </div>
-          <div className="col-span-10 md:col-span-6 2xl:col-span-3 lg:p-11 p-4">
-            <img
-              src={text.especialidades.imgLogo}
-              alt=""
-              className="m-auto mt-10"
-            />
-            <p className="text-blue-green text-xl md:text-2xl text-center mt-4 mx-8">
-              {text.especialidades.texto1}
-            </p>
-            <p className="text-blue-green text-xl md:text-3xl  text-center mt-4 mx-10 uppercase">
-              {text.especialidades.texto2}
-              <strong className="block text-6xl lg:text-7x font-extrabold ">
-                {text.especialidades.valor}
-                <span className=" lowercase text-2xl lg:text-3x">
-                  /{text.especialidades.tempo}
-                </span>
-              </strong>
-            </p>
-            <div className="flex justify-center flex-col items-center text-cold-green font-bold text-xl lg:text-2xl mt-3 mb-7">
-              <h3 className="relative top-3.5">Telemedicina</h3>
-              <h3 className="flex items-center gap-2">
-                <span className="text-5xl">+</span>
-                Televeterinária
-              </h3>
+        <div ref={planos} className="keen-slider">
+          <div className="keen-slider__slide">
+            <div className="grid gap-10 lg:gap-0  md:grid-cols-12 2xl:items-center">
+              <div className="hidden 2xl:block 2xl:col-span-3">
+                <img
+                  src={text.especialidades.imgBg}
+                  alt=""
+                  className="rounded-br-4xl object-cover w-full 2xl:max-h-dvh"
+                />
+              </div>
+              <div className="col-span-10 md:col-span-6 2xl:col-span-3 lg:p-11 p-4">
+                <img
+                  src={text.especialidades.imgLogo}
+                  alt=""
+                  className="m-auto mt-10"
+                />
+                <p className="text-blue-green text-xl md:text-2xl text-center mt-4 mx-8">
+                  {text.especialidades.texto1}
+                </p>
+                <p className="text-blue-green text-xl md:text-3xl  text-center mt-4 mx-10 uppercase">
+                  {text.especialidades.texto2}
+                  <strong className="block text-6xl lg:text-7x font-extrabold ">
+                    {text.especialidades.valor}
+                    <span className=" lowercase text-2xl lg:text-3x">
+                      /{text.especialidades.tempo}
+                    </span>
+                  </strong>
+                </p>
+                <div className="flex justify-center flex-col items-center text-cold-green font-bold text-xl lg:text-2xl mt-3 mb-7">
+                  <h3 className="relative top-3.5">Telemedicina</h3>
+                  <h3 className="flex items-center gap-2">
+                    <span className="text-5xl">+</span>
+                    Médico Veterinário On Line
+                  </h3>
+                </div>
+                <ul className="grid grid-cols-2 gap-3.5">
+                  {text.especialidades.itens.map((data) => (
+                    <li
+                      key={data.id}
+                      className="bg-cold-green text-white text-center rounded-3xl text-base lg:text-xl font-semibold py-1"
+                    >
+                      {data.nome}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="col-span-10 md:col-span-6 relative">
+                <img
+                  src={text.especialidades.imgBg2}
+                  alt=""
+                  className="rounded-bl-4xl md:h-full 2xl:h-dvh object-cover w-full"
+                />
+                <div className="flex w-fit rounded-full overflow-hidden shadow absolute bottom-5 left-5 bg-white">
+                  <button className="px-4 py-2 text-xl lg:text-2xl font-semibold text-cold-green-dark bg-cold-green rounded-r-full">
+                    {text.especialidades.cta1}
+                  </button>
+                  <button className="px-4 py-2 font-semibold text-xl lg:text-2xl text-cold-green bg-white">
+                    {text.especialidades.cta2}
+                  </button>
+                </div>
+              </div>
             </div>
-            <ul className="grid grid-cols-2 gap-3.5">
-              {text.especialidades.itens.map((data) => (
-                <li
-                  key={data.id}
-                  className="bg-cold-green text-white text-center rounded-3xl text-base lg:text-xl font-semibold py-1"
-                >
-                  {data.nome}
-                </li>
-              ))}
-            </ul>
           </div>
-          <div className="col-span-10 md:col-span-6 relative">
+          <div className="keen-slider__slide">
             <img
-              src={text.especialidades.imgBg2}
-              alt=""
-              className="rounded-bl-4xl md:h-full 2xl:h-dvh object-cover w-full"
+              src="/img/VP_psiquiatria_banner.jpeg"
+              alt="Banner psiquiatria"
             />
-            <div className="flex w-fit rounded-full overflow-hidden shadow absolute bottom-5 left-5 bg-white">
-              <button className="px-4 py-2 text-xl lg:text-2xl font-semibold text-cold-green-dark bg-cold-green rounded-r-full">
-                {text.especialidades.cta1}
-              </button>
-              <button className="px-4 py-2 font-semibold text-xl lg:text-2xl text-cold-green bg-white">
-                {text.especialidades.cta2}
-              </button>
-            </div>
           </div>
         </div>
+        {loaded && instanceRef.current && (
+          <div className="dots relative flex justify-center gap-2 mt-4 z-50">
+            {[
+              ...Array(instanceRef.current.track.details.slides.length).keys(),
+            ].map((idx) => {
+              return (
+                <button
+                  key={idx}
+                  onClick={() => {
+                    instanceRef.current?.moveToIdx(idx);
+                  }}
+                  className={`w-3 h-3 rounded-full cursor-pointer ${
+                    currentSlide === idx ? 'bg-blue-green' : 'bg-gray-300'
+                  }`}
+                />
+              );
+            })}
+          </div>
+        )}
       </section>
       {/* Notificaçoes */}
       <section className="py-10">
