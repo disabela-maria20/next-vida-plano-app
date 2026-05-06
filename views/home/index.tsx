@@ -139,7 +139,7 @@ const Home = () => {
       <section id="telemedicina">
         <div ref={planos} className="keen-slider">
           <div className="keen-slider__slide">
-            <div className="grid gap-10 lg:gap-0  md:grid-cols-12 2xl:items-center">
+            <div className="grid grid-cols-1 gap-10 lg:gap-0  md:grid-cols-12 2xl:items-center">
               <div className="hidden 2xl:block 2xl:col-span-3">
                 <img
                   src={text.especialidades.imgBg}
@@ -158,7 +158,7 @@ const Home = () => {
                 </p>
                 <p className="text-blue-green text-xl md:text-3xl  text-center mt-4 mx-10 uppercase">
                   {text.especialidades.texto2}
-                  <strong className="block text-6xl lg:text-7x font-extrabold ">
+                  <strong className="block text-5xl lg:text-7x font-extrabold ">
                     {text.especialidades.valor}
                     <span className=" lowercase text-2xl lg:text-3x">
                       /{text.especialidades.tempo}
