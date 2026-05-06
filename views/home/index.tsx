@@ -204,6 +204,7 @@ const Home = () => {
             <img
               src="/img/VP_psiquiatria_banner.jpeg"
               alt="Banner psiquiatria"
+              className="m-auto block"
             />
           </div>
         </div>
