@@ -138,40 +138,51 @@ const Home = () => {
       {/* Especialidades */}
       <section id="telemedicina">
         <div ref={planos} className="keen-slider">
+          {/* SLIDE 1 */}
           <div className="keen-slider__slide">
-            <div className="grid grid-cols-1 gap-10 lg:gap-0  md:grid-cols-12 2xl:items-center">
-              <div className="hidden 2xl:block 2xl:col-span-3">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-0 h-full">
+              {/* IMAGEM ESQUERDA */}
+              <div className="hidden 2xl:block 2xl:col-span-3 h-full">
                 <img
                   src={text.especialidades.imgBg}
                   alt=""
-                  className="rounded-br-4xl object-cover w-full 2xl:max-h-dvh"
+                  className="w-full h-full object-cover rounded-br-4xl"
                 />
               </div>
-              <div className="col-span-10 md:col-span-6 2xl:col-span-3 lg:p-11 p-4">
+
+              {/* CONTEÚDO */}
+              <div className="col-span-10 md:col-span-6 2xl:col-span-3 lg:p-11 p-4 flex flex-col justify-center h-full">
                 <img
                   src={text.especialidades.imgLogo}
                   alt=""
-                  className="m-auto mt-10"
+                  className="m-auto"
                 />
+
                 <p className="text-blue-green text-xl md:text-2xl text-center mt-4 mx-8">
                   {text.especialidades.texto1}
                 </p>
-                <p className="text-blue-green text-xl md:text-3xl  text-center mt-4 mx-10 uppercase">
+
+                <p className="text-blue-green text-xl md:text-3xl text-center mt-4 mx-10 uppercase">
                   {text.especialidades.texto2}
-                  <strong className="block text-5xl lg:text-7x font-extrabold ">
+
+                  <strong className="block text-5xl lg:text-7xl font-extrabold">
                     {text.especialidades.valor}
-                    <span className=" lowercase text-2xl lg:text-3x">
+
+                    <span className="lowercase text-2xl lg:text-3xl">
                       /{text.especialidades.tempo}
                     </span>
                   </strong>
                 </p>
+
                 <div className="flex justify-center flex-col items-center text-cold-green font-bold text-xl lg:text-2xl mt-3 mb-7">
                   <h3 className="relative top-3.5">Telemedicina</h3>
-                  <h3 className="flex items-center gap-2">
+
+                  <h3 className="flex items-center gap-2 text-center">
                     <span className="text-5xl">+</span>
                     Médico Veterinário On Line
                   </h3>
                 </div>
+
                 <ul className="grid grid-cols-2 gap-3.5">
                   {text.especialidades.itens.map((data) => (
                     <li
@@ -183,16 +194,20 @@ const Home = () => {
                   ))}
                 </ul>
               </div>
-              <div className="col-span-10 md:col-span-6 relative">
+
+              {/* IMAGEM DIREITA */}
+              <div className="col-span-10 md:col-span-6 hidden md:block relative h-full">
                 <img
                   src={text.especialidades.imgBg2}
                   alt=""
-                  className="rounded-bl-4xl md:h-full 2xl:h-dvh object-cover w-full"
+                  className="w-full h-full object-cover rounded-bl-4xl"
                 />
+
                 <div className="flex w-fit rounded-full overflow-hidden shadow absolute bottom-5 left-5 bg-white">
                   <button className="px-4 py-2 text-xl lg:text-2xl font-semibold text-cold-green-dark bg-cold-green rounded-r-full">
                     {text.especialidades.cta1}
                   </button>
+
                   <button className="px-4 py-2 font-semibold text-xl lg:text-2xl text-cold-green bg-white">
                     {text.especialidades.cta2}
                   </button>
@@ -200,11 +215,17 @@ const Home = () => {
               </div>
             </div>
           </div>
+
+          {/* SLIDE 2 */}
           <div className="keen-slider__slide">
             <img
-              src="/img/VP_psiquiatria_banner.jpeg"
+              src={
+                isMobile
+                  ? '/img/VP_psiquiatria_banner-mobile.jpg'
+                  : '/img/VP_psiquiatria_banner.jpeg'
+              }
               alt="Banner psiquiatria"
-              className="m-auto block"
+              className="block w-full h-auto"
             />
           </div>
         </div>
