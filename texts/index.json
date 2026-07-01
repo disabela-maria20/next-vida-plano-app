@@ -1481,5 +1481,206 @@
         "plano": "VIDA plano"
       }
     ]
+  },
+  "empresa": {
+    "hero": {
+      "imgLogo": "/img/logo-horizontal.png",
+      "imgBg": "/img/bg-herro-empresa.png",
+      "imgHero": "/img/empresa-hero.png",
+      "title": "QUALIDADE DE VIDA PARA VOCÊ E SUA EMPRESA",
+      "description": "Benefícios corporativos em um só aplicativo para garantir saúde, economia e proteção para todos os momentos.",
+      "cta": "CONFIA, FAZ O VIDA PLANO!"
+    },
+    "benefits": {
+      "title": "O que mais podemos te oferecer:",
+
+      "imgBg": "/img/bg-herro-beneficios.png",
+      "description": "Uma solução completa para cuidar dos colaboradores e suas famílias, reunindo saúde, telemedicina, descontos, assistência funeral, benefícios pet e clube de vantagens em um só aplicativo.",
+      "images": {
+        "leftTop": "/img/beneficio-exame.jpg",
+        "center": "/img/beneficio-telemedicina.jpg",
+        "leftBottom": "/img/beneficio-pet.jpg",
+        "bottom": "/img/beneficio-viagem.jpg"
+      },
+      "items": [
+        {
+          "id": 1,
+          "name": "Telemedicina",
+
+          "incluso": true
+        },
+        {
+          "id": 2,
+          "name": "Televeterinária",
+          "incluso": true
+        },
+        {
+          "id": 3,
+          "name": "Clube de benefícios",
+          "incluso": true
+        },
+        {
+          "id": 4,
+          "name": "Descontos em Farmácias (a partir de 22%)",
+          "incluso": true
+        },
+        {
+          "id": 5,
+          "name": "Abrangência nacional",
+          "incluso": true
+        },
+        {
+          "id": 6,
+          "name": "Descontos em consultas físicas em mais de 50 especialidades médicas",
+          "incluso": true
+        },
+        {
+          "id": 7,
+          "name": "Descontos em exames",
+          "incluso": true
+        },
+        {
+          "id": 8,
+          "name": "Rede laboratorial: mais de 1500 tipos de exames disponíveis",
+          "incluso": true
+        },
+        {
+          "id": 9,
+          "name": "Odontologia: rede para consultas, exames, tratamentos e procedimentos",
+          "incluso": true
+        },
+        {
+          "id": 10,
+          "name": "Assistência funeral completa com cobertura de até R$ 10 mil",
+          "incluso": true
+        },
+        {
+          "id": 11,
+          "name": "Cobertura completa de cremação e cerimônia de despedida",
+          "incluso": true
+        },
+        {
+          "id": 12,
+          "name": "Cobertura de cremação para Pets",
+          "incluso": true
+        },
+        {
+          "id": 13,
+          "name": "Serviço de translado com cobertura em todo território nacional",
+          "incluso": true
+        },
+        {
+          "id": 14,
+          "name": "Sorteios semanais de até R$ 25.000",
+          "incluso": true
+        }
+      ],
+      "cta": "ENTRE EM CONTATO E CUIDE DA SUA EQUIPE"
+    },
+    "form": {
+      "title": "Comece agora, fácil e rápido:",
+      "card": {
+        "image": "/img/empresa-form.png",
+        "title": "Formulário",
+        "description": "Quer levar mais saúde, economia e segurança para sua equipe? Preencha o formulário e conheça uma solução completa de benefícios corporativos para empresas de todos os tamanhos.",
+        "button": "CONHEÇA MAIS"
+      },
+      "fields": [
+        {
+          "name": "name",
+          "label": "Nome",
+          "placeholder": "Nome",
+          "validation": {
+            "required": "Informe seu nome.",
+            "minLength": "O nome deve possuir no mínimo 3 caracteres."
+          }
+        },
+        {
+          "name": "email",
+          "label": "E-mail",
+          "placeholder": "E-mail",
+          "validation": {
+            "required": "Informe seu e-mail.",
+            "invalid": "Digite um e-mail válido."
+          }
+        },
+        {
+          "name": "phone",
+          "label": "Telefone",
+          "placeholder": "Telefone",
+          "validation": {
+            "required": "Informe seu telefone.",
+            "invalid": "Digite um telefone válido."
+          }
+        },
+        {
+          "name": "company",
+          "label": "Empresa",
+          "placeholder": "Empresa",
+          "validation": {
+            "required": "Informe a empresa."
+          }
+        },
+        {
+          "name": "position",
+          "label": "Cargo",
+          "placeholder": "Cargo",
+          "validation": {
+            "required": "Informe seu cargo."
+          }
+        },
+        {
+          "name": "department",
+          "label": "Área",
+          "placeholder": "Área",
+          "validation": {
+            "required": "Informe sua área."
+          }
+        },
+        {
+          "name": "segment",
+          "label": "Segmento",
+          "placeholder": "Segmento",
+          "validation": {
+            "required": "Informe o segmento."
+          }
+        },
+        {
+          "name": "employees",
+          "label": "Quantidade de Funcionários",
+          "placeholder": "Quantidade de Funcionários",
+          "validation": {
+            "required": "Informe a quantidade de funcionários.",
+            "numeric": "Informe apenas números.",
+            "min": "A quantidade deve ser maior que zero."
+          }
+        }
+      ],
+      "button": {
+        "label": "CONHEÇA MAIS",
+        "loading": "Enviando...",
+        "success": "Formulário enviado com sucesso!",
+        "error": "Não foi possível enviar o formulário. Tente novamente."
+      }
+    },
+    "app": {
+      "imgLogo": "/img/logo-colorido.png",
+      "imgBanner": "/img/empresa-promo.png",
+      "title": "BAIXE O APP",
+      "subtitle": "e comece a cuidar da saúde dos seus Funcionários.",
+      "cta": "CONFIA, FAZ O VIDA PLANO!",
+      "stores": [
+        {
+          "id": 1,
+          "image": "/img/playstore.png",
+          "link": "https://play.google.com/store/apps/details?id=com.farol.vidaApp&hl=pt_BR"
+        },
+        {
+          "id": 2,
+          "image": "/img/appstore.png",
+          "link": "https://apps.apple.com/br/app/vida-plano/id1664932847"
+        }
+      ]
+    }
   }
 }
