@@ -9,6 +9,7 @@ import { createEmpresaSchema } from './empresa.schema';
 import { z } from 'zod';
 import { FormField } from './type';
 import axios from 'axios';
+import { useAppLink } from '@/hooks/useAppLink';
 // Interface para os benefícios
 interface BenefitItem {
   id: number;
@@ -18,6 +19,7 @@ interface BenefitItem {
 }
 
 const Empresa = () => {
+  const appLink = useAppLink();
   const fields = text.empresa.form.fields as FormField[];
   const benefits = text.empresa.benefits.items as BenefitItem[];
 
@@ -40,6 +42,9 @@ const Empresa = () => {
     resolver: zodResolver(schema),
   });
 
+  if (!appLink) {
+    return;
+  }
   const formatPhone = (value: string) => {
     const numbers = value.replace(/\D/g, '').slice(0, 11);
 
@@ -361,13 +366,25 @@ const Empresa = () => {
                     <p className="font-bold text-2xl text-cold-green mb-10">
                       {text.empresa.app.subtitle}
                     </p>
-                    <span
-                      className="inline-block relative bg-blue-green text-white font-bold text-base px-7 py-2 rounded-full shadow-md text-center
-                      after:absolute after:w-4 after:bg-blue-green after:h-4 after:-bottom-12 after:rounded-full after:-left-2
-                      before:absolute before:w-6 before:bg-blue-green before:h-6 before:-bottom-7 before:rounded-full before:-left-5"
+                    <a
+                      href={appLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Baixar o aplicativo Vida Plano"
                     >
-                      CONFIA, FAZ <br /> O VIDA PLANO!
-                    </span>
+                      <span
+                        className="
+                              relative inline-block
+                              rounded-full bg-blue-green px-7 py-2
+                              text-center text-base font-bold text-white shadow-md
+                              before:absolute before:-bottom-7 before:-left-5 before:h-6 before:w-6 before:rounded-full before:bg-blue-green
+                              after:absolute after:-bottom-12 after:-left-2 after:h-4 after:w-4 after:rounded-full after:bg-blue-green
+                            "
+                      >
+                        CONFIA, FAZ
+                        <br />O VIDA PLANO!
+                      </span>
+                    </a>
                   </div>
                 </div>
               </div>
