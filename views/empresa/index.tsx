@@ -349,7 +349,7 @@ const Empresa = () => {
         </section>
 
         {/* App section */}
-        <section className="mb-y md:my-16 lg:my-24">
+        <section className="pb-8 md:py-16 lg:py-24">
           <div className="container px-4 m-auto">
             <div className="grid gap-5 md:grid-cols-5 items-center">
               <div className="col-span-3 md:col-span-2">
@@ -372,18 +372,20 @@ const Empresa = () => {
                       rel="noopener noreferrer"
                       aria-label="Baixar o aplicativo Vida Plano"
                     >
-                      <span
-                        className="
+                      <div className="pb-4">
+                        <span
+                          className="
                               relative inline-block
                               rounded-full bg-blue-green px-7 py-2
                               text-center text-base font-bold text-white shadow-md
                               before:absolute before:-bottom-7 before:-left-5 before:h-6 before:w-6 before:rounded-full before:bg-blue-green
                               after:absolute after:-bottom-12 after:-left-2 after:h-4 after:w-4 after:rounded-full after:bg-blue-green
                             "
-                      >
-                        CONFIA, FAZ
-                        <br />O VIDA PLANO!
-                      </span>
+                        >
+                          CONFIA, FAZ
+                          <br />O VIDA PLANO!
+                        </span>
+                      </div>
                     </a>
                   </div>
                 </div>
