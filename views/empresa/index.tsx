@@ -193,18 +193,25 @@ const Empresa = () => {
                   ))}
                 </ul>
                 <div className="pt-7 flex justify-center">
-                  <span
-                    className="
-                      block relative
-                      bg-blue-green text-white font-bold text-base
-                      px-7 py-2 rounded-full shadow-md
-                      after:absolute after:w-4 after:h-4 after:bg-blue-green after:rounded-full after:-bottom-12 after:-left-2
-                      before:absolute before:w-6 before:h-6 before:bg-blue-green before:rounded-full before:-bottom-7 before:-left-5
-                    "
+                  <a
+                    href="https://wa.me/551636055582"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Entrar em contato pelo WhatsApp para conhecer os benefícios corporativos"
                   >
-                    ENTRE EM CONTATO
-                    <br />E CUIDE DA SUA EQUIPE
-                  </span>
+                    <span
+                      className="
+                            relative block
+                            rounded-full bg-blue-green px-7 py-2
+                            text-base font-bold text-white shadow-md
+                            before:absolute before:-bottom-7 before:-left-5 before:h-6 before:w-6 before:rounded-full before:bg-blue-green
+                            after:absolute after:-bottom-12 after:-left-2 after:h-4 after:w-4 after:rounded-full after:bg-blue-green
+                          "
+                    >
+                      ENTRE EM CONTATO
+                      <br />E CUIDE DA SUA EQUIPE
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>
