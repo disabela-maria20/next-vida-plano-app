@@ -21,6 +21,11 @@
         "link": "/planos"
       },
       {
+        "id": 3,
+        "nome": "Empresa",
+        "link": "/empresa"
+      },
+      {
         "id": 4,
         "nome": "Quem somos",
         "link": "/#quemsomos"

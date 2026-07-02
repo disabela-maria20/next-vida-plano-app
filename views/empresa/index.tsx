@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 'use client';
 import { Footer, Header } from '@/components';
 import React from 'react';
@@ -7,7 +8,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { createEmpresaSchema } from './empresa.schema';
 import { z } from 'zod';
 import { FormField } from './type';
-
+import axios from 'axios';
 // Interface para os benefícios
 interface BenefitItem {
   id: number;
@@ -54,53 +55,58 @@ const Empresa = () => {
   };
 
   const onSubmit = async (data: EmpresaFormData) => {
+    if (isLoading) return;
+
     setIsLoading(true);
     setMessageStatus({ type: null, message: '' });
 
     try {
       const payload = {
-        to: 'paulo@vibezz.com',
+        to: 'b2b@vidaplano.com.br',
         from_email: 'noreply.cineidea@cineidea.com',
-        from_name: `Novo contato - ${data.name}`,
+        from_name: `Novo contato - ${data.name.trim()}`,
         assunto: 'Novo contato - Vida Plano Empresas',
-        nome: data.name,
-        email: data.email,
-        telefone: data.phone,
+        nome: data.name.trim(),
+        email: data.email.trim().toLowerCase(),
+        telefone: data.phone.replace(/\D/g, ''),
         mensagem: `
-          Empresa: ${data.company}
-          Cargo: ${data.position}
-          Área: ${data.department}
-          Segmento: ${data.segment}
-          Quantidade de Funcionários: ${data.employees}
-      `.trim(),
+              Empresa: ${data.company.trim()}
+              Cargo: ${data.position.trim()}
+              Área: ${data.department.trim()}
+              Segmento: ${data.segment.trim()}
+              Quantidade de Funcionários: ${data.employees.trim()}
+                    `.trim(),
       };
 
-      // eslint-disable-next-line no-undef
-      const response = await fetch('https://api.vibezz.com/api/sendmail', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(payload),
-      });
-
-      if (!response.ok) {
-        throw new Error('Erro ao enviar e-mail.');
-      }
+      await axios.post(
+        process.env.NEXT_PUBLIC_MAIL_API ??
+          'https://api.vibezz.com/api/sendmail',
+        payload,
+        {
+          timeout: 10000,
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+            'X-Requested-With': 'XMLHttpRequest',
+          },
+          validateStatus: (status: number) => status >= 200 && status < 300,
+        }
+      );
 
       setMessageStatus({
         type: 'success',
         message:
           'Mensagem enviada com sucesso! Entraremos em contato em breve.',
       });
-      reset(); // Limpa o formulário após sucesso
-    } catch (error) {
-      console.error(error);
-      setMessageStatus({
-        type: 'error',
-        message:
-          'Não foi possível enviar sua mensagem. Tente novamente mais tarde.',
-      });
+
+      reset();
+    } catch (error: unknown) {
+      if (axios.isAxiosError(error)) {
+        setMessageStatus({
+          type: 'error',
+          message: 'Ocorreu um erro inesperado. Tente novamente mais tarde.',
+        });
+      }
     } finally {
       setIsLoading(false);
     }
@@ -260,10 +266,8 @@ const Empresa = () => {
                               ? 15
                               : undefined
                           }
-                          className={`w-full bg-white h-12 rounded-full px-4 border ${
-                            errors[field.name]
-                              ? 'border-red-500'
-                              : 'border-gray-300'
+                          className={`w-full bg-white h-12 rounded-full px-4  ${
+                            errors[field.name] && 'border border-red-500'
                           }`}
                           disabled={isLoading}
                         />
@@ -280,7 +284,7 @@ const Empresa = () => {
                       <button
                         type="submit"
                         disabled={isLoading}
-                        className={`bg-blue-green text-white px-6 py-3 rounded-full transition-all duration-300 flex items-center justify-center gap-2
+                        className={`bg-blue-green cursor-pointer text-white px-6 py-3 rounded-full transition-all duration-300 flex items-center justify-center gap-2
                           ${isLoading ? 'opacity-70 cursor-not-allowed' : 'hover:bg-blue-green-dark'}`}
                       >
                         {isLoading ? (
